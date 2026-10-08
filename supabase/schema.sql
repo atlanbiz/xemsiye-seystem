@@ -99,18 +99,75 @@ create table if not exists readings (
   primary key (site_id, ts)
 );
 
+-- ── v2: financial (ROI) fields on sites ─────────────────────────────────────
+alter table sites add column if not exists system_cost numeric not null default 0;          -- CAPEX, in settings.currency
+alter table sites add column if not exists annual_opex numeric not null default 0;          -- O&M per year
+alter table sites add column if not exists degradation_pct numeric not null default 0.5;    -- output loss per year, %
+alter table sites add column if not exists tariff_escalation_pct numeric not null default 2; -- tariff growth per year, %
+alter table settings add column if not exists discount_rate_pct numeric;                     -- NPV discount rate, % (default 6)
+
+-- ── v2: user-defined alert rules ────────────────────────────────────────────
+-- metric values: site_yield_below (today kWh/kWp), site_offline, device_efficiency_below,
+-- device_health_below, device_offline_minutes, invoice_overdue_days
+create table if not exists alert_rules (
+  id text primary key,
+  name text not null,
+  metric text not null check (metric in ('site_yield_below','site_offline','device_efficiency_below','device_health_below','device_offline_minutes','invoice_overdue_days')),
+  threshold numeric not null default 0,
+  site_id text references sites(id) on delete cascade,  -- null = all sites
+  severity text not null default 'warning' check (severity in ('warning','danger')),
+  enabled boolean not null default true,
+  last_triggered_at timestamptz,
+  created_at timestamptz not null default now()
+);
+
+-- ── v2: vendor integrations (real telemetry) ────────────────────────────────
+create table if not exists integrations (
+  id text primary key,
+  vendor text not null check (vendor in ('solaredge','fusionsolar','webhook')),
+  name text not null,
+  site_id text not null references sites(id) on delete cascade,
+  external_id text not null default '',          -- vendor site id / station code
+  config jsonb not null default '{}'::jsonb,      -- non-secret settings (base_url, username, ...)
+  ingest_token text not null default replace(gen_random_uuid()::text, '-', ''), -- for webhook/MQTT-bridge POSTs
+  status text not null default 'pending' check (status in ('pending','ok','error')),
+  last_sync_at timestamptz,
+  last_error text,
+  created_at timestamptz not null default now()
+);
+
+-- Secrets (API keys, passwords) are write-only for the app: no select policy,
+-- only Edge Functions (service role) can read them.
+create table if not exists integration_secrets (
+  integration_id text primary key references integrations(id) on delete cascade,
+  secret jsonb not null default '{}'::jsonb
+);
+
 create index if not exists devices_site_idx on devices(site_id);
 create index if not exists tickets_site_idx on tickets(site_id);
 create index if not exists invoices_site_idx on invoices(site_id);
 create index if not exists invoices_period_idx on invoices(period);
+create index if not exists readings_ts_idx on readings(site_id, ts desc);
+create index if not exists integrations_site_idx on integrations(site_id);
 
 -- Row Level Security: only signed-in users can read/write (single-organisation setup).
 do $$
 declare t text;
 begin
-  foreach t in array array['sites','devices','tickets','invoices','notifications','reports','settings','readings'] loop
+  foreach t in array array['sites','devices','tickets','invoices','notifications','reports','settings','readings','alert_rules','integrations'] loop
     execute format('alter table %I enable row level security', t);
     execute format('drop policy if exists "auth full access" on %I', t);
     execute format('create policy "auth full access" on %I for all to authenticated using (true) with check (true)', t);
   end loop;
 end $$;
+
+-- integration_secrets has RLS on and no policies: clients can't read or write it directly.
+-- They store a secret through this function; only Edge Functions (service role) read it.
+alter table integration_secrets enable row level security;
+create or replace function set_integration_secret(p_integration_id text, p_secret jsonb)
+returns void language sql security definer set search_path = public as $$
+  insert into integration_secrets (integration_id, secret) values (p_integration_id, p_secret)
+  on conflict (integration_id) do update set secret = excluded.secret;
+$$;
+revoke all on function set_integration_secret(text, jsonb) from public, anon;
+grant execute on function set_integration_secret(text, jsonb) to authenticated;
