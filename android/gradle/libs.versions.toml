@@ -1,0 +1,68 @@
+[versions]
+agp = "8.11.1"
+kotlin = "2.1.21"
+coroutines = "1.10.2"
+serialization = "1.8.1"
+composeBom = "2025.06.00"
+adaptive = "1.1.0"
+activityCompose = "1.10.1"
+coreKtx = "1.16.0"
+appcompat = "1.7.1"
+lifecycle = "2.9.1"
+navigation = "2.9.0"
+splashscreen = "1.0.1"
+datastore = "1.1.7"
+work = "2.10.2"
+supabase = "3.1.4"
+ktor = "3.1.3"
+osmdroid = "6.1.20"
+vico = "2.1.3"
+junit = "5.11.4"
+
+[libraries]
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashscreen" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-animation = { module = "androidx.compose.animation:animation" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material3-navigation-suite = { module = "androidx.compose.material3:material3-adaptive-navigation-suite" }
+compose-material3-adaptive = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "adaptive" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+
+supabase-bom = { module = "io.github.jan-tennert.supabase:bom", version.ref = "supabase" }
+supabase-auth = { module = "io.github.jan-tennert.supabase:auth-kt" }
+supabase-postgrest = { module = "io.github.jan-tennert.supabase:postgrest-kt" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+
+osmdroid = { module = "org.osmdroid:osmdroid-android", version.ref = "osmdroid" }
+vico-compose-m3 = { module = "com.patrykandpatrick.vico:compose-m3", version.ref = "vico" }
+
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

@@ -1,0 +1,7 @@
+# Copy to local.properties (Android Studio adds sdk.dir automatically).
+# sdk.dir=/path/to/Android/Sdk
+
+# Supabase project (Settings -> API). Leave empty to run the app in demo mode
+# with deterministic simulated data stored on the device.
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
