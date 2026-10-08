@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { NavLink, Outlet, useLocation, useNavigate, Link } from 'react-router-dom'
 import {
   LayoutGrid, MapPin, BarChart3, Cpu, FileText, Wrench, CreditCard, Settings as SettingsIcon, Search, Bell, CalendarDays,
-  Menu, X, Zap, ChevronDown, LogOut, User, Moon, Sun, Languages, ChevronLeft, ChevronRight, Leaf,
+  Menu, X, Zap, ChevronDown, LogOut, User, Moon, Sun, Languages, ChevronLeft, ChevronRight, Leaf, Map as MapIcon, BellRing, TrendingUp,
 } from 'lucide-react'
 import { useData } from '../context/data'
 import { useI18n, LANGS } from '../context/i18n'
@@ -10,13 +10,17 @@ import { useAuth } from '../context/auth'
 import { cn, dayKey, addDays, initials, monthKey } from '../lib/utils'
 import { useClickOutside } from './ui'
 import { co2Tons, totalKwh } from '../lib/sim'
+import { useAlertEngine } from '../context/alerts'
 import type { DictKey } from '../i18n/en'
 
 export const NAV: { to: string; key: DictKey; icon: typeof LayoutGrid }[] = [
   { to: '/', key: 'nav.overview', icon: LayoutGrid },
   { to: '/sites', key: 'nav.sites', icon: MapPin },
+  { to: '/map', key: 'nav.map', icon: MapIcon },
   { to: '/analytics', key: 'nav.analytics', icon: BarChart3 },
+  { to: '/finance', key: 'nav.finance', icon: TrendingUp },
   { to: '/devices', key: 'nav.devices', icon: Cpu },
+  { to: '/alerts', key: 'nav.alerts', icon: BellRing },
   { to: '/reports', key: 'nav.reports', icon: FileText },
   { to: '/maintenance', key: 'nav.maintenance', icon: Wrench },
   { to: '/billing', key: 'nav.billing', icon: CreditCard },
@@ -39,6 +43,7 @@ export default function Layout() {
   const { dir, lang } = useI18n()
   const [mobileOpen, setMobileOpen] = useState(false)
   const loc = useLocation()
+  useAlertEngine()
 
   useEffect(() => setMobileOpen(false), [loc.pathname])
 
@@ -93,7 +98,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
       {open && <div className="fixed inset-0 z-40 bg-slate-900/40 backdrop-blur-sm lg:hidden" onClick={onClose} />}
       <aside
         className={cn(
-          'no-print fixed inset-y-0 start-0 z-50 flex w-64 shrink-0 flex-col gap-4 border-e border-white/60 bg-white/90 p-4 backdrop-blur-xl transition-transform lg:static lg:z-auto lg:w-60 lg:bg-white/40 dark:border-white/10 dark:bg-slate-900/90 lg:dark:bg-slate-900/30',
+          'no-print scrollbar-thin fixed inset-y-0 start-0 z-50 flex w-64 shrink-0 flex-col gap-4 overflow-y-auto border-e border-white/60 bg-white/90 p-4 backdrop-blur-xl transition-transform lg:static lg:z-auto lg:w-60 lg:bg-white/40 dark:border-white/10 dark:bg-slate-900/90 lg:dark:bg-slate-900/30',
           !open && 'max-lg:ltr:-translate-x-full max-lg:rtl:translate-x-full',
         )}
       >
@@ -103,7 +108,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
             <X className="h-4 w-4" />
           </button>
         </div>
-        <nav className="mt-4 flex flex-col gap-1">
+        <nav className="mt-2 flex flex-col gap-0.5">
           {NAV.map(({ to, key, icon: Icon }) => (
             <NavLink
               key={to}
@@ -122,7 +127,8 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
           ))}
         </nav>
 
-        <div className="mt-auto overflow-hidden rounded-2xl bg-white/80 shadow-sm ring-1 ring-white dark:bg-slate-800/80 dark:ring-white/10">
+        <div className="flex-1" />
+        <div className="overflow-hidden rounded-2xl bg-white/80 shadow-sm ring-1 ring-white [@media(max-height:900px)]:hidden dark:bg-slate-800/80 dark:ring-white/10">
           <div className="relative h-24 bg-[url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=600&q=60')] bg-cover bg-center">
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             <Leaf className="absolute bottom-2 start-2 h-5 w-5 text-white" />

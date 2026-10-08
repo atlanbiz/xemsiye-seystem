@@ -1,22 +1,28 @@
 import { useEffect, useRef, useState } from 'react'
-import { User, SlidersHorizontal, Bell, Leaf, Database, Download, Upload, RotateCcw, CheckCircle2, CloudOff } from 'lucide-react'
+import { useSearchParams } from 'react-router-dom'
+import { User, SlidersHorizontal, Bell, Leaf, Database, Download, Upload, RotateCcw, CheckCircle2, CloudOff, Plug } from 'lucide-react'
 import { useData } from '../context/data'
 import { useI18n, LANGS } from '../context/i18n'
 import { useToast } from '../context/toast'
 import { Card, ConfirmDialog, Field, Input, PageHeader, Select, Toggle } from '../components/ui'
+import Integrations from '../components/Integrations'
 import { isSupabase } from '../lib/supabase'
+import { normalizeDB } from '../lib/repo'
 import { CITIES, cityLabel } from '../lib/weather'
 import type { DB, Settings as S } from '../lib/types'
 import { cn, downloadFile, initials } from '../lib/utils'
 import type { DictKey } from '../i18n/en'
 
-type Tab = 'profile' | 'preferences' | 'notifications' | 'environment' | 'data'
+type Tab = 'profile' | 'preferences' | 'notifications' | 'environment' | 'integrations' | 'data'
+const TABS: Tab[] = ['profile', 'preferences', 'notifications', 'environment', 'integrations', 'data']
 
 export default function Settings() {
   const { db, updateSettings, replaceAll, resetDemo } = useData()
   const { t } = useI18n()
   const toast = useToast()
-  const [tab, setTab] = useState<Tab>('profile')
+  const [params, setParams] = useSearchParams()
+  const tab: Tab = TABS.find((x) => x === params.get('tab')) ?? 'profile'
+  const setTab = (id: Tab) => setParams(id === 'profile' ? {} : { tab: id }, { replace: true })
   const [f, setF] = useState<S>(db.settings)
   const [reset, setReset] = useState(false)
   const file = useRef<HTMLInputElement>(null)
@@ -38,6 +44,7 @@ export default function Settings() {
     { id: 'preferences', icon: SlidersHorizontal, key: 'set.preferences' },
     { id: 'notifications', icon: Bell, key: 'set.notifications' },
     { id: 'environment', icon: Leaf, key: 'set.environment' },
+    { id: 'integrations', icon: Plug, key: 'set.integrations' },
     { id: 'data', icon: Database, key: 'set.data' },
   ]
 
@@ -49,7 +56,7 @@ export default function Settings() {
     try {
       const parsed = JSON.parse(await fl.text()) as DB
       if (!Array.isArray(parsed.sites) || !Array.isArray(parsed.devices) || !parsed.settings) throw new Error('shape')
-      await replaceAll({ ...parsed, reports: parsed.reports ?? [], notifications: parsed.notifications ?? [], tickets: parsed.tickets ?? [], invoices: parsed.invoices ?? [] })
+      await replaceAll(normalizeDB(parsed))
       toast(t('set.importDone'))
     } catch {
       toast(t('set.importFail'), 'error')
@@ -91,6 +98,9 @@ export default function Settings() {
                 <Field label={t('set.language')}><Select value={f.language} onChange={(e) => apply('language', e.target.value as S['language'])}>{LANGS.map((l) => <option key={l.code} value={l.code}>{l.label}</option>)}</Select></Field>
                 <Field label={t('set.theme')}><Select value={f.theme} onChange={(e) => apply('theme', e.target.value as S['theme'])}>{(['light', 'dark', 'system'] as const).map((x) => <option key={x} value={x}>{t(`set.theme.${x}`)}</option>)}</Select></Field>
                 <Field label={t('set.currency')}><Select value={f.currency} onChange={(e) => apply('currency', e.target.value as S['currency'])}><option value="USD">USD ($)</option><option value="CNY">CNY (¥)</option><option value="EUR">EUR (€)</option></Select></Field>
+                <Field label={t('set.discountRate')}>
+                  <Input type="number" min={0} max={50} step="0.1" value={f.discountRatePct} onChange={(e) => set('discountRatePct', Number(e.target.value))} onBlur={() => f.discountRatePct >= 0 && f.discountRatePct < 100 && f.discountRatePct !== db.settings.discountRatePct && save({ discountRatePct: f.discountRatePct })} />
+                </Field>
                 <Field label={t('set.city')}>
                   <Select value={f.city} onChange={(e) => { const c = CITIES.find((x) => x.name === e.target.value); if (c) { setF((p) => ({ ...p, city: c.name, lat: c.lat, lng: c.lng })); updateSettings({ city: c.name, lat: c.lat, lng: c.lng }) } }}>
                     {!CITIES.some((c) => c.name === f.city) && <option value={f.city}>{f.city}</option>}
@@ -123,6 +133,8 @@ export default function Settings() {
               <div className="mt-4 flex justify-end"><button className="btn btn-primary" disabled={!(f.treeKgPerYear > 0 && f.carTonsPerYear > 0 && f.co2KgPerKwh >= 0)} onClick={() => save({ co2KgPerKwh: f.co2KgPerKwh, treeKgPerYear: f.treeKgPerYear, carTonsPerYear: f.carTonsPerYear })}>{t('common.save')}</button></div>
             </Card>
           )}
+
+          {tab === 'integrations' && <Integrations />}
 
           {tab === 'data' && (
             <div className="space-y-4">

@@ -1,4 +1,4 @@
-import type { AppNotification, DB, Device, DeviceType, Invoice, Settings, Site, Ticket } from './types'
+import type { AlertRule, AppNotification, DB, Device, DeviceType, Invoice, Settings, Site, Ticket } from './types'
 import { rand, siteDayKwhCached } from './sim'
 import { addDays, addMonths, dayKey, daysBetween, monthKey, pad } from './utils'
 
@@ -22,6 +22,29 @@ export const defaultSettings: Settings = {
   notifyDeviceAlerts: true,
   notifyBilling: true,
   notifyMaintenance: true,
+  discountRatePct: 6,
+}
+
+/** Contract defaults for the ROI fields (docs/PLATFORM.md §1). */
+export function siteFinanceDefaults(capacityKw: number) {
+  const systemCost = Math.round(capacityKw * 900)
+  return { systemCost, annualOpex: Math.round(systemCost * 0.015), degradationPct: 0.5, tariffEscalationPct: 2 }
+}
+
+/**
+ * Fills ROI fields that are missing (older saved data) or still at the column default 0.
+ * A stored annualOpex of 0 is only treated as missing when systemCost is missing too.
+ */
+export function withSiteDefaults(site: Partial<Site> & Pick<Site, 'capacityKw'>): Site {
+  const d = siteFinanceDefaults(site.capacityKw)
+  const hasCost = (site.systemCost ?? 0) > 0
+  return {
+    ...site,
+    systemCost: hasCost ? site.systemCost! : d.systemCost,
+    annualOpex: hasCost && site.annualOpex != null ? site.annualOpex : d.annualOpex,
+    degradationPct: site.degradationPct ?? d.degradationPct,
+    tariffEscalationPct: site.tariffEscalationPct ?? d.tariffEscalationPct,
+  } as Site
 }
 
 const SITE_DEFS: [string, string, Site['type'], number, number, number, number][] = [
@@ -62,6 +85,7 @@ function buildSites(): Site[] {
     installDate: dayKey(addDays(new Date(), -(420 + Math.floor(rand('inst' + i) * 900)))),
     lat,
     lng,
+    ...siteFinanceDefaults(cap),
   }))
 }
 
@@ -207,6 +231,29 @@ function buildNotifications(): AppNotification[] {
   ]
 }
 
+export function buildAlertRules(): AlertRule[] {
+  const createdAt = addDays(new Date(), -30).toISOString()
+  const defs: [string, AlertRule['metric'], number, AlertRule['severity'], string | null][] = [
+    ['ئىستانسا تورسىز', 'site_offline', 0, 'danger', null],
+    ['ھاسىلات تۆۋەن', 'site_yield_below', 1.5, 'warning', null],
+    ['ئىنۋېرتور ئۈنۈمى تۆۋەن', 'device_efficiency_below', 92, 'warning', null],
+    ['ئۈسكۈنە سالامەتلىكى ناچار', 'device_health_below', 72, 'warning', null],
+    ['ئۈسكۈنە 1 سائەتتىن ئارتۇق تورسىز', 'device_offline_minutes', 60, 'danger', null],
+    ['تالون 10 كۈندىن ئارتۇق كېچىكتى', 'invoice_overdue_days', 10, 'warning', null],
+  ]
+  return defs.map(([name, metric, threshold, severity, siteId], i) => ({
+    id: `rule-${pad(i + 1)}`,
+    name,
+    metric,
+    threshold,
+    siteId,
+    severity,
+    enabled: true,
+    lastTriggeredAt: null,
+    createdAt,
+  }))
+}
+
 export function buildSeed(): DB {
   const sites = buildSites()
   const devices = buildDevices(sites)
@@ -217,6 +264,8 @@ export function buildSeed(): DB {
     invoices: buildInvoices(sites),
     notifications: buildNotifications(),
     reports: [],
+    alertRules: buildAlertRules(),
+    integrations: [],
     settings: { ...defaultSettings },
   }
 }

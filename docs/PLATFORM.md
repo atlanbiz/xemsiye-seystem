@@ -27,14 +27,19 @@ Ids are text (`site-01`, `dev-…`, `rule-…`); dates are `YYYY-MM-DD`; timesta
 | `notifications` | id, title, body, kind (`info`/`success`/`warning`/`danger`), link?, read, createdAt |
 | `reports` | id, kind (`energy`/`financial`/`devices`/`maintenance`/`environment`), title, from, to, siteIds[], createdAt |
 | `settings` (single row id=`settings`) | userName, email, role (`admin`/`operator`/`viewer`), company, language (`ug`/`en`/`ar`/`tr`), theme (`light`/`dark`/`system`), currency (`USD`/`CNY`/`EUR`), city, lat, lng, co2KgPerKwh, treeKgPerYear, carTonsPerYear, notify*, **discountRatePct** |
-| `readings` | siteId, ts, powerKw, energyKwh? — real telemetry written by integrations |
+| `readings` | siteId, ts, powerKw, energyKwh? — real telemetry written by integrations; energyKwh = energy produced so far in the site's local day |
 | **`alert_rules`** | id, name, metric, threshold, siteId? (null = all sites), severity (`warning`/`danger`), enabled, lastTriggeredAt?, createdAt |
 | **`integrations`** | id, vendor (`solaredge`/`fusionsolar`/`webhook`), name, siteId, externalId, config (json, non-secret), ingestToken, status (`pending`/`ok`/`error`), lastSyncAt?, lastError?, createdAt |
 | `integration_secrets` | write-only from clients via `rpc('set_integration_secret', {p_integration_id, p_secret})` |
 
+Integration fields per vendor: SolarEdge — externalId = SolarEdge site id, config `{}`, secret `{"api_key"}`;
+FusionSolar — externalId = station code, config `{"base_url","username"}` (base_url default `https://eu5.fusionsolar.huawei.com`),
+secret `{"system_code"}`; webhook — externalId `""`, config `{}`, no secret (clients generate `ingestToken`, 32 hex chars).
+
 Defaults for the new site fields when absent: systemCost = `capacityKw × 900`,
 annualOpex = `systemCost × 1.5 %`, degradationPct = 0.5, tariffEscalationPct = 2.
-Default discountRatePct = 6.
+Default discountRatePct = 6. A stored systemCost ≤ 0 (the column default) counts as absent; annualOpex is then
+derived as well, otherwise a stored annualOpex (even 0) is kept.
 
 ## 2. Simulator (demo mode and fallback)
 
@@ -74,7 +79,8 @@ When a site has `readings` within the last 15 minutes, clients show the real
    (shows `POST {SUPABASE_URL}/functions/v1/ingest` with header `x-ingest-token`). Status, last sync,
    last error. Secrets go only through `set_integration_secret`.
 5. **Financial analysis (ROI)** — per site and portfolio, 25-year horizon:
-   - year-1 energy `E1` = simulated kWh over the last 365 days (or `capacityKw × 365 × avg daily yield`)
+   - year-1 energy `E1` = simulated kWh over the 365 full days ending yesterday, ignoring installDate
+     (or `capacityKw × 365 × avg daily yield`)
    - `E_y = E1 × (1 − degradationPct/100)^(y−1)`
    - `price_y = pricePerKwh × (1 + tariffEscalationPct/100)^(y−1)`
    - cash flow `CF_y = E_y × price_y − annualOpex`, `CF_0 = −systemCost`

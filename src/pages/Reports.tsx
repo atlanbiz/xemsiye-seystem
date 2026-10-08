@@ -1,6 +1,6 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
-import { FileText, Download, Printer, Save, Trash2, Zap, DollarSign, Cpu, Wrench, Leaf, FolderOpen } from 'lucide-react'
+import { FileText, Download, Printer, Save, Trash2, Zap, DollarSign, Cpu, Wrench, Leaf, FolderOpen, FileDown, Loader2 } from 'lucide-react'
 import { useData } from '../context/data'
 import { useI18n, type TFn } from '../context/i18n'
 import { useToast } from '../context/toast'
@@ -9,6 +9,7 @@ import { Logo } from '../components/Layout'
 import { co2Tons, dailySeries, totalKwh } from '../lib/sim'
 import type { DB, ReportKind, SavedReport, Site } from '../lib/types'
 import { addDays, axisEnergy, cn, dayKey, downloadFile, parseDay, toCSV, uid } from '../lib/utils'
+import { exportPdf } from '../lib/pdf'
 import type { DictKey } from '../i18n/en'
 
 const KINDS: { kind: ReportKind; icon: typeof Zap; key: DictKey }[] = [
@@ -158,6 +159,20 @@ export default function Reports() {
     setKind(r.kind); setFrom(r.from); setTo(r.to); setSiteIds(r.siteIds)
     setGenerated({ kind: r.kind, from: r.from, to: r.to, siteIds: r.siteIds })
   }
+  const [pdfBusy, setPdfBusy] = useState(false)
+  const docRef = useRef<HTMLDivElement>(null)
+  const downloadPdf = async () => {
+    if (!docRef.current || !generated) return
+    setPdfBusy(true)
+    try {
+      await exportPdf(docRef.current, `${generated.kind}-report-${generated.from}_${generated.to}.pdf`)
+    } catch (e) {
+      console.error(e)
+      toast(t('common.pdfFailed'), 'error')
+    } finally {
+      setPdfBusy(false)
+    }
+  }
   const quick = (days: number) => { setFrom(dayKey(addDays(new Date(), -days + 1))); setTo(dayKey(new Date())) }
 
   return (
@@ -200,8 +215,9 @@ export default function Reports() {
           <button className="btn btn-ghost !py-1.5 text-xs" onClick={save}><Save className="h-3.5 w-3.5" />{t('common.save')}</button>
           <button className="btn btn-ghost !py-1.5 text-xs" onClick={exportCsv}><Download className="h-3.5 w-3.5" />{t('common.export')}</button>
           <button className="btn btn-ghost !py-1.5 text-xs" onClick={() => window.print()}><Printer className="h-3.5 w-3.5" />{t('common.print')}</button>
+          <button className="btn btn-primary !py-1.5 text-xs" disabled={pdfBusy} onClick={downloadPdf}>{pdfBusy ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <FileDown className="h-3.5 w-3.5" />}{t('common.downloadPdf')}</button>
         </div>}>
-          <div className="print-area space-y-4 p-1">
+          <div ref={docRef} className="print-area space-y-4 p-1">
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3 dark:border-slate-700">
               <div>
                 <div className="text-lg font-semibold">{title(generated.kind)}</div>
@@ -225,7 +241,7 @@ export default function Reports() {
                     <XAxis dataKey="x" tick={{ fontSize: 10, fill: '#94a3b8' }} tickLine={false} axisLine={false} minTickGap={18} />
                     <YAxis tick={{ fontSize: 10, fill: '#94a3b8' }} tickLine={false} axisLine={false} width={64} tickFormatter={(v) => (generated.kind === 'environment' ? `${+v.toFixed(1)} t` : axisEnergy(v))} />
                     <Tooltip content={<ChartTooltip format={(v) => (generated.kind === 'environment' ? `${fmt.num(v, 2)} t` : fmt.energy(v))} />} />
-                    <Area dataKey="v" name={title(generated.kind)} stroke="#3b74f6" fill="#3b74f6" fillOpacity={0.15} strokeWidth={2} />
+                    <Area dataKey="v" name={title(generated.kind)} stroke="#3b74f6" fill="#3b74f6" fillOpacity={0.15} strokeWidth={2} isAnimationActive={false} />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
@@ -234,7 +250,7 @@ export default function Reports() {
               {report.display.length === 0 ? <EmptyState text={t('common.noData')} /> : (
                 <table className="table-base">
                   <thead><tr>{report.columns.map((c) => <th key={c}>{c}</th>)}</tr></thead>
-                  <tbody>{report.display.map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody>
+                  <tbody>{report.display.map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}><bdi>{c}</bdi></td>)}</tr>)}</tbody>
                 </table>
               )}
             </div>

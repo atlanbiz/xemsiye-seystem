@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* .pdf-light opts a subtree out of dark mode (PDF export renders a light copy) */
+@custom-variant dark (&:where(.dark, .dark *):where(:not(.pdf-light, .pdf-light *)));
 
 @theme {
   --font-sans: "Inter", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
@@ -117,12 +118,74 @@ body {
   }
 }
 
+/* PDF export copy: let wide tables wrap instead of scrolling */
+.pdf-light .overflow-x-auto {
+  overflow: visible !important;
+}
+.pdf-light .table-base th,
+.pdf-light .table-base td {
+  white-space: normal;
+}
+
+/* Leaflet map: themed popups, dark tiles (html-prefixed to beat leaflet.css, which loads later) */
+html .leaflet-container {
+  font: inherit;
+  background: #dbe8fe;
+}
+html.dark .leaflet-container {
+  background: #0f172a;
+}
+html.dark .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.6);
+}
+html .leaflet-popup-content-wrapper {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+html .leaflet-popup-content {
+  margin: 12px 14px;
+  min-width: 220px;
+  font-size: inherit;
+  line-height: inherit;
+}
+html.dark .leaflet-popup-content-wrapper,
+html.dark .leaflet-popup-tip {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+html.dark .leaflet-bar a {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+html.dark .leaflet-container .leaflet-control-attribution {
+  background: rgba(15, 23, 42, 0.75);
+  color: #94a3b8;
+}
+html.dark .leaflet-container .leaflet-control-attribution a {
+  color: #93b8fd;
+}
+html.dark .leaflet-tooltip {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+.site-pin {
+  transition: stroke-width 0.15s;
+}
+.site-pin:hover {
+  stroke-width: 4;
+}
+
 .scrollbar-thin::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-slate-300/70 dark:bg-slate-600;
+  @apply rounded-full bg-slate-300/70;
+}
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--color-slate-600);
 }
 
 .recharts-wrapper,

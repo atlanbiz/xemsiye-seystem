@@ -3,6 +3,7 @@ import type { Site } from '../lib/types'
 import { useI18n } from '../context/i18n'
 import { Field, Input, Modal, Select } from './ui'
 import { dayKey, uid } from '../lib/utils'
+import { siteFinanceDefaults } from '../lib/seed'
 import type { DictKey } from '../i18n/en'
 
 const empty = (): Site => ({
@@ -18,6 +19,7 @@ const empty = (): Site => ({
   installDate: dayKey(new Date()),
   lat: 43.82,
   lng: 87.61,
+  ...siteFinanceDefaults(50),
 })
 
 export default function SiteForm({ open, onClose, onSave, initial }: { open: boolean; onClose: () => void; onSave: (s: Site) => void; initial?: Site | null }) {
@@ -39,6 +41,10 @@ export default function SiteForm({ open, onClose, onSave, initial }: { open: boo
     if (!f.location.trim()) er.location = t('common.required')
     if (!f.customer.trim()) er.customer = t('common.required')
     if (!(f.capacityKw > 0)) er.capacityKw = t('common.required')
+    if (!(f.systemCost > 0)) er.systemCost = t('common.required')
+    if (!(f.annualOpex >= 0)) er.annualOpex = t('common.required')
+    if (!(f.degradationPct >= 0 && f.degradationPct < 100)) er.degradationPct = t('common.required')
+    if (!Number.isFinite(f.tariffEscalationPct)) er.tariffEscalationPct = t('common.required')
     setErr(er)
     if (Object.keys(er).length) return
     onSave({ ...f, name: f.name.trim(), location: f.location.trim(), customer: f.customer.trim() })
@@ -76,6 +82,14 @@ export default function SiteForm({ open, onClose, onSave, initial }: { open: boo
         <Field label={t('sites.installDate')}><Input type="date" value={f.installDate} onChange={(e) => set('installDate', e.target.value)} /></Field>
         <Field label={t('sites.lat')}><Input type="number" step="0.0001" value={f.lat} onChange={(e) => set('lat', Number(e.target.value))} /></Field>
         <Field label={t('sites.lng')}><Input type="number" step="0.0001" value={f.lng} onChange={(e) => set('lng', Number(e.target.value))} /></Field>
+        <div className="mt-2 flex items-center justify-between gap-2 border-t border-slate-100 pt-3 sm:col-span-2 dark:border-slate-700">
+          <span className="text-sm font-semibold">{t('sites.financials')}</span>
+          <button type="button" className="cursor-pointer text-xs text-brand-600 hover:underline" onClick={() => setF((p) => ({ ...p, ...siteFinanceDefaults(p.capacityKw) }))}>{t('sites.useDefaults')}</button>
+        </div>
+        <Field label={t('sites.systemCost')} error={err.systemCost}><Input type="number" min={0} step="100" value={f.systemCost} onChange={(e) => set('systemCost', Number(e.target.value))} /></Field>
+        <Field label={t('sites.annualOpex')} error={err.annualOpex}><Input type="number" min={0} step="10" value={f.annualOpex} onChange={(e) => set('annualOpex', Number(e.target.value))} /></Field>
+        <Field label={t('sites.degradation')} error={err.degradationPct}><Input type="number" min={0} max={10} step="0.1" value={f.degradationPct} onChange={(e) => set('degradationPct', Number(e.target.value))} /></Field>
+        <Field label={t('sites.escalation')} error={err.tariffEscalationPct}><Input type="number" min={-10} max={20} step="0.1" value={f.tariffEscalationPct} onChange={(e) => set('tariffEscalationPct', Number(e.target.value))} /></Field>
       </form>
     </Modal>
   )
