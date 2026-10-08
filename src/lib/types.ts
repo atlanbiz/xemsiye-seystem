@@ -91,7 +91,7 @@ export interface SavedReport {
 
 export type ReportKind = 'energy' | 'financial' | 'devices' | 'maintenance' | 'environment'
 
-export type Lang = 'ug' | 'en'
+export type Lang = 'ug' | 'en' | 'ar' | 'tr'
 export type Theme = 'light' | 'dark' | 'system'
 
 export interface Settings {

@@ -1,7 +1,9 @@
 # SolarPulse — قۇياش ئېنېرگىيىسى نازارەت سىستېمىسى
 
 قۇياش ئېنېرگىيە ئىستانسىلىرىنى نازارەت قىلىش، ئانالىز قىلىش ۋە باشقۇرۇش ئۈچۈن تولۇق ئىقتىدارلىق تور سىستېمىسى.
-ئۇيغۇرچە (RTL) ۋە ئىنگلىزچە، يورۇق/قاراڭغۇ ئۇسلۇب، كومپيۇتېر ۋە يانفون ئېكرانىنى قوللايدۇ.
+ئۇيغۇرچە (RTL)، ئىنگلىزچە، ئەرەبچە (RTL) ۋە تۈركچە، يورۇق/قاراڭغۇ ئۇسلۇب، كومپيۇتېر ۋە يانفون ئېكرانىنى قوللايدۇ.
+
+Languages: Uyghur, English, Arabic, Turkish (`src/i18n/`).
 
 A full solar-fleet monitoring web app (React + TypeScript + Vite + Tailwind), built from the SolarPulse dashboard design.
 

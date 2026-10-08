@@ -1,15 +1,27 @@
 import { useCallback, useMemo } from 'react'
 import { en, type DictKey } from '../i18n/en'
 import { ug } from '../i18n/ug'
+import { ar } from '../i18n/ar'
+import { tr } from '../i18n/tr'
+import type { Lang } from '../lib/types'
 import { useData } from './data'
 
-const dicts = { en, ug }
+const dicts = { en, ug, ar, tr }
+
+/** Supported UI languages: native label, Intl locale and text direction. */
+export const LANGS: { code: Lang; label: string; locale: string; dir: 'rtl' | 'ltr' }[] = [
+  { code: 'ug', label: 'ئۇيغۇرچە', locale: 'ug-CN', dir: 'rtl' },
+  { code: 'en', label: 'English', locale: 'en-US', dir: 'ltr' },
+  { code: 'ar', label: 'العربية', locale: 'ar-EG-u-nu-latn', dir: 'rtl' },
+  { code: 'tr', label: 'Türkçe', locale: 'tr-TR', dir: 'ltr' },
+]
 
 export function useI18n() {
   const { db } = useData()
-  const lang = db.settings.language
+  const meta = LANGS.find((l) => l.code === db.settings.language) ?? LANGS[1]
+  const lang = meta.code
   const currency = db.settings.currency
-  const locale = lang === 'ug' ? 'ug-CN' : 'en-US'
+  const locale = meta.locale
 
   const t = useCallback(
     (key: DictKey, vars?: Record<string, string | number>) => {
@@ -81,7 +93,7 @@ export function useI18n() {
     }
   }, [currency, locale, lang])
 
-  return { t, fmt, lang, locale, dir: lang === 'ug' ? ('rtl' as const) : ('ltr' as const) }
+  return { t, fmt, lang, locale, dir: meta.dir }
 }
 
 export type TFn = ReturnType<typeof useI18n>['t']

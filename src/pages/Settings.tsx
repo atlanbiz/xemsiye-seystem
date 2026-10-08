@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { User, SlidersHorizontal, Bell, Leaf, Database, Download, Upload, RotateCcw, CheckCircle2, CloudOff } from 'lucide-react'
 import { useData } from '../context/data'
-import { useI18n } from '../context/i18n'
+import { useI18n, LANGS } from '../context/i18n'
 import { useToast } from '../context/toast'
 import { Card, ConfirmDialog, Field, Input, PageHeader, Select, Toggle } from '../components/ui'
 import { isSupabase } from '../lib/supabase'
-import { CITIES } from '../lib/weather'
+import { CITIES, cityLabel } from '../lib/weather'
 import type { DB, Settings as S } from '../lib/types'
 import { cn, downloadFile, initials } from '../lib/utils'
 import type { DictKey } from '../i18n/en'
@@ -88,13 +88,13 @@ export default function Settings() {
           {tab === 'preferences' && (
             <Card title={t('set.preferences')}>
               <div className="grid gap-3 sm:grid-cols-2">
-                <Field label={t('set.language')}><Select value={f.language} onChange={(e) => apply('language', e.target.value as S['language'])}><option value="ug">ئۇيغۇرچە</option><option value="en">English</option></Select></Field>
+                <Field label={t('set.language')}><Select value={f.language} onChange={(e) => apply('language', e.target.value as S['language'])}>{LANGS.map((l) => <option key={l.code} value={l.code}>{l.label}</option>)}</Select></Field>
                 <Field label={t('set.theme')}><Select value={f.theme} onChange={(e) => apply('theme', e.target.value as S['theme'])}>{(['light', 'dark', 'system'] as const).map((x) => <option key={x} value={x}>{t(`set.theme.${x}`)}</option>)}</Select></Field>
                 <Field label={t('set.currency')}><Select value={f.currency} onChange={(e) => apply('currency', e.target.value as S['currency'])}><option value="USD">USD ($)</option><option value="CNY">CNY (¥)</option><option value="EUR">EUR (€)</option></Select></Field>
                 <Field label={t('set.city')}>
                   <Select value={f.city} onChange={(e) => { const c = CITIES.find((x) => x.name === e.target.value); if (c) { setF((p) => ({ ...p, city: c.name, lat: c.lat, lng: c.lng })); updateSettings({ city: c.name, lat: c.lat, lng: c.lng }) } }}>
                     {!CITIES.some((c) => c.name === f.city) && <option value={f.city}>{f.city}</option>}
-                    {CITIES.map((c) => <option key={c.name} value={c.name}>{f.language === 'ug' ? c.name : c.en}</option>)}
+                    {CITIES.map((c) => <option key={c.name} value={c.name}>{cityLabel(c.name, f.language)}</option>)}
                   </Select>
                 </Field>
               </div>

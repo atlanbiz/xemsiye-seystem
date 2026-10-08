@@ -5,7 +5,7 @@ import {
   Menu, X, Zap, ChevronDown, LogOut, User, Moon, Sun, Languages, ChevronLeft, ChevronRight, Leaf,
 } from 'lucide-react'
 import { useData } from '../context/data'
-import { useI18n } from '../context/i18n'
+import { useI18n, LANGS } from '../context/i18n'
 import { useAuth } from '../context/auth'
 import { cn, dayKey, addDays, initials, monthKey } from '../lib/utils'
 import { useClickOutside } from './ui'
@@ -163,7 +163,7 @@ function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
 }
 
 function Topbar({ onMenu }: { onMenu: () => void }) {
-  const { db, updateSettings } = useData()
+  const { updateSettings } = useData()
   const { t } = useI18n()
   const dark = document.documentElement.classList.contains('dark')
   return (
@@ -174,15 +174,42 @@ function Topbar({ onMenu }: { onMenu: () => void }) {
       <Logo className="hidden sm:flex lg:hidden" />
       <div className="hidden flex-1 sm:block" />
       <GlobalSearch />
-      <button className="icon-btn" title={t('set.language')} onClick={() => updateSettings({ language: db.settings.language === 'ug' ? 'en' : 'ug' })}>
-        <Languages className="h-4 w-4" />
-      </button>
+      <LanguageMenu />
       <button className="icon-btn hidden sm:inline-grid" title={t('set.theme')} onClick={() => updateSettings({ theme: dark ? 'light' : 'dark' })}>
         {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
       </button>
       <Notifications />
       <CalendarPopover />
     </header>
+  )
+}
+
+export function LanguageMenu() {
+  const { db, updateSettings } = useData()
+  const { t } = useI18n()
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+  useClickOutside(ref, () => setOpen(false))
+  return (
+    <div ref={ref} className="relative">
+      <button className="icon-btn" title={t('set.language')} aria-label={t('set.language')} onClick={() => setOpen((o) => !o)}>
+        <Languages className="h-4 w-4" />
+      </button>
+      {open && (
+        <div className="fade-in absolute end-0 z-40 mt-2 w-40 rounded-xl border border-slate-100 bg-white p-1 shadow-xl dark:border-slate-700 dark:bg-slate-800">
+          {LANGS.map((l) => (
+            <button
+              key={l.code}
+              dir={l.dir}
+              onClick={() => { updateSettings({ language: l.code }); setOpen(false) }}
+              className={cn('block w-full cursor-pointer rounded-lg px-3 py-1.5 text-start text-sm hover:bg-slate-50 dark:hover:bg-slate-700', l.code === db.settings.language && 'font-semibold text-brand-600')}
+            >
+              {l.label}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   )
 }
 

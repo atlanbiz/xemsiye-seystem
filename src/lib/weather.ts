@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { simWeather } from './sim'
+import type { Lang } from './types'
 
 export interface Weather {
   temp: number
@@ -54,15 +55,22 @@ export function weatherKind(code: number): 'sunny' | 'partly' | 'cloudy' | 'fog'
   return 'rain'
 }
 
-export const CITIES: { name: string; en: string; lat: number; lng: number }[] = [
-  { name: 'ئۈرۈمچى', en: 'Urumqi', lat: 43.825, lng: 87.617 },
-  { name: 'قەشقەر', en: 'Kashgar', lat: 39.47, lng: 75.99 },
-  { name: 'تۇرپان', en: 'Turpan', lat: 42.95, lng: 89.18 },
-  { name: 'خوتەن', en: 'Hotan', lat: 37.11, lng: 79.92 },
-  { name: 'غۇلجا', en: 'Ghulja', lat: 43.92, lng: 81.32 },
-  { name: 'ئاقسۇ', en: 'Aksu', lat: 41.17, lng: 80.26 },
-  { name: 'قۇمۇل', en: 'Hami', lat: 42.82, lng: 93.51 },
-  { name: 'كورلا', en: 'Korla', lat: 41.76, lng: 86.15 },
-  { name: 'ئالمۇتا', en: 'Almaty', lat: 43.24, lng: 76.89 },
-  { name: 'ئىستانبۇل', en: 'Istanbul', lat: 41.01, lng: 28.98 },
+export const CITIES: { name: string; en: string; ar: string; tr: string; lat: number; lng: number }[] = [
+  { name: 'ئۈرۈمچى', en: 'Urumqi', ar: 'أورومتشي', tr: 'Urumçi', lat: 43.825, lng: 87.617 },
+  { name: 'قەشقەر', en: 'Kashgar', ar: 'كاشغر', tr: 'Kaşgar', lat: 39.47, lng: 75.99 },
+  { name: 'تۇرپان', en: 'Turpan', ar: 'توربان', tr: 'Turfan', lat: 42.95, lng: 89.18 },
+  { name: 'خوتەن', en: 'Hotan', ar: 'خوتان', tr: 'Hotan', lat: 37.11, lng: 79.92 },
+  { name: 'غۇلجا', en: 'Ghulja', ar: 'غولجا', tr: 'Gulca', lat: 43.92, lng: 81.32 },
+  { name: 'ئاقسۇ', en: 'Aksu', ar: 'آقسو', tr: 'Aksu', lat: 41.17, lng: 80.26 },
+  { name: 'قۇمۇل', en: 'Hami', ar: 'قومول', tr: 'Kumul', lat: 42.82, lng: 93.51 },
+  { name: 'كورلا', en: 'Korla', ar: 'كورلا', tr: 'Korla', lat: 41.76, lng: 86.15 },
+  { name: 'ئالمۇتا', en: 'Almaty', ar: 'ألماتي', tr: 'Almatı', lat: 43.24, lng: 76.89 },
+  { name: 'ئىستانبۇل', en: 'Istanbul', ar: 'إسطنبول', tr: 'İstanbul', lat: 41.01, lng: 28.98 },
 ]
+
+/** City name in the UI language (custom cities are shown as stored). */
+export function cityLabel(name: string, lang: Lang) {
+  const c = CITIES.find((x) => x.name === name)
+  if (!c) return name
+  return lang === 'ug' ? c.name : c[lang]
+}
