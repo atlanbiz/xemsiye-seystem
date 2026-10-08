@@ -1,0 +1,12 @@
+// SolarPulse build configuration.
+//
+// Supabase credentials are read from Info.plist keys SUPABASE_URL / SUPABASE_ANON_KEY,
+// which are filled from these build settings. Leave them empty to run in demo mode
+// (local deterministic simulator + data persisted in Application Support).
+//
+// Don't put real keys here — copy Secrets.example.xcconfig to Secrets.xcconfig (git-ignored).
+
+SUPABASE_URL =
+SUPABASE_ANON_KEY =
+
+#include? "Secrets.xcconfig"

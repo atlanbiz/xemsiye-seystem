@@ -1,0 +1,104 @@
+# XcodeGen spec — generate the Xcode project with:  brew install xcodegen && xcodegen
+name: SolarPulse
+options:
+  bundleIdPrefix: com.solarpulse
+  deploymentTarget:
+    iOS: "18.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  groupSortPosition: top
+configFiles:
+  Debug: Config.xcconfig
+  Release: Config.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Set your Apple Developer team id here (or in Xcode → Signing & Capabilities).
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    # Keys are managed manually in Localizable.xcstrings (shared with the web dictionaries).
+    SWIFT_EMIT_LOC_STRINGS: NO
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: "2.0.0"
+  SolarPulseKit:
+    path: SolarPulseKit
+targets:
+  SolarPulse:
+    type: application
+    platform: iOS
+    sources:
+      - path: SolarPulse
+        excludes:
+          - "**/.DS_Store"
+    dependencies:
+      - package: Supabase
+        product: Supabase
+      - package: SolarPulseKit
+    info:
+      path: SolarPulse/Info.plist
+      properties:
+        CFBundleDisplayName: SolarPulse
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [en, ug, ar, tr]
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.utilities
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        # Filled from Config.xcconfig / Secrets.xcconfig. Empty → demo mode.
+        SUPABASE_URL: $(SUPABASE_URL)
+        SUPABASE_ANON_KEY: $(SUPABASE_ANON_KEY)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.solarpulse.app
+        PRODUCT_NAME: SolarPulse
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+  SolarPulseTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SolarPulseTests
+    dependencies:
+      - target: SolarPulse
+      - package: SolarPulseKit
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.solarpulse.app.tests
+schemes:
+  SolarPulse:
+    build:
+      targets:
+        SolarPulse: all
+        SolarPulseTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - SolarPulseTests
+    archive:
+      config: Release
