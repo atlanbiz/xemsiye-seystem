@@ -1,3 +1,4 @@
+import { lazy, Suspense, type ReactNode } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AuthProvider, useAuth } from './context/auth'
 import { DataProvider } from './context/data'
@@ -12,6 +13,13 @@ import Reports from './pages/Reports'
 import Maintenance from './pages/Maintenance'
 import Billing from './pages/Billing'
 import Settings from './pages/Settings'
+import { Skeleton } from './components/ui'
+
+// v2 pages load on demand (Leaflet, finance model, alert rules) to keep the main bundle lean
+const MapPage = lazy(() => import('./pages/MapPage'))
+const Finance = lazy(() => import('./pages/Finance'))
+const Alerts = lazy(() => import('./pages/Alerts'))
+const Page = ({ children }: { children: ReactNode }) => <Suspense fallback={<Skeleton className="mt-4 h-[60vh]" />}>{children}</Suspense>
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 
@@ -33,7 +41,10 @@ export default function App() {
                 <Route index element={<Overview />} />
                 <Route path="sites" element={<Sites />} />
                 <Route path="sites/:id" element={<SiteDetail />} />
+                <Route path="map" element={<Page><MapPage /></Page>} />
                 <Route path="analytics" element={<Analytics />} />
+                <Route path="finance" element={<Page><Finance /></Page>} />
+                <Route path="alerts" element={<Page><Alerts /></Page>} />
                 <Route path="devices" element={<Devices />} />
                 <Route path="reports" element={<Reports />} />
                 <Route path="maintenance" element={<Maintenance />} />

@@ -1,0 +1,56 @@
+// Android-only strings (no web equivalent), authored in all four languages.
+export const extras = {
+  'nav.more': { en: 'More', ug: 'تېخىمۇ كۆپ', ar: 'المزيد', tr: 'Daha fazla' },
+  'common.sharePdf': { en: 'Share PDF', ug: 'PDF ھەمبەھىرلەش', ar: 'مشاركة PDF', tr: "PDF'i paylaş" },
+  'cd.clearSearch': { en: 'Clear search', ug: 'ئىزدەشنى تازىلاش', ar: 'مسح البحث', tr: 'Aramayı temizle' },
+  'cd.showPassword': { en: 'Show or hide password', ug: 'پارولنى كۆرسىتىش ياكى يوشۇرۇش', ar: 'إظهار كلمة المرور أو إخفاؤها', tr: 'Şifreyi göster veya gizle' },
+  'mt.swipeHint': {
+    en: 'Swipe a ticket right to move it to the next status, left to delete it',
+    ug: 'ۋەزىپىنى كېيىنكى ھالەتكە يۆتكەش ئۈچۈن ئوڭغا، ئۆچۈرۈش ئۈچۈن سولغا سىيرىڭ',
+    ar: 'اسحب البطاقة إلى الأمام لنقلها إلى الحالة التالية، أو إلى الخلف لحذفها',
+    tr: 'Bir sonraki duruma taşımak için kartı sağa, silmek için sola kaydırın',
+  },
+  'mt.moveTo': { en: 'Move to {s}', ug: '{s} غا يۆتكەش', ar: 'نقل إلى {s}', tr: '{s} durumuna taşı' },
+  'rep.generatedAt': { en: 'Generated {t} · SolarPulse', ug: 'ھاسىل قىلىنغان ۋاقتى {t} · SolarPulse', ar: 'أُنشئ في {t} · SolarPulse', tr: 'Oluşturulma: {t} · SolarPulse' },
+  'set.about': { en: 'About', ug: 'ھەققىدە', ar: 'حول التطبيق', tr: 'Hakkında' },
+  'set.version': { en: 'SolarPulse for Android · version {v}', ug: 'SolarPulse Android نەشرى · {v}', ar: 'SolarPulse لنظام Android · الإصدار {v}', tr: 'Android için SolarPulse · sürüm {v}' },
+  'set.dynamicColor': { en: 'Wallpaper colours', ug: 'تام قەغىزى رەڭلىرى', ar: 'ألوان الخلفية', tr: 'Duvar kağıdı renkleri' },
+  'set.dynamicColorDesc': {
+    en: 'Use Material You colours instead of the SolarPulse palette',
+    ug: 'SolarPulse رەڭلىرىنىڭ ئورنىغا Material You رەڭلىرىنى ئىشلىتىش',
+    ar: 'استخدام ألوان Material You بدلاً من ألوان SolarPulse',
+    tr: 'SolarPulse paleti yerine Material You renklerini kullan',
+  },
+  'set.notifyPermission': {
+    en: 'Allow notifications so fired alert rules can reach you.',
+    ug: 'ئاگاھلاندۇرۇش قائىدىلىرى سىزگە يەتسۇن ئۈچۈن ئۇقتۇرۇشقا رۇخسەت قىلىڭ.',
+    ar: 'اسمح بالإشعارات حتى تصلك تنبيهات القواعد.',
+    tr: 'Tetiklenen uyarı kurallarının size ulaşması için bildirimlere izin verin.',
+  },
+  'set.notifyAllow': { en: 'Allow', ug: 'رۇخسەت قىلىش', ar: 'سماح', tr: 'İzin ver' },
+  'set.storage.device': {
+    en: 'On-device storage (demo mode)',
+    ug: 'ئۈسكۈنىدىكى يەرلىك ساقلىغۇچ (سىناق ھالىتى)',
+    ar: 'التخزين على الجهاز (الوضع التجريبي)',
+    tr: 'Cihaz depolaması (demo modu)',
+  },
+  'set.supabaseHintAndroid': {
+    en: 'To use Supabase, run supabase/schema.sql in your project and set SUPABASE_URL and SUPABASE_ANON_KEY in android/local.properties, then rebuild the app.',
+    ug: 'Supabase ئىشلىتىش ئۈچۈن supabase/schema.sql نى تۈرىڭىزدە ئىجرا قىلىپ، android/local.properties ھۆججىتىگە SUPABASE_URL ۋە SUPABASE_ANON_KEY نى يېزىڭ، ئاندىن ئەپنى قايتا قۇرۇڭ.',
+    ar: 'لاستخدام Supabase، نفّذ supabase/schema.sql في مشروعك واضبط SUPABASE_URL و SUPABASE_ANON_KEY في ملف android/local.properties، ثم أعد بناء التطبيق.',
+    tr: 'Supabase kullanmak için projenizde supabase/schema.sql dosyasını çalıştırın, android/local.properties içinde SUPABASE_URL ve SUPABASE_ANON_KEY değerlerini ayarlayın ve uygulamayı yeniden derleyin.',
+  },
+  'alerts.demoHintAndroid': {
+    en: 'Demo mode: rules are checked on this device when the app opens and in the background about every 15 minutes. Each rule fires at most once every 6 hours and posts a notification.',
+    ug: 'سىناق ھالىتى: قائىدىلەر ئەپ ئېچىلغاندا ۋە ئارقا سۇپىدا تەخمىنەن ھەر 15 مىنۇتتا بۇ ئۈسكۈنىدە تەكشۈرۈلىدۇ. ھەر بىر قائىدە 6 سائەتتە ئەڭ كۆپ بىر قېتىم ئۇقتۇرۇش ئەۋەتىدۇ.',
+    ar: 'الوضع التجريبي: تُفحص القواعد على هذا الجهاز عند فتح التطبيق وفي الخلفية كل 15 دقيقة تقريبًا. تُطلق كل قاعدة إشعارًا مرة واحدة على الأكثر كل 6 ساعات.',
+    tr: 'Demo modu: kurallar uygulama açıldığında ve arka planda yaklaşık her 15 dakikada bir bu cihazda kontrol edilir. Her kural en fazla 6 saatte bir bildirim gönderir.',
+  },
+  'notif.channel.alerts': { en: 'Alerts', ug: 'ئاگاھلاندۇرۇشلار', ar: 'التنبيهات', tr: 'Uyarılar' },
+  'notif.channel.alertsDesc': {
+    en: 'Notifications when one of your alert rules fires',
+    ug: 'ئاگاھلاندۇرۇش قائىدىلىرىڭىزنىڭ بىرى قوزغالغاندا ئۇقتۇرۇش',
+    ar: 'إشعارات عند إطلاق إحدى قواعد التنبيه',
+    tr: 'Uyarı kurallarınızdan biri tetiklendiğinde bildirim',
+  },
+}

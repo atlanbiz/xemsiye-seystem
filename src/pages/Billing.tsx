@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis, Legend } from 'recharts'
-import { Receipt, CheckCircle2, Clock, AlertCircle, Download, Printer, FilePlus2, Trash2 } from 'lucide-react'
+import { Receipt, CheckCircle2, Clock, AlertCircle, Download, Printer, FilePlus2, Trash2, FileDown, Loader2 } from 'lucide-react'
 import { useData } from '../context/data'
 import { useI18n } from '../context/i18n'
 import { useToast } from '../context/toast'
@@ -10,6 +10,7 @@ import { Logo } from '../components/Layout'
 import { buildInvoice } from '../lib/seed'
 import type { Invoice } from '../lib/types'
 import { addMonths, dayKey, downloadFile, monthKey, toCSV } from '../lib/utils'
+import { exportPdf } from '../lib/pdf'
 import type { DictKey } from '../i18n/en'
 
 export default function Billing() {
@@ -25,6 +26,21 @@ export default function Billing() {
   const [gen, setGen] = useState(false)
   const [genMonth, setGenMonth] = useState(monthKey(addMonths(new Date(), -1)))
   const [del, setDel] = useState<Invoice | null>(null)
+  const [pdfBusy, setPdfBusy] = useState(false)
+  const docRef = useRef<HTMLDivElement>(null)
+
+  const downloadPdf = async (inv: Invoice) => {
+    if (!docRef.current) return
+    setPdfBusy(true)
+    try {
+      await exportPdf(docRef.current, `${inv.number}.pdf`)
+    } catch (e) {
+      console.error(e)
+      toast(t('common.pdfFailed'), 'error')
+    } finally {
+      setPdfBusy(false)
+    }
+  }
 
   useEffect(() => {
     const id = params.get('open')
@@ -161,9 +177,10 @@ export default function Billing() {
       <Modal open={!!open} onClose={() => setOpen(null)} size="lg" title={open ? <span dir="ltr">{open.number}</span> : ''}
         footer={open && <>
           <button className="btn btn-ghost" onClick={() => window.print()}><Printer className="h-4 w-4" />{t('common.print')}</button>
+          <button className="btn btn-ghost" disabled={pdfBusy} onClick={() => downloadPdf(open)}>{pdfBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileDown className="h-4 w-4" />}{t('common.downloadPdf')}</button>
           {open.status !== 'paid' && <button className="btn btn-primary" onClick={() => markPaid(open)}><CheckCircle2 className="h-4 w-4" />{t('bill.markPaid')}</button>}
         </>}>
-        {open && <InvoiceDoc inv={open} />}
+        {open && <div ref={docRef}><InvoiceDoc inv={open} /></div>}
       </Modal>
 
       <Modal open={gen} onClose={() => setGen(false)} size="sm" title={t('bill.generate')}
@@ -188,7 +205,7 @@ function InvoiceDoc({ inv }: { inv: Invoice }) {
           <div className="mt-2 text-xs text-slate-500">{db.settings.company}<br />{db.settings.email}</div>
         </div>
         <div className="text-end">
-          <div className="text-xl font-bold" dir="ltr">{inv.number}</div>
+          <div className="whitespace-nowrap text-xl font-bold" dir="ltr">{inv.number}</div>
           <StatusBadge status={inv.status} label={t(`status.${inv.status}` as DictKey)} />
         </div>
       </div>

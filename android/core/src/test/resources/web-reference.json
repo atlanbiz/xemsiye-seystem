@@ -1,0 +1,6322 @@
+{
+ "now": 1782027000000,
+ "tz": "Asia/Shanghai",
+ "hash": [
+  [
+   "",
+   2166136261
+  ],
+  [
+   "a",
+   3826002220
+  ],
+  [
+   "site-01",
+   126484622
+  ],
+  [
+   "wx2026-06-21",
+   1168233145
+  ],
+  [
+   "inst0",
+   3374983883
+  ],
+  [
+   "ئۈرۈمچى",
+   4089484232
+  ],
+  [
+   "load2026-06-2155",
+   1289042244
+  ],
+  [
+   "site-01inverter0",
+   213451891
+  ]
+ ],
+ "rand": [
+  [
+   "",
+   0.6112444521859288
+  ],
+  [
+   "a",
+   0.621685681398958
+  ],
+  [
+   "site-01",
+   0.9332428716588765
+  ],
+  [
+   "wx2026-06-21",
+   0.43811059230938554
+  ],
+  [
+   "inst0",
+   0.12676901719532907
+  ],
+  [
+   "ئۈرۈمچى",
+   0.21615242632105947
+  ],
+  [
+   "load2026-06-2155",
+   0.07684845989570022
+  ],
+  [
+   "site-01inverter0",
+   0.708288601366803
+  ]
+ ],
+ "solarCurve": [
+  [
+   0,
+   0
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   6.125,
+   0.003285487634687696
+  ],
+  [
+   9.5,
+   0.5743491774985174
+  ],
+  [
+   13,
+   1
+  ],
+  [
+   16.75,
+   0.5223002993669671
+  ],
+  [
+   19.9,
+   0.0022991993130858563
+  ],
+  [
+   20,
+   0
+  ]
+ ],
+ "weatherFactor": [
+  [
+   "2026-01-01",
+   0.8392420005891472
+  ],
+  [
+   "2026-03-20",
+   0.9930022155027837
+  ],
+  [
+   "2026-06-20",
+   0.91192145798821
+  ],
+  [
+   "2026-06-21",
+   0.8763843303080648
+  ],
+  [
+   "2026-09-23",
+   0.9057970747631043
+  ],
+  [
+   "2026-12-31",
+   0.8297287161182613
+  ],
+  [
+   "2025-02-28",
+   0.8339518690435216
+  ]
+ ],
+ "seasonFactor": [
+  [
+   "2026-01-01",
+   0.36708853071818986
+  ],
+  [
+   "2026-03-20",
+   0.674491726030133
+  ],
+  [
+   "2026-06-20",
+   0.9999970367155808
+  ],
+  [
+   "2026-06-21",
+   0.9999733307695162
+  ],
+  [
+   "2026-09-23",
+   0.6607317512429464
+  ],
+  [
+   "2026-12-31",
+   0.36598192951308506
+  ],
+  [
+   "2025-02-28",
+   0.5668236409035612
+  ]
+ ],
+ "siteKw": [
+  [
+   "2026-01-01",
+   7.125,
+   21.264294549097485
+  ],
+  [
+   "2026-01-01",
+   12.5,
+   193.7249335954134
+  ],
+  [
+   "2026-01-01",
+   18,
+   51.44769448669289
+  ],
+  [
+   "2026-03-20",
+   7.125,
+   45.7226268076728
+  ],
+  [
+   "2026-03-20",
+   12.5,
+   416.5486337518883
+  ],
+  [
+   "2026-03-20",
+   18,
+   110.62317302362909
+  ],
+  [
+   "2026-06-20",
+   7.125,
+   66.34794088911038
+  ],
+  [
+   "2026-06-20",
+   12.5,
+   604.4522386227408
+  ],
+  [
+   "2026-06-20",
+   18,
+   160.5248923166833
+  ],
+  [
+   "2026-06-21",
+   7.125,
+   64.9007253283438
+  ],
+  [
+   "2026-06-21",
+   12.5,
+   591.2676141452898
+  ],
+  [
+   "2026-06-21",
+   18,
+   157.02344044134387
+  ],
+  [
+   "2026-09-23",
+   7.125,
+   42.63500140325014
+  ],
+  [
+   "2026-09-23",
+   12.5,
+   388.4193193719443
+  ],
+  [
+   "2026-09-23",
+   18,
+   103.15284720918393
+  ],
+  [
+   "2026-12-31",
+   7.125,
+   21.428160257296653
+  ],
+  [
+   "2026-12-31",
+   12.5,
+   195.21780576035414
+  ],
+  [
+   "2026-12-31",
+   18,
+   51.84415781035552
+  ],
+  [
+   "2025-02-28",
+   7.125,
+   32.99523863342046
+  ],
+  [
+   "2025-02-28",
+   12.5,
+   300.59781190791915
+  ],
+  [
+   "2025-02-28",
+   18,
+   79.83001518382324
+  ]
+ ],
+ "siteDayKwh": [
+  [
+   "2026-01-01",
+   1489.4184994437535
+  ],
+  [
+   "2026-03-20",
+   3202.557510350189
+  ],
+  [
+   "2026-06-20",
+   4647.219795233499
+  ],
+  [
+   "2026-06-21",
+   4545.852236393882
+  ],
+  [
+   "2026-09-23",
+   2986.2904535672133
+  ],
+  [
+   "2026-12-31",
+   1500.8961723405791
+  ],
+  [
+   "2025-02-28",
+   2311.0909558136955
+  ]
+ ],
+ "siteDayKwhPartial": [
+  [
+   "2026-06-20",
+   15.5,
+   3727.784437979094
+  ]
+ ],
+ "consumptionKw": [
+  [
+   3,
+   320.49735892714034
+  ],
+  [
+   9,
+   679.9748643436143
+  ],
+  [
+   12.25,
+   622.9987067901058
+  ],
+  [
+   19.5,
+   790.7029036115097
+  ]
+ ],
+ "liveKw": 1742.0452405770977,
+ "energyFlow": {
+  "solar": 1742.0452405770977,
+  "consumption": 586.5702828821061,
+  "battery": 638.75,
+  "grid": -516.7249576949916,
+  "batterySoc": 92.95554957734409,
+  "batteryCapacity": 2555
+ },
+ "simWeather": {
+  "temp": 33,
+  "code": 0,
+  "irradiance": 672,
+  "wind": 15,
+  "humidity": 52
+ },
+ "deviceStats": {
+  "availability": 92.52873563218391,
+  "inverterEfficiency": 94.25999999999999,
+  "batteryHealth": 92.0625,
+  "online": 78,
+  "warning": 5,
+  "offline": 4
+ },
+ "seed": {
+  "sites": [
+   {
+    "id": "site-01",
+    "name": "تۇرپان قۇياش مەيدانى",
+    "location": "تۇرپان",
+    "type": "utility",
+    "status": "active",
+    "capacityKw": 820,
+    "batteryKwh": 600,
+    "pricePerKwh": 0.08,
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "installDate": "2025-01-03",
+    "lat": 42.95,
+    "lng": 89.18,
+    "systemCost": 738000,
+    "annualOpex": 11070,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-02",
+    "name": "ئۈرۈمچى سودا مەركىزى",
+    "location": "ئۈرۈمچى",
+    "type": "commercial",
+    "status": "active",
+    "capacityKw": 183,
+    "batteryKwh": 120,
+    "pricePerKwh": 0.12,
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "installDate": "2024-06-16",
+    "lat": 43.82,
+    "lng": 87.61,
+    "systemCost": 164700,
+    "annualOpex": 2471,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-03",
+    "name": "قەشقەر كونا شەھەر ئۆيلىرى",
+    "location": "قەشقەر",
+    "type": "residential",
+    "status": "active",
+    "capacityKw": 12.4,
+    "batteryKwh": 15,
+    "pricePerKwh": 0.14,
+    "customer": "ئابدۇللا ئائىلىسى",
+    "installDate": "2023-03-03",
+    "lat": 39.47,
+    "lng": 75.99,
+    "systemCost": 11160,
+    "annualOpex": 167,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-04",
+    "name": "خوتەن ئاشلىق زاۋۇتى",
+    "location": "خوتەن",
+    "type": "industrial",
+    "status": "active",
+    "capacityKw": 410,
+    "batteryKwh": 300,
+    "pricePerKwh": 0.1,
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "installDate": "2024-02-29",
+    "lat": 37.11,
+    "lng": 79.92,
+    "systemCost": 369000,
+    "annualOpex": 5535,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-05",
+    "name": "غۇلجا مەكتىپى",
+    "location": "غۇلجا",
+    "type": "commercial",
+    "status": "idle",
+    "capacityKw": 96,
+    "batteryKwh": 60,
+    "pricePerKwh": 0.12,
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "installDate": "2024-02-05",
+    "lat": 43.92,
+    "lng": 81.32,
+    "systemCost": 86400,
+    "annualOpex": 1296,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-06",
+    "name": "ئاقسۇ يېزا ئىگىلىك مەيدانى",
+    "location": "ئاقسۇ",
+    "type": "industrial",
+    "status": "active",
+    "capacityKw": 265,
+    "batteryKwh": 180,
+    "pricePerKwh": 0.1,
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "installDate": "2023-11-26",
+    "lat": 41.17,
+    "lng": 80.26,
+    "systemCost": 238500,
+    "annualOpex": 3578,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-07",
+    "name": "قۇمۇل شامال-قۇياش بازىسى",
+    "location": "قۇمۇل",
+    "type": "utility",
+    "status": "active",
+    "capacityKw": 640,
+    "batteryKwh": 450,
+    "pricePerKwh": 0.08,
+    "customer": "قۇمۇل توك تورى",
+    "installDate": "2024-07-04",
+    "lat": 42.82,
+    "lng": 93.51,
+    "systemCost": 576000,
+    "annualOpex": 8640,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-08",
+    "name": "كورلا ئىشخانا بىناسى",
+    "location": "كورلا",
+    "type": "commercial",
+    "status": "active",
+    "capacityKw": 65,
+    "batteryKwh": 40,
+    "pricePerKwh": 0.12,
+    "customer": "كورلا نېفىت شىركىتى",
+    "installDate": "2024-12-16",
+    "lat": 41.76,
+    "lng": 86.15,
+    "systemCost": 58500,
+    "annualOpex": 878,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-09",
+    "name": "ئاتۇش ئائىلە ئولتۇراق رايونى",
+    "location": "ئاتۇش",
+    "type": "residential",
+    "status": "idle",
+    "capacityKw": 38,
+    "batteryKwh": 30,
+    "pricePerKwh": 0.14,
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "installDate": "2024-02-18",
+    "lat": 39.71,
+    "lng": 76.17,
+    "systemCost": 34200,
+    "annualOpex": 513,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-10",
+    "name": "چۆچەك دوختۇرخانىسى",
+    "location": "چۆچەك",
+    "type": "commercial",
+    "status": "active",
+    "capacityKw": 120,
+    "batteryKwh": 150,
+    "pricePerKwh": 0.12,
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "installDate": "2024-01-24",
+    "lat": 46.75,
+    "lng": 82.98,
+    "systemCost": 108000,
+    "annualOpex": 1620,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-11",
+    "name": "ئالتاي تاغ ئارامگاھى",
+    "location": "ئالتاي",
+    "type": "residential",
+    "status": "offline",
+    "capacityKw": 18,
+    "batteryKwh": 20,
+    "pricePerKwh": 0.14,
+    "customer": "نۇرگۈل خانىم",
+    "installDate": "2023-09-02",
+    "lat": 47.84,
+    "lng": 88.14,
+    "systemCost": 16200,
+    "annualOpex": 243,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-12",
+    "name": "يەكەن توقۇمىچىلىق زاۋۇتى",
+    "location": "يەكەن",
+    "type": "industrial",
+    "status": "active",
+    "capacityKw": 350,
+    "batteryKwh": 220,
+    "pricePerKwh": 0.1,
+    "customer": "يەكەن توقۇمىچىلىق",
+    "installDate": "2023-06-02",
+    "lat": 38.42,
+    "lng": 77.24,
+    "systemCost": 315000,
+    "annualOpex": 4725,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-13",
+    "name": "قاراماي ئامبار مەركىزى",
+    "location": "قاراماي",
+    "type": "industrial",
+    "status": "idle",
+    "capacityKw": 290,
+    "batteryKwh": 160,
+    "pricePerKwh": 0.1,
+    "customer": "قاراماي ئامبار شىركىتى",
+    "installDate": "2024-05-22",
+    "lat": 45.58,
+    "lng": 84.89,
+    "systemCost": 261000,
+    "annualOpex": 3915,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-14",
+    "name": "بۆرتالا مېھمانخانىسى",
+    "location": "بۆرتالا",
+    "type": "commercial",
+    "status": "active",
+    "capacityKw": 74,
+    "batteryKwh": 50,
+    "pricePerKwh": 0.12,
+    "customer": "بۆرتالا ساياھەت",
+    "installDate": "2024-04-21",
+    "lat": 44.9,
+    "lng": 82.07,
+    "systemCost": 66600,
+    "annualOpex": 999,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-15",
+    "name": "كۇچا ئۈزۈمزارلىقى",
+    "location": "كۇچا",
+    "type": "residential",
+    "status": "maintenance",
+    "capacityKw": 24,
+    "batteryKwh": 20,
+    "pricePerKwh": 0.14,
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "installDate": "2024-01-31",
+    "lat": 41.72,
+    "lng": 82.96,
+    "systemCost": 21600,
+    "annualOpex": 324,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   {
+    "id": "site-16",
+    "name": "شىخەنزە لوگىستىكا پاركى",
+    "location": "شىخەنزە",
+    "type": "commercial",
+    "status": "active",
+    "capacityKw": 210,
+    "batteryKwh": 140,
+    "pricePerKwh": 0.12,
+    "customer": "شىخەنزە لوگىستىكا",
+    "installDate": "2024-07-24",
+    "lat": 44.3,
+    "lng": 86.04,
+    "systemCost": 189000,
+    "annualOpex": 2835,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   }
+  ],
+  "devices": [
+   {
+    "id": "dev-001",
+    "siteId": "site-01",
+    "name": "INV-01-1",
+    "type": "inverter",
+    "model": "Sungrow SG110CX",
+    "serial": "SN50518D620",
+    "status": "online",
+    "health": 96,
+    "efficiency": 97.9,
+    "firmware": "v4.6.14",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:28:35.005Z"
+   },
+   {
+    "id": "dev-002",
+    "siteId": "site-01",
+    "name": "INV-01-2",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SNDBA69F597",
+    "status": "online",
+    "health": 93,
+    "efficiency": 97.3,
+    "firmware": "v3.4.8",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:29:06.091Z"
+   },
+   {
+    "id": "dev-003",
+    "siteId": "site-01",
+    "name": "INV-01-3",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SNACB1FD2074",
+    "status": "online",
+    "health": 93,
+    "efficiency": 97.1,
+    "firmware": "v3.3.7",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:29:13.916Z"
+   },
+   {
+    "id": "dev-004",
+    "siteId": "site-01",
+    "name": "PV-01-4",
+    "type": "panel",
+    "model": "Trina Vertex S+ (Array)",
+    "serial": "SNA56A216101",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.6,
+    "firmware": "v4.6.14",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:28:35.259Z"
+   },
+   {
+    "id": "dev-005",
+    "siteId": "site-01",
+    "name": "MTR-01-5",
+    "type": "meter",
+    "model": "Eastron SDM630",
+    "serial": "SNED506B7672",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.6,
+    "firmware": "v4.6.14",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:28:35.796Z"
+   },
+   {
+    "id": "dev-006",
+    "siteId": "site-01",
+    "name": "BAT-01-6",
+    "type": "battery",
+    "model": "BYD Battery-Box HVM",
+    "serial": "SNC2DD027653",
+    "status": "online",
+    "health": 90,
+    "efficiency": 91.3,
+    "firmware": "v2.1.3",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:29:40.769Z"
+   },
+   {
+    "id": "dev-007",
+    "siteId": "site-01",
+    "name": "SNS-01-7",
+    "type": "sensor",
+    "model": "Kipp & Zonen SMP10",
+    "serial": "SN38E1924181",
+    "status": "online",
+    "health": 92,
+    "efficiency": 92.4,
+    "firmware": "v2.2.5",
+    "installedAt": "2025-01-03",
+    "lastSeen": "2026-06-21T07:29:24.299Z"
+   },
+   {
+    "id": "dev-008",
+    "siteId": "site-02",
+    "name": "INV-02-1",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SN0CF7425362",
+    "status": "online",
+    "health": 94,
+    "efficiency": 97.4,
+    "firmware": "v3.4.9",
+    "installedAt": "2024-06-16",
+    "lastSeen": "2026-06-21T07:29:00.997Z"
+   },
+   {
+    "id": "dev-009",
+    "siteId": "site-02",
+    "name": "INV-02-2",
+    "type": "inverter",
+    "model": "Huawei SUN2000-100KTL",
+    "serial": "SN2E3CE79096",
+    "status": "warning",
+    "health": 70,
+    "efficiency": 96.2,
+    "firmware": "v2.0.0",
+    "installedAt": "2024-06-16",
+    "lastSeen": "2026-06-21T07:29:57.691Z"
+   },
+   {
+    "id": "dev-010",
+    "siteId": "site-02",
+    "name": "PV-02-3",
+    "type": "panel",
+    "model": "Trina Vertex S+ (Array)",
+    "serial": "SN7A0DDC8519",
+    "status": "online",
+    "health": 98,
+    "efficiency": 96.7,
+    "firmware": "v4.7.16",
+    "installedAt": "2024-06-16",
+    "lastSeen": "2026-06-21T07:28:19.087Z"
+   },
+   {
+    "id": "dev-011",
+    "siteId": "site-02",
+    "name": "MTR-02-4",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SN2806AF5357",
+    "status": "online",
+    "health": 93,
+    "efficiency": 93.5,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-06-16",
+    "lastSeen": "2026-06-21T07:29:07.771Z"
+   },
+   {
+    "id": "dev-012",
+    "siteId": "site-02",
+    "name": "BAT-02-5",
+    "type": "battery",
+    "model": "LG RESU 16H",
+    "serial": "SNDA83572896",
+    "status": "online",
+    "health": 100,
+    "efficiency": 97.8,
+    "firmware": "v4.8.19",
+    "installedAt": "2024-06-16",
+    "lastSeen": "2026-06-21T07:28:02.814Z"
+   },
+   {
+    "id": "dev-013",
+    "siteId": "site-02",
+    "name": "SNS-02-6",
+    "type": "sensor",
+    "model": "Kipp & Zonen SMP10",
+    "serial": "SNDD1E1E1472",
+    "status": "online",
+    "health": 90,
+    "efficiency": 91.1,
+    "firmware": "v2.1.2",
+    "installedAt": "2024-06-16",
+    "lastSeen": "2026-06-21T07:29:43.286Z"
+   },
+   {
+    "id": "dev-014",
+    "siteId": "site-03",
+    "name": "INV-03-1",
+    "type": "inverter",
+    "model": "Sungrow SG110CX",
+    "serial": "SNFB36986872",
+    "status": "online",
+    "health": 95,
+    "efficiency": 97.6,
+    "firmware": "v3.5.11",
+    "installedAt": "2023-03-03",
+    "lastSeen": "2026-06-21T07:28:49.653Z"
+   },
+   {
+    "id": "dev-015",
+    "siteId": "site-03",
+    "name": "PV-03-2",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SNFC173D2971",
+    "status": "online",
+    "health": 93,
+    "efficiency": 93.4,
+    "firmware": "v3.3.8",
+    "installedAt": "2023-03-03",
+    "lastSeen": "2026-06-21T07:29:09.027Z"
+   },
+   {
+    "id": "dev-016",
+    "siteId": "site-03",
+    "name": "MTR-03-3",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SNDDB6B58214",
+    "status": "online",
+    "health": 93,
+    "efficiency": 93.1,
+    "firmware": "v3.3.7",
+    "installedAt": "2023-03-03",
+    "lastSeen": "2026-06-21T07:29:13.173Z"
+   },
+   {
+    "id": "dev-017",
+    "siteId": "site-03",
+    "name": "BAT-03-4",
+    "type": "battery",
+    "model": "BYD Battery-Box HVM",
+    "serial": "SNDA49AF7615",
+    "status": "warning",
+    "health": 71,
+    "efficiency": 90.4,
+    "firmware": "v2.0.0",
+    "installedAt": "2023-03-03",
+    "lastSeen": "2026-06-21T07:29:54.278Z"
+   },
+   {
+    "id": "dev-018",
+    "siteId": "site-04",
+    "name": "INV-04-1",
+    "type": "inverter",
+    "model": "Sungrow SG110CX",
+    "serial": "SN81D6AA4614",
+    "status": "online",
+    "health": 97,
+    "efficiency": 98,
+    "firmware": "v4.6.14",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:28:30.673Z"
+   },
+   {
+    "id": "dev-019",
+    "siteId": "site-04",
+    "name": "INV-04-2",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SN211B1A2279",
+    "status": "online",
+    "health": 93,
+    "efficiency": 97.2,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:29:07.618Z"
+   },
+   {
+    "id": "dev-020",
+    "siteId": "site-04",
+    "name": "INV-04-3",
+    "type": "inverter",
+    "model": "Sungrow SG110CX",
+    "serial": "SN9EA97A5735",
+    "status": "online",
+    "health": 95,
+    "efficiency": 97.6,
+    "firmware": "v3.5.11",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:28:51.425Z"
+   },
+   {
+    "id": "dev-021",
+    "siteId": "site-04",
+    "name": "PV-04-4",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SNF03A0F2268",
+    "status": "online",
+    "health": 94,
+    "efficiency": 94.2,
+    "firmware": "v3.4.10",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:28:57.528Z"
+   },
+   {
+    "id": "dev-022",
+    "siteId": "site-04",
+    "name": "MTR-04-5",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SND06EB68779",
+    "status": "online",
+    "health": 89,
+    "efficiency": 90.7,
+    "firmware": "v2.0.1",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:29:49.819Z"
+   },
+   {
+    "id": "dev-023",
+    "siteId": "site-04",
+    "name": "BAT-04-6",
+    "type": "battery",
+    "model": "CATL EnerOne",
+    "serial": "SN54B0C73181",
+    "status": "online",
+    "health": 97,
+    "efficiency": 96,
+    "firmware": "v4.6.14",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:28:30.486Z"
+   },
+   {
+    "id": "dev-024",
+    "siteId": "site-04",
+    "name": "SNS-04-7",
+    "type": "sensor",
+    "model": "Davis Vantage Pro2",
+    "serial": "SNA9931F8896",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.6,
+    "firmware": "v4.6.14",
+    "installedAt": "2024-02-29",
+    "lastSeen": "2026-06-21T07:28:35.632Z"
+   },
+   {
+    "id": "dev-025",
+    "siteId": "site-05",
+    "name": "INV-05-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SNC0288B9584",
+    "status": "online",
+    "health": 98,
+    "efficiency": 98.2,
+    "firmware": "v4.7.16",
+    "installedAt": "2024-02-05",
+    "lastSeen": "2026-06-21T07:28:18.153Z"
+   },
+   {
+    "id": "dev-026",
+    "siteId": "site-05",
+    "name": "INV-05-2",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SNC951182239",
+    "status": "online",
+    "health": 93,
+    "efficiency": 97.2,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-02-05",
+    "lastSeen": "2026-06-21T07:29:09.622Z"
+   },
+   {
+    "id": "dev-027",
+    "siteId": "site-05",
+    "name": "PV-05-3",
+    "type": "panel",
+    "model": "Trina Vertex S+ (Array)",
+    "serial": "SN8120335678",
+    "status": "online",
+    "health": 99,
+    "efficiency": 97.3,
+    "firmware": "v4.8.18",
+    "installedAt": "2024-02-05",
+    "lastSeen": "2026-06-21T07:28:10.242Z"
+   },
+   {
+    "id": "dev-028",
+    "siteId": "site-05",
+    "name": "MTR-05-4",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SNBF412A8846",
+    "status": "warning",
+    "health": 71,
+    "efficiency": 90.4,
+    "firmware": "v2.0.1",
+    "installedAt": "2024-02-05",
+    "lastSeen": "2026-06-21T07:29:53.604Z"
+   },
+   {
+    "id": "dev-029",
+    "siteId": "site-05",
+    "name": "BAT-05-5",
+    "type": "battery",
+    "model": "Tesla Powerwall 2",
+    "serial": "SN9A8E941777",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92.1,
+    "firmware": "v2.2.5",
+    "installedAt": "2024-02-05",
+    "lastSeen": "2026-06-21T07:29:28.076Z"
+   },
+   {
+    "id": "dev-030",
+    "siteId": "site-06",
+    "name": "INV-06-1",
+    "type": "inverter",
+    "model": "Huawei SUN2000-100KTL",
+    "serial": "SNEC574A2522",
+    "status": "online",
+    "health": 89,
+    "efficiency": 96.4,
+    "firmware": "v2.0.1",
+    "installedAt": "2023-11-26",
+    "lastSeen": "2026-06-21T07:29:49.321Z"
+   },
+   {
+    "id": "dev-031",
+    "siteId": "site-06",
+    "name": "INV-06-2",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN6A36864442",
+    "status": "online",
+    "health": 98,
+    "efficiency": 98.3,
+    "firmware": "v4.7.17",
+    "installedAt": "2023-11-26",
+    "lastSeen": "2026-06-21T07:28:15.566Z"
+   },
+   {
+    "id": "dev-032",
+    "siteId": "site-06",
+    "name": "PV-06-3",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SN35E3A64871",
+    "status": "online",
+    "health": 95,
+    "efficiency": 95,
+    "firmware": "v3.5.12",
+    "installedAt": "2023-11-26",
+    "lastSeen": "2026-06-21T07:28:45.541Z"
+   },
+   {
+    "id": "dev-033",
+    "siteId": "site-06",
+    "name": "MTR-06-4",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SN91CC3A1945",
+    "status": "online",
+    "health": 92,
+    "efficiency": 92.6,
+    "firmware": "v2.2.6",
+    "installedAt": "2023-11-26",
+    "lastSeen": "2026-06-21T07:29:20.343Z"
+   },
+   {
+    "id": "dev-034",
+    "siteId": "site-06",
+    "name": "BAT-06-5",
+    "type": "battery",
+    "model": "CATL EnerOne",
+    "serial": "SNA4AE458465",
+    "status": "online",
+    "health": 95,
+    "efficiency": 94.6,
+    "firmware": "v3.5.11",
+    "installedAt": "2023-11-26",
+    "lastSeen": "2026-06-21T07:28:50.692Z"
+   },
+   {
+    "id": "dev-035",
+    "siteId": "site-06",
+    "name": "SNS-06-6",
+    "type": "sensor",
+    "model": "Davis Vantage Pro2",
+    "serial": "SNB461B99949",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.5,
+    "firmware": "v4.6.13",
+    "installedAt": "2023-11-26",
+    "lastSeen": "2026-06-21T07:28:37.222Z"
+   },
+   {
+    "id": "dev-036",
+    "siteId": "site-07",
+    "name": "INV-07-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN2344531896",
+    "status": "online",
+    "health": 97,
+    "efficiency": 98,
+    "firmware": "v4.6.15",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:28:29.051Z"
+   },
+   {
+    "id": "dev-037",
+    "siteId": "site-07",
+    "name": "INV-07-2",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SNA21D019260",
+    "status": "online",
+    "health": 94,
+    "efficiency": 97.4,
+    "firmware": "v3.4.9",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:29:01.413Z"
+   },
+   {
+    "id": "dev-038",
+    "siteId": "site-07",
+    "name": "INV-07-3",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SNAEF09F7295",
+    "status": "online",
+    "health": 93,
+    "efficiency": 97.2,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:29:07.614Z"
+   },
+   {
+    "id": "dev-039",
+    "siteId": "site-07",
+    "name": "PV-07-4",
+    "type": "panel",
+    "model": "Trina Vertex S+ (Array)",
+    "serial": "SNE9C0D31007",
+    "status": "online",
+    "health": 99,
+    "efficiency": 97.3,
+    "firmware": "v4.8.18",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:28:10.750Z"
+   },
+   {
+    "id": "dev-040",
+    "siteId": "site-07",
+    "name": "MTR-07-5",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SNB0EC5F2138",
+    "status": "online",
+    "health": 93,
+    "efficiency": 93.5,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:29:07.322Z"
+   },
+   {
+    "id": "dev-041",
+    "siteId": "site-07",
+    "name": "BAT-07-6",
+    "type": "battery",
+    "model": "CATL EnerOne",
+    "serial": "SNEB011A4087",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.3,
+    "firmware": "v3.5.13",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:28:40.794Z"
+   },
+   {
+    "id": "dev-042",
+    "siteId": "site-07",
+    "name": "SNS-07-7",
+    "type": "sensor",
+    "model": "Davis Vantage Pro2",
+    "serial": "SNC139B52642",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.4,
+    "firmware": "v4.6.13",
+    "installedAt": "2024-07-04",
+    "lastSeen": "2026-06-21T07:28:39.645Z"
+   },
+   {
+    "id": "dev-043",
+    "siteId": "site-08",
+    "name": "INV-08-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN5D68D11177",
+    "status": "online",
+    "health": 97,
+    "efficiency": 98.1,
+    "firmware": "v4.7.15",
+    "installedAt": "2024-12-16",
+    "lastSeen": "2026-06-21T07:28:26.006Z"
+   },
+   {
+    "id": "dev-044",
+    "siteId": "site-08",
+    "name": "PV-08-2",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SN85F40E9141",
+    "status": "online",
+    "health": 93,
+    "efficiency": 93.5,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-12-16",
+    "lastSeen": "2026-06-21T07:29:06.895Z"
+   },
+   {
+    "id": "dev-045",
+    "siteId": "site-08",
+    "name": "MTR-08-3",
+    "type": "meter",
+    "model": "Eastron SDM630",
+    "serial": "SN84AEA13373",
+    "status": "online",
+    "health": 99,
+    "efficiency": 97.6,
+    "firmware": "v4.8.18",
+    "installedAt": "2024-12-16",
+    "lastSeen": "2026-06-21T07:28:06.496Z"
+   },
+   {
+    "id": "dev-046",
+    "siteId": "site-08",
+    "name": "BAT-08-4",
+    "type": "battery",
+    "model": "BYD Battery-Box HVM",
+    "serial": "SNC08525867",
+    "status": "online",
+    "health": 91,
+    "efficiency": 91.8,
+    "firmware": "v2.2.4",
+    "installedAt": "2024-12-16",
+    "lastSeen": "2026-06-21T07:29:32.946Z"
+   },
+   {
+    "id": "dev-047",
+    "siteId": "site-09",
+    "name": "INV-09-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN28797923",
+    "status": "online",
+    "health": 98,
+    "efficiency": 98.2,
+    "firmware": "v4.7.16",
+    "installedAt": "2024-02-18",
+    "lastSeen": "2026-06-21T07:28:19.954Z"
+   },
+   {
+    "id": "dev-048",
+    "siteId": "site-09",
+    "name": "PV-09-2",
+    "type": "panel",
+    "model": "LONGi Hi-MO 6 (Array)",
+    "serial": "SN5400E13298",
+    "status": "online",
+    "health": 92,
+    "efficiency": 92.4,
+    "firmware": "v2.2.6",
+    "installedAt": "2024-02-18",
+    "lastSeen": "2026-06-21T07:29:23.927Z"
+   },
+   {
+    "id": "dev-049",
+    "siteId": "site-09",
+    "name": "MTR-09-3",
+    "type": "meter",
+    "model": "Eastron SDM630",
+    "serial": "SN5E19024575",
+    "status": "online",
+    "health": 99,
+    "efficiency": 97.2,
+    "firmware": "v4.8.18",
+    "installedAt": "2024-02-18",
+    "lastSeen": "2026-06-21T07:28:11.569Z"
+   },
+   {
+    "id": "dev-050",
+    "siteId": "site-09",
+    "name": "BAT-09-4",
+    "type": "battery",
+    "model": "CATL EnerOne",
+    "serial": "SNA6EC383306",
+    "status": "online",
+    "health": 94,
+    "efficiency": 94.2,
+    "firmware": "v3.4.10",
+    "installedAt": "2024-02-18",
+    "lastSeen": "2026-06-21T07:28:57.234Z"
+   },
+   {
+    "id": "dev-051",
+    "siteId": "site-10",
+    "name": "INV-10-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SND57BD75037",
+    "status": "online",
+    "health": 97,
+    "efficiency": 98.1,
+    "firmware": "v4.7.15",
+    "installedAt": "2024-01-24",
+    "lastSeen": "2026-06-21T07:28:25.498Z"
+   },
+   {
+    "id": "dev-052",
+    "siteId": "site-10",
+    "name": "INV-10-2",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN915A015725",
+    "status": "online",
+    "health": 98,
+    "efficiency": 98.2,
+    "firmware": "v4.7.16",
+    "installedAt": "2024-01-24",
+    "lastSeen": "2026-06-21T07:28:18.041Z"
+   },
+   {
+    "id": "dev-053",
+    "siteId": "site-10",
+    "name": "PV-10-3",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SNAAF5FF3429",
+    "status": "online",
+    "health": 92,
+    "efficiency": 92.9,
+    "firmware": "v3.3.7",
+    "installedAt": "2024-01-24",
+    "lastSeen": "2026-06-21T07:29:15.877Z"
+   },
+   {
+    "id": "dev-054",
+    "siteId": "site-10",
+    "name": "MTR-10-4",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SN434FDB1273",
+    "status": "online",
+    "health": 90,
+    "efficiency": 91.2,
+    "firmware": "v2.1.2",
+    "installedAt": "2024-01-24",
+    "lastSeen": "2026-06-21T07:29:42.396Z"
+   },
+   {
+    "id": "dev-055",
+    "siteId": "site-10",
+    "name": "BAT-10-5",
+    "type": "battery",
+    "model": "BYD Battery-Box HVM",
+    "serial": "SNCA622B3566",
+    "status": "online",
+    "health": 90,
+    "efficiency": 91.5,
+    "firmware": "v2.1.3",
+    "installedAt": "2024-01-24",
+    "lastSeen": "2026-06-21T07:29:36.847Z"
+   },
+   {
+    "id": "dev-056",
+    "siteId": "site-10",
+    "name": "SNS-10-6",
+    "type": "sensor",
+    "model": "Davis Vantage Pro2",
+    "serial": "SNBD8BDD663",
+    "status": "online",
+    "health": 100,
+    "efficiency": 98,
+    "firmware": "v4.8.19",
+    "installedAt": "2024-01-24",
+    "lastSeen": "2026-06-21T07:28:00.185Z"
+   },
+   {
+    "id": "dev-057",
+    "siteId": "site-11",
+    "name": "INV-11-1",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SN28164E7997",
+    "status": "offline",
+    "health": 93,
+    "efficiency": 97.2,
+    "firmware": "v3.3.8",
+    "installedAt": "2023-09-02",
+    "lastSeen": "2026-06-20T09:00:11.770Z"
+   },
+   {
+    "id": "dev-058",
+    "siteId": "site-11",
+    "name": "PV-11-2",
+    "type": "panel",
+    "model": "Trina Vertex S+ (Array)",
+    "serial": "SNC8D9BA3425",
+    "status": "offline",
+    "health": 97,
+    "efficiency": 96,
+    "firmware": "v4.6.15",
+    "installedAt": "2023-09-02",
+    "lastSeen": "2026-06-19T19:21:16.304Z"
+   },
+   {
+    "id": "dev-059",
+    "siteId": "site-11",
+    "name": "MTR-11-3",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SNC9BA9F921",
+    "status": "offline",
+    "health": 90,
+    "efficiency": 91.3,
+    "firmware": "v2.1.3",
+    "installedAt": "2023-09-02",
+    "lastSeen": "2026-06-20T19:10:46.938Z"
+   },
+   {
+    "id": "dev-060",
+    "siteId": "site-11",
+    "name": "BAT-11-4",
+    "type": "battery",
+    "model": "LG RESU 16H",
+    "serial": "SND31D7A5526",
+    "status": "offline",
+    "health": 97,
+    "efficiency": 96.2,
+    "firmware": "v4.6.15",
+    "installedAt": "2023-09-02",
+    "lastSeen": "2026-06-19T18:27:44.647Z"
+   },
+   {
+    "id": "dev-061",
+    "siteId": "site-12",
+    "name": "INV-12-1",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SNA643CE3393",
+    "status": "online",
+    "health": 91,
+    "efficiency": 96.9,
+    "firmware": "v2.2.5",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:29:26.210Z"
+   },
+   {
+    "id": "dev-062",
+    "siteId": "site-12",
+    "name": "INV-12-2",
+    "type": "inverter",
+    "model": "Huawei SUN2000-100KTL",
+    "serial": "SN360BE31555",
+    "status": "online",
+    "health": 91,
+    "efficiency": 96.7,
+    "firmware": "v2.1.4",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:29:34.729Z"
+   },
+   {
+    "id": "dev-063",
+    "siteId": "site-12",
+    "name": "INV-12-3",
+    "type": "inverter",
+    "model": "Sungrow SG110CX",
+    "serial": "SN1DA7817409",
+    "status": "online",
+    "health": 96,
+    "efficiency": 97.8,
+    "firmware": "v3.5.13",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:28:40.438Z"
+   },
+   {
+    "id": "dev-064",
+    "siteId": "site-12",
+    "name": "PV-12-4",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SN81CF5B2793",
+    "status": "online",
+    "health": 95,
+    "efficiency": 94.5,
+    "firmware": "v3.5.11",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:28:52.117Z"
+   },
+   {
+    "id": "dev-065",
+    "siteId": "site-12",
+    "name": "MTR-12-5",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SN172F9A6649",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92.3,
+    "firmware": "v2.2.5",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:29:25.037Z"
+   },
+   {
+    "id": "dev-066",
+    "siteId": "site-12",
+    "name": "BAT-12-6",
+    "type": "battery",
+    "model": "BYD Battery-Box HVM",
+    "serial": "SNF651EF5853",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92,
+    "firmware": "v2.2.4",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:29:30.353Z"
+   },
+   {
+    "id": "dev-067",
+    "siteId": "site-12",
+    "name": "SNS-12-7",
+    "type": "sensor",
+    "model": "Davis Vantage Pro2",
+    "serial": "SN1566C75256",
+    "status": "online",
+    "health": 97,
+    "efficiency": 95.9,
+    "firmware": "v4.6.14",
+    "installedAt": "2023-06-02",
+    "lastSeen": "2026-06-21T07:28:31.297Z"
+   },
+   {
+    "id": "dev-068",
+    "siteId": "site-13",
+    "name": "INV-13-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN81D9727469",
+    "status": "online",
+    "health": 100,
+    "efficiency": 98.5,
+    "firmware": "v4.8.19",
+    "installedAt": "2024-05-22",
+    "lastSeen": "2026-06-21T07:28:04.923Z"
+   },
+   {
+    "id": "dev-069",
+    "siteId": "site-13",
+    "name": "INV-13-2",
+    "type": "inverter",
+    "model": "Huawei SUN2000-100KTL",
+    "serial": "SN36B2834375",
+    "status": "online",
+    "health": 90,
+    "efficiency": 96.5,
+    "firmware": "v2.1.2",
+    "installedAt": "2024-05-22",
+    "lastSeen": "2026-06-21T07:29:42.812Z"
+   },
+   {
+    "id": "dev-070",
+    "siteId": "site-13",
+    "name": "PV-13-3",
+    "type": "panel",
+    "model": "LONGi Hi-MO 6 (Array)",
+    "serial": "SN1FA9952322",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92.2,
+    "firmware": "v2.2.5",
+    "installedAt": "2024-05-22",
+    "lastSeen": "2026-06-21T07:29:27.559Z"
+   },
+   {
+    "id": "dev-071",
+    "siteId": "site-13",
+    "name": "MTR-13-4",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SNCC02A69140",
+    "status": "online",
+    "health": 91,
+    "efficiency": 91.7,
+    "firmware": "v2.1.4",
+    "installedAt": "2024-05-22",
+    "lastSeen": "2026-06-21T07:29:33.798Z"
+   },
+   {
+    "id": "dev-072",
+    "siteId": "site-13",
+    "name": "BAT-13-5",
+    "type": "battery",
+    "model": "BYD Battery-Box HVM",
+    "serial": "SN820C851700",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92,
+    "firmware": "v2.2.4",
+    "installedAt": "2024-05-22",
+    "lastSeen": "2026-06-21T07:29:30.633Z"
+   },
+   {
+    "id": "dev-073",
+    "siteId": "site-13",
+    "name": "SNS-13-6",
+    "type": "sensor",
+    "model": "Kipp & Zonen SMP10",
+    "serial": "SND4C2713308",
+    "status": "online",
+    "health": 91,
+    "efficiency": 91.8,
+    "firmware": "v2.2.4",
+    "installedAt": "2024-05-22",
+    "lastSeen": "2026-06-21T07:29:33.298Z"
+   },
+   {
+    "id": "dev-074",
+    "siteId": "site-14",
+    "name": "INV-14-1",
+    "type": "inverter",
+    "model": "SMA Sunny Tripower 25",
+    "serial": "SN03907A4827",
+    "status": "online",
+    "health": 93,
+    "efficiency": 97.2,
+    "firmware": "v3.3.8",
+    "installedAt": "2024-04-21",
+    "lastSeen": "2026-06-21T07:29:09.564Z"
+   },
+   {
+    "id": "dev-075",
+    "siteId": "site-14",
+    "name": "PV-14-2",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SN19BDBF1995",
+    "status": "online",
+    "health": 94,
+    "efficiency": 94,
+    "firmware": "v3.4.10",
+    "installedAt": "2024-04-21",
+    "lastSeen": "2026-06-21T07:28:59.338Z"
+   },
+   {
+    "id": "dev-076",
+    "siteId": "site-14",
+    "name": "MTR-14-3",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SN36BE809365",
+    "status": "warning",
+    "health": 70,
+    "efficiency": 90.2,
+    "firmware": "v2.0.0",
+    "installedAt": "2024-04-21",
+    "lastSeen": "2026-06-21T07:29:56.844Z"
+   },
+   {
+    "id": "dev-077",
+    "siteId": "site-14",
+    "name": "BAT-14-4",
+    "type": "battery",
+    "model": "Tesla Powerwall 2",
+    "serial": "SN1CA48F3402",
+    "status": "online",
+    "health": 92,
+    "efficiency": 92.5,
+    "firmware": "v2.2.6",
+    "installedAt": "2024-04-21",
+    "lastSeen": "2026-06-21T07:29:23.113Z"
+   },
+   {
+    "id": "dev-078",
+    "siteId": "site-15",
+    "name": "INV-15-1",
+    "type": "inverter",
+    "model": "Fronius Symo 20",
+    "serial": "SN42B9F94877",
+    "status": "warning",
+    "health": 80,
+    "efficiency": 98.1,
+    "firmware": "v4.7.16",
+    "installedAt": "2024-01-31",
+    "lastSeen": "2026-06-21T07:28:23.990Z"
+   },
+   {
+    "id": "dev-079",
+    "siteId": "site-15",
+    "name": "PV-15-2",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SN496A7B5597",
+    "status": "online",
+    "health": 94,
+    "efficiency": 94.2,
+    "firmware": "v3.4.10",
+    "installedAt": "2024-01-31",
+    "lastSeen": "2026-06-21T07:28:56.518Z"
+   },
+   {
+    "id": "dev-080",
+    "siteId": "site-15",
+    "name": "MTR-15-3",
+    "type": "meter",
+    "model": "Schneider PM5560",
+    "serial": "SNAD542E3920",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92.1,
+    "firmware": "v2.2.5",
+    "installedAt": "2024-01-31",
+    "lastSeen": "2026-06-21T07:29:29.086Z"
+   },
+   {
+    "id": "dev-081",
+    "siteId": "site-15",
+    "name": "BAT-15-4",
+    "type": "battery",
+    "model": "CATL EnerOne",
+    "serial": "SN4895D33732",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.3,
+    "firmware": "v4.6.13",
+    "installedAt": "2024-01-31",
+    "lastSeen": "2026-06-21T07:28:39.804Z"
+   },
+   {
+    "id": "dev-082",
+    "siteId": "site-16",
+    "name": "INV-16-1",
+    "type": "inverter",
+    "model": "Sungrow SG110CX",
+    "serial": "SN15A9EC4596",
+    "status": "online",
+    "health": 95,
+    "efficiency": 97.7,
+    "firmware": "v3.5.12",
+    "installedAt": "2024-07-24",
+    "lastSeen": "2026-06-21T07:28:46.025Z"
+   },
+   {
+    "id": "dev-083",
+    "siteId": "site-16",
+    "name": "INV-16-2",
+    "type": "inverter",
+    "model": "Huawei SUN2000-100KTL",
+    "serial": "SN33C4915397",
+    "status": "online",
+    "health": 91,
+    "efficiency": 96.8,
+    "firmware": "v2.2.4",
+    "installedAt": "2024-07-24",
+    "lastSeen": "2026-06-21T07:29:32.039Z"
+   },
+   {
+    "id": "dev-084",
+    "siteId": "site-16",
+    "name": "PV-16-3",
+    "type": "panel",
+    "model": "JinkoSolar Tiger Neo (Array)",
+    "serial": "SNA92B087573",
+    "status": "online",
+    "health": 94,
+    "efficiency": 93.7,
+    "firmware": "v3.4.9",
+    "installedAt": "2024-07-24",
+    "lastSeen": "2026-06-21T07:29:04.399Z"
+   },
+   {
+    "id": "dev-085",
+    "siteId": "site-16",
+    "name": "MTR-16-4",
+    "type": "meter",
+    "model": "Eastron SDM630",
+    "serial": "SN0445652411",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.7,
+    "firmware": "v4.6.14",
+    "installedAt": "2024-07-24",
+    "lastSeen": "2026-06-21T07:28:35.230Z"
+   },
+   {
+    "id": "dev-086",
+    "siteId": "site-16",
+    "name": "BAT-16-5",
+    "type": "battery",
+    "model": "Tesla Powerwall 2",
+    "serial": "SNF48C7E9960",
+    "status": "online",
+    "health": 91,
+    "efficiency": 92.2,
+    "firmware": "v2.2.5",
+    "installedAt": "2024-07-24",
+    "lastSeen": "2026-06-21T07:29:27.162Z"
+   },
+   {
+    "id": "dev-087",
+    "siteId": "site-16",
+    "name": "SNS-16-6",
+    "type": "sensor",
+    "model": "Davis Vantage Pro2",
+    "serial": "SN767D3C7190",
+    "status": "online",
+    "health": 96,
+    "efficiency": 95.5,
+    "firmware": "v4.6.13",
+    "installedAt": "2024-07-24",
+    "lastSeen": "2026-06-21T07:28:37.108Z"
+   }
+  ],
+  "tickets": [
+   {
+    "id": "tkt-01",
+    "siteId": "site-11",
+    "deviceId": "dev-057",
+    "title": "ئالتاي ئىستانسىسى تورسىز",
+    "description": "ئالاقە ئۈسكۈنىسى جاۋاب قايتۇرمايۋاتىدۇ، نەق مەيداندا تەكشۈرۈش كېرەك.",
+    "priority": "critical",
+    "status": "open",
+    "assignee": "ئەركىن تۇرسۇن",
+    "dueDate": "2026-06-22",
+    "createdAt": "2026-06-17T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-02",
+    "siteId": "site-15",
+    "deviceId": "dev-078",
+    "title": "كۇچا ئىنۋېرتورىنى ئالماشتۇرۇش",
+    "description": "ئىنۋېرتور قىزىپ كېتىش خاتالىقى بەردى، يېڭىسىغا ئالماشتۇرۇلىدۇ.",
+    "priority": "high",
+    "status": "in_progress",
+    "assignee": "مۇختەر ئەھمەت",
+    "dueDate": "2026-06-23",
+    "createdAt": "2026-06-15T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-03",
+    "siteId": "site-01",
+    "deviceId": null,
+    "title": "تاختايلارنى تازىلاش",
+    "description": "قۇم-توپا سەۋەبىدىن ئۈنۈم 6% تۆۋەنلىدى.",
+    "priority": "medium",
+    "status": "open",
+    "assignee": "دىلنۇر ئابلىز",
+    "dueDate": "2026-06-25",
+    "createdAt": "2026-06-12T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-04",
+    "siteId": "site-04",
+    "deviceId": "dev-018",
+    "title": "باتارېيە BMS يۇمشاق دېتالىنى يېڭىلاش",
+    "description": "BMS v3.2 گە يېڭىلاش.",
+    "priority": "low",
+    "status": "open",
+    "assignee": "پەرھات قادىر",
+    "dueDate": "2026-06-30",
+    "createdAt": "2026-06-06T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-05",
+    "siteId": "site-07",
+    "deviceId": "dev-036",
+    "title": "پەسىللىك تەكشۈرۈش",
+    "description": "ئېلېكتر ئۇلىنىشى، يەرلەشتۈرۈش ۋە كابېللارنى تەكشۈرۈش.",
+    "priority": "medium",
+    "status": "in_progress",
+    "assignee": "گۈلنار ھەسەن",
+    "dueDate": "2026-06-24",
+    "createdAt": "2026-06-15T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-06",
+    "siteId": "site-12",
+    "deviceId": null,
+    "title": "توك ئۆلچىگۈچ سانلىق مەلۇماتى كەم",
+    "description": "سائەت 14:00-16:00 ئارىلىقىدا ئۆلچەش كەم.",
+    "priority": "medium",
+    "status": "open",
+    "assignee": "ئەركىن تۇرسۇن",
+    "dueDate": "2026-06-27",
+    "createdAt": "2026-06-11T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-07",
+    "siteId": "site-02",
+    "deviceId": "dev-008",
+    "title": "ئوت ئۆچۈرگۈچ ۋە بىخەتەرلىك تەكشۈرۈشى",
+    "description": "يىللىق بىخەتەرلىك تەكشۈرۈشى.",
+    "priority": "low",
+    "status": "resolved",
+    "assignee": "مۇختەر ئەھمەت",
+    "dueDate": "2026-06-16",
+    "createdAt": "2026-06-11T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-08",
+    "siteId": "site-13",
+    "deviceId": "dev-068",
+    "title": "ئىنۋېرتور ئالاقە ئۈزۈلۈشى",
+    "description": "RS485 ئالاقىسى ۋاقتى-ۋاقتى بىلەن ئۈزۈلىدۇ.",
+    "priority": "high",
+    "status": "open",
+    "assignee": "دىلنۇر ئابلىز",
+    "dueDate": "2026-06-23",
+    "createdAt": "2026-06-13T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-09",
+    "siteId": "site-09",
+    "deviceId": null,
+    "title": "سايە چۈشۈش مەسىلىسى",
+    "description": "يېڭى بىنا سايىسى سەۋەبىدىن ئەتىگەنلىك ھاسىلات تۆۋەن.",
+    "priority": "low",
+    "status": "resolved",
+    "assignee": "پەرھات قادىر",
+    "dueDate": "2026-06-09",
+    "createdAt": "2026-06-06T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-10",
+    "siteId": "site-05",
+    "deviceId": "dev-025",
+    "title": "تاختاي يېرىلىشى",
+    "description": "مۆلدۈردىن كېيىن 3 تاختايدا يېرىق بايقالدى.",
+    "priority": "high",
+    "status": "in_progress",
+    "assignee": "گۈلنار ھەسەن",
+    "dueDate": "2026-06-26",
+    "createdAt": "2026-06-12T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-11",
+    "siteId": "site-10",
+    "deviceId": "dev-051",
+    "title": "زاپاس توك سىستېمىسىنى سىناش",
+    "description": "دوختۇرخانا ئۈچۈن ئايلىق زاپاس توك سىنىقى.",
+    "priority": "critical",
+    "status": "open",
+    "assignee": "ئەركىن تۇرسۇن",
+    "dueDate": "2026-06-21",
+    "createdAt": "2026-06-16T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-12",
+    "siteId": "site-03",
+    "deviceId": null,
+    "title": "تاختايلارنى تازىلاش",
+    "description": "ئايلىق تازىلاش.",
+    "priority": "low",
+    "status": "resolved",
+    "assignee": "مۇختەر ئەھمەت",
+    "dueDate": "2026-06-01",
+    "createdAt": "2026-05-26T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-13",
+    "siteId": "site-07",
+    "deviceId": "dev-036",
+    "title": "ھاۋا رايى سېنزورىنى تەڭشەش",
+    "description": "نۇرلىنىش سېنزورى %8 يۇقىرى كۆرسىتىۋاتىدۇ.",
+    "priority": "medium",
+    "status": "open",
+    "assignee": "دىلنۇر ئابلىز",
+    "dueDate": "2026-07-03",
+    "createdAt": "2026-06-06T07:30:00.000Z"
+   },
+   {
+    "id": "tkt-14",
+    "siteId": "site-14",
+    "deviceId": "dev-074",
+    "title": "يۇمشاق دېتال يېڭىلاش",
+    "description": "ئىنۋېرتور يۇمشاق دېتالىنى ئەڭ يېڭى نەشرىگە يېڭىلاش.",
+    "priority": "low",
+    "status": "open",
+    "assignee": "پەرھات قادىر",
+    "dueDate": "2026-07-06",
+    "createdAt": "2026-06-02T07:30:00.000Z"
+   }
+  ],
+  "invoices": [
+   {
+    "id": "inv-site-01-2025-12",
+    "number": "INV-202512-001",
+    "siteId": "site-01",
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "period": "2025-12",
+    "energyKwh": 48435,
+    "rate": 0.08,
+    "amount": 3874.8,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-01"
+   },
+   {
+    "id": "inv-site-02-2025-12",
+    "number": "INV-202512-002",
+    "siteId": "site-02",
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "period": "2025-12",
+    "energyKwh": 10774,
+    "rate": 0.12,
+    "amount": 1292.88,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-14"
+   },
+   {
+    "id": "inv-site-03-2025-12",
+    "number": "INV-202512-003",
+    "siteId": "site-03",
+    "customer": "ئابدۇللا ئائىلىسى",
+    "period": "2025-12",
+    "energyKwh": 735,
+    "rate": 0.14,
+    "amount": 102.9,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-01"
+   },
+   {
+    "id": "inv-site-04-2025-12",
+    "number": "INV-202512-004",
+    "siteId": "site-04",
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "period": "2025-12",
+    "energyKwh": 24148,
+    "rate": 0.1,
+    "amount": 2414.8,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-14"
+   },
+   {
+    "id": "inv-site-05-2025-12",
+    "number": "INV-202512-005",
+    "siteId": "site-05",
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "period": "2025-12",
+    "energyKwh": 5651,
+    "rate": 0.12,
+    "amount": 678.12,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-08"
+   },
+   {
+    "id": "inv-site-06-2025-12",
+    "number": "INV-202512-006",
+    "siteId": "site-06",
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "period": "2025-12",
+    "energyKwh": 15648,
+    "rate": 0.1,
+    "amount": 1564.8,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-10"
+   },
+   {
+    "id": "inv-site-07-2025-12",
+    "number": "INV-202512-007",
+    "siteId": "site-07",
+    "customer": "قۇمۇل توك تورى",
+    "period": "2025-12",
+    "energyKwh": 37479,
+    "rate": 0.08,
+    "amount": 2998.32,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-17"
+   },
+   {
+    "id": "inv-site-08-2025-12",
+    "number": "INV-202512-008",
+    "siteId": "site-08",
+    "customer": "كورلا نېفىت شىركىتى",
+    "period": "2025-12",
+    "energyKwh": 3872,
+    "rate": 0.12,
+    "amount": 464.64,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-10"
+   },
+   {
+    "id": "inv-site-09-2025-12",
+    "number": "INV-202512-009",
+    "siteId": "site-09",
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "period": "2025-12",
+    "energyKwh": 2249,
+    "rate": 0.14,
+    "amount": 314.86,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-14"
+   },
+   {
+    "id": "inv-site-10-2025-12",
+    "number": "INV-202512-010",
+    "siteId": "site-10",
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "period": "2025-12",
+    "energyKwh": 7067,
+    "rate": 0.12,
+    "amount": 848.04,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-15"
+   },
+   {
+    "id": "inv-site-11-2025-12",
+    "number": "INV-202512-011",
+    "siteId": "site-11",
+    "customer": "نۇرگۈل خانىم",
+    "period": "2025-12",
+    "energyKwh": 1064,
+    "rate": 0.14,
+    "amount": 148.96,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-16"
+   },
+   {
+    "id": "inv-site-12-2025-12",
+    "number": "INV-202512-012",
+    "siteId": "site-12",
+    "customer": "يەكەن توقۇمىچىلىق",
+    "period": "2025-12",
+    "energyKwh": 20641,
+    "rate": 0.1,
+    "amount": 2064.1,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-17"
+   },
+   {
+    "id": "inv-site-13-2025-12",
+    "number": "INV-202512-013",
+    "siteId": "site-13",
+    "customer": "قاراماي ئامبار شىركىتى",
+    "period": "2025-12",
+    "energyKwh": 17126,
+    "rate": 0.1,
+    "amount": 1712.6,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-11"
+   },
+   {
+    "id": "inv-site-14-2025-12",
+    "number": "INV-202512-014",
+    "siteId": "site-14",
+    "customer": "بۆرتالا ساياھەت",
+    "period": "2025-12",
+    "energyKwh": 4332,
+    "rate": 0.12,
+    "amount": 519.84,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-07"
+   },
+   {
+    "id": "inv-site-15-2025-12",
+    "number": "INV-202512-015",
+    "siteId": "site-15",
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "period": "2025-12",
+    "energyKwh": 1406,
+    "rate": 0.14,
+    "amount": 196.84,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-16"
+   },
+   {
+    "id": "inv-site-16-2025-12",
+    "number": "INV-202512-016",
+    "siteId": "site-16",
+    "customer": "شىخەنزە لوگىستىكا",
+    "period": "2025-12",
+    "energyKwh": 12288,
+    "rate": 0.12,
+    "amount": 1474.56,
+    "status": "paid",
+    "issuedAt": "2026-01-01",
+    "dueAt": "2026-01-21",
+    "paidAt": "2026-01-11"
+   },
+   {
+    "id": "inv-site-01-2026-01",
+    "number": "INV-202601-001",
+    "siteId": "site-01",
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "period": "2026-01",
+    "energyKwh": 51061,
+    "rate": 0.08,
+    "amount": 4084.88,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-05"
+   },
+   {
+    "id": "inv-site-02-2026-01",
+    "number": "INV-202601-002",
+    "siteId": "site-02",
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "period": "2026-01",
+    "energyKwh": 11454,
+    "rate": 0.12,
+    "amount": 1374.48,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-04"
+   },
+   {
+    "id": "inv-site-03-2026-01",
+    "number": "INV-202601-003",
+    "siteId": "site-03",
+    "customer": "ئابدۇللا ئائىلىسى",
+    "period": "2026-01",
+    "energyKwh": 773,
+    "rate": 0.14,
+    "amount": 108.22,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-03"
+   },
+   {
+    "id": "inv-site-04-2026-01",
+    "number": "INV-202601-004",
+    "siteId": "site-04",
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "period": "2026-01",
+    "energyKwh": 25451,
+    "rate": 0.1,
+    "amount": 2545.1,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-16"
+   },
+   {
+    "id": "inv-site-05-2026-01",
+    "number": "INV-202601-005",
+    "siteId": "site-05",
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "period": "2026-01",
+    "energyKwh": 5958,
+    "rate": 0.12,
+    "amount": 714.96,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-07"
+   },
+   {
+    "id": "inv-site-06-2026-01",
+    "number": "INV-202601-006",
+    "siteId": "site-06",
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "period": "2026-01",
+    "energyKwh": 16492,
+    "rate": 0.1,
+    "amount": 1649.2,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-03"
+   },
+   {
+    "id": "inv-site-07-2026-01",
+    "number": "INV-202601-007",
+    "siteId": "site-07",
+    "customer": "قۇمۇل توك تورى",
+    "period": "2026-01",
+    "energyKwh": 39650,
+    "rate": 0.08,
+    "amount": 3172,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-17"
+   },
+   {
+    "id": "inv-site-08-2026-01",
+    "number": "INV-202601-008",
+    "siteId": "site-08",
+    "customer": "كورلا نېفىت شىركىتى",
+    "period": "2026-01",
+    "energyKwh": 4060,
+    "rate": 0.12,
+    "amount": 487.2,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-12"
+   },
+   {
+    "id": "inv-site-09-2026-01",
+    "number": "INV-202601-009",
+    "siteId": "site-09",
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "period": "2026-01",
+    "energyKwh": 2383,
+    "rate": 0.14,
+    "amount": 333.62,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-17"
+   },
+   {
+    "id": "inv-site-10-2026-01",
+    "number": "INV-202601-010",
+    "siteId": "site-10",
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "period": "2026-01",
+    "energyKwh": 7515,
+    "rate": 0.12,
+    "amount": 901.8,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-10"
+   },
+   {
+    "id": "inv-site-11-2026-01",
+    "number": "INV-202601-011",
+    "siteId": "site-11",
+    "customer": "نۇرگۈل خانىم",
+    "period": "2026-01",
+    "energyKwh": 1113,
+    "rate": 0.14,
+    "amount": 155.82,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-18"
+   },
+   {
+    "id": "inv-site-12-2026-01",
+    "number": "INV-202601-012",
+    "siteId": "site-12",
+    "customer": "يەكەن توقۇمىچىلىق",
+    "period": "2026-01",
+    "energyKwh": 21898,
+    "rate": 0.1,
+    "amount": 2189.8,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-14"
+   },
+   {
+    "id": "inv-site-13-2026-01",
+    "number": "INV-202601-013",
+    "siteId": "site-13",
+    "customer": "قاراماي ئامبار شىركىتى",
+    "period": "2026-01",
+    "energyKwh": 18128,
+    "rate": 0.1,
+    "amount": 1812.8,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-08"
+   },
+   {
+    "id": "inv-site-14-2026-01",
+    "number": "INV-202601-014",
+    "siteId": "site-14",
+    "customer": "بۆرتالا ساياھەت",
+    "period": "2026-01",
+    "energyKwh": 4629,
+    "rate": 0.12,
+    "amount": 555.48,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-18"
+   },
+   {
+    "id": "inv-site-15-2026-01",
+    "number": "INV-202601-015",
+    "siteId": "site-15",
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "period": "2026-01",
+    "energyKwh": 1491,
+    "rate": 0.14,
+    "amount": 208.74,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-14"
+   },
+   {
+    "id": "inv-site-16-2026-01",
+    "number": "INV-202601-016",
+    "siteId": "site-16",
+    "customer": "شىخەنزە لوگىستىكا",
+    "period": "2026-01",
+    "energyKwh": 13184,
+    "rate": 0.12,
+    "amount": 1582.08,
+    "status": "paid",
+    "issuedAt": "2026-02-01",
+    "dueAt": "2026-02-21",
+    "paidAt": "2026-02-04"
+   },
+   {
+    "id": "inv-site-01-2026-02",
+    "number": "INV-202602-001",
+    "siteId": "site-01",
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "period": "2026-02",
+    "energyKwh": 60855,
+    "rate": 0.08,
+    "amount": 4868.4,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-18"
+   },
+   {
+    "id": "inv-site-02-2026-02",
+    "number": "INV-202602-002",
+    "siteId": "site-02",
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "period": "2026-02",
+    "energyKwh": 13464,
+    "rate": 0.12,
+    "amount": 1615.68,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-15"
+   },
+   {
+    "id": "inv-site-03-2026-02",
+    "number": "INV-202602-003",
+    "siteId": "site-03",
+    "customer": "ئابدۇللا ئائىلىسى",
+    "period": "2026-02",
+    "energyKwh": 922,
+    "rate": 0.14,
+    "amount": 129.08,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-05"
+   },
+   {
+    "id": "inv-site-04-2026-02",
+    "number": "INV-202602-004",
+    "siteId": "site-04",
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "period": "2026-02",
+    "energyKwh": 30350,
+    "rate": 0.1,
+    "amount": 3035,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-09"
+   },
+   {
+    "id": "inv-site-05-2026-02",
+    "number": "INV-202602-005",
+    "siteId": "site-05",
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "period": "2026-02",
+    "energyKwh": 7129,
+    "rate": 0.12,
+    "amount": 855.48,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-04"
+   },
+   {
+    "id": "inv-site-06-2026-02",
+    "number": "INV-202602-006",
+    "siteId": "site-06",
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "period": "2026-02",
+    "energyKwh": 19591,
+    "rate": 0.1,
+    "amount": 1959.1,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-09"
+   },
+   {
+    "id": "inv-site-07-2026-02",
+    "number": "INV-202602-007",
+    "siteId": "site-07",
+    "customer": "قۇمۇل توك تورى",
+    "period": "2026-02",
+    "energyKwh": 47106,
+    "rate": 0.08,
+    "amount": 3768.48,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-12"
+   },
+   {
+    "id": "inv-site-08-2026-02",
+    "number": "INV-202602-008",
+    "siteId": "site-08",
+    "customer": "كورلا نېفىت شىركىتى",
+    "period": "2026-02",
+    "energyKwh": 4840,
+    "rate": 0.12,
+    "amount": 580.8,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-11"
+   },
+   {
+    "id": "inv-site-09-2026-02",
+    "number": "INV-202602-009",
+    "siteId": "site-09",
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "period": "2026-02",
+    "energyKwh": 2807,
+    "rate": 0.14,
+    "amount": 392.98,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-06"
+   },
+   {
+    "id": "inv-site-10-2026-02",
+    "number": "INV-202602-010",
+    "siteId": "site-10",
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "period": "2026-02",
+    "energyKwh": 8901,
+    "rate": 0.12,
+    "amount": 1068.12,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-15"
+   },
+   {
+    "id": "inv-site-11-2026-02",
+    "number": "INV-202602-011",
+    "siteId": "site-11",
+    "customer": "نۇرگۈل خانىم",
+    "period": "2026-02",
+    "energyKwh": 1339,
+    "rate": 0.14,
+    "amount": 187.46,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-17"
+   },
+   {
+    "id": "inv-site-12-2026-02",
+    "number": "INV-202602-012",
+    "siteId": "site-12",
+    "customer": "يەكەن توقۇمىچىلىق",
+    "period": "2026-02",
+    "energyKwh": 25967,
+    "rate": 0.1,
+    "amount": 2596.7,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-15"
+   },
+   {
+    "id": "inv-site-13-2026-02",
+    "number": "INV-202602-013",
+    "siteId": "site-13",
+    "customer": "قاراماي ئامبار شىركىتى",
+    "period": "2026-02",
+    "energyKwh": 21560,
+    "rate": 0.1,
+    "amount": 2156,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-07"
+   },
+   {
+    "id": "inv-site-14-2026-02",
+    "number": "INV-202602-014",
+    "siteId": "site-14",
+    "customer": "بۆرتالا ساياھەت",
+    "period": "2026-02",
+    "energyKwh": 5451,
+    "rate": 0.12,
+    "amount": 654.12,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-18"
+   },
+   {
+    "id": "inv-site-15-2026-02",
+    "number": "INV-202602-015",
+    "siteId": "site-15",
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "period": "2026-02",
+    "energyKwh": 1772,
+    "rate": 0.14,
+    "amount": 248.08,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-09"
+   },
+   {
+    "id": "inv-site-16-2026-02",
+    "number": "INV-202602-016",
+    "siteId": "site-16",
+    "customer": "شىخەنزە لوگىستىكا",
+    "period": "2026-02",
+    "energyKwh": 15423,
+    "rate": 0.12,
+    "amount": 1850.76,
+    "status": "paid",
+    "issuedAt": "2026-03-01",
+    "dueAt": "2026-03-21",
+    "paidAt": "2026-03-12"
+   },
+   {
+    "id": "inv-site-01-2026-03",
+    "number": "INV-202603-001",
+    "siteId": "site-01",
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "period": "2026-03",
+    "energyKwh": 84374,
+    "rate": 0.08,
+    "amount": 6749.92,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-04"
+   },
+   {
+    "id": "inv-site-02-2026-03",
+    "number": "INV-202603-002",
+    "siteId": "site-02",
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "period": "2026-03",
+    "energyKwh": 19013,
+    "rate": 0.12,
+    "amount": 2281.56,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-10"
+   },
+   {
+    "id": "inv-site-03-2026-03",
+    "number": "INV-202603-003",
+    "siteId": "site-03",
+    "customer": "ئابدۇللا ئائىلىسى",
+    "period": "2026-03",
+    "energyKwh": 1284,
+    "rate": 0.14,
+    "amount": 179.76,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-10"
+   },
+   {
+    "id": "inv-site-04-2026-03",
+    "number": "INV-202603-004",
+    "siteId": "site-04",
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "period": "2026-03",
+    "energyKwh": 42689,
+    "rate": 0.1,
+    "amount": 4268.9,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-06"
+   },
+   {
+    "id": "inv-site-05-2026-03",
+    "number": "INV-202603-005",
+    "siteId": "site-05",
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "period": "2026-03",
+    "energyKwh": 9937,
+    "rate": 0.12,
+    "amount": 1192.44,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-14"
+   },
+   {
+    "id": "inv-site-06-2026-03",
+    "number": "INV-202603-006",
+    "siteId": "site-06",
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "period": "2026-03",
+    "energyKwh": 27488,
+    "rate": 0.1,
+    "amount": 2748.8,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-05"
+   },
+   {
+    "id": "inv-site-07-2026-03",
+    "number": "INV-202603-007",
+    "siteId": "site-07",
+    "customer": "قۇمۇل توك تورى",
+    "period": "2026-03",
+    "energyKwh": 66998,
+    "rate": 0.08,
+    "amount": 5359.84,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-15"
+   },
+   {
+    "id": "inv-site-08-2026-03",
+    "number": "INV-202603-008",
+    "siteId": "site-08",
+    "customer": "كورلا نېفىت شىركىتى",
+    "period": "2026-03",
+    "energyKwh": 6880,
+    "rate": 0.12,
+    "amount": 825.6,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-11"
+   },
+   {
+    "id": "inv-site-09-2026-03",
+    "number": "INV-202603-009",
+    "siteId": "site-09",
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "period": "2026-03",
+    "energyKwh": 3980,
+    "rate": 0.14,
+    "amount": 557.2,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-09"
+   },
+   {
+    "id": "inv-site-10-2026-03",
+    "number": "INV-202603-010",
+    "siteId": "site-10",
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "period": "2026-03",
+    "energyKwh": 12452,
+    "rate": 0.12,
+    "amount": 1494.24,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-13"
+   },
+   {
+    "id": "inv-site-11-2026-03",
+    "number": "INV-202603-011",
+    "siteId": "site-11",
+    "customer": "نۇرگۈل خانىم",
+    "period": "2026-03",
+    "energyKwh": 1872,
+    "rate": 0.14,
+    "amount": 262.08,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-11"
+   },
+   {
+    "id": "inv-site-12-2026-03",
+    "number": "INV-202603-012",
+    "siteId": "site-12",
+    "customer": "يەكەن توقۇمىچىلىق",
+    "period": "2026-03",
+    "energyKwh": 36600,
+    "rate": 0.1,
+    "amount": 3660,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-08"
+   },
+   {
+    "id": "inv-site-13-2026-03",
+    "number": "INV-202603-013",
+    "siteId": "site-13",
+    "customer": "قاراماي ئامبار شىركىتى",
+    "period": "2026-03",
+    "energyKwh": 30088,
+    "rate": 0.1,
+    "amount": 3008.8,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-09"
+   },
+   {
+    "id": "inv-site-14-2026-03",
+    "number": "INV-202603-014",
+    "siteId": "site-14",
+    "customer": "بۆرتالا ساياھەت",
+    "period": "2026-03",
+    "energyKwh": 7626,
+    "rate": 0.12,
+    "amount": 915.12,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-09"
+   },
+   {
+    "id": "inv-site-15-2026-03",
+    "number": "INV-202603-015",
+    "siteId": "site-15",
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "period": "2026-03",
+    "energyKwh": 2510,
+    "rate": 0.14,
+    "amount": 351.4,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-08"
+   },
+   {
+    "id": "inv-site-16-2026-03",
+    "number": "INV-202603-016",
+    "siteId": "site-16",
+    "customer": "شىخەنزە لوگىستىكا",
+    "period": "2026-03",
+    "energyKwh": 21963,
+    "rate": 0.12,
+    "amount": 2635.56,
+    "status": "paid",
+    "issuedAt": "2026-04-01",
+    "dueAt": "2026-04-21",
+    "paidAt": "2026-04-06"
+   },
+   {
+    "id": "inv-site-01-2026-04",
+    "number": "INV-202604-001",
+    "siteId": "site-01",
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "period": "2026-04",
+    "energyKwh": 96529,
+    "rate": 0.08,
+    "amount": 7722.32,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-04"
+   },
+   {
+    "id": "inv-site-02-2026-04",
+    "number": "INV-202604-002",
+    "siteId": "site-02",
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "period": "2026-04",
+    "energyKwh": 21562,
+    "rate": 0.12,
+    "amount": 2587.44,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-04"
+   },
+   {
+    "id": "inv-site-03-2026-04",
+    "number": "INV-202604-003",
+    "siteId": "site-03",
+    "customer": "ئابدۇللا ئائىلىسى",
+    "period": "2026-04",
+    "energyKwh": 1465,
+    "rate": 0.14,
+    "amount": 205.1,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-10"
+   },
+   {
+    "id": "inv-site-04-2026-04",
+    "number": "INV-202604-004",
+    "siteId": "site-04",
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "period": "2026-04",
+    "energyKwh": 48386,
+    "rate": 0.1,
+    "amount": 4838.6,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-12"
+   },
+   {
+    "id": "inv-site-05-2026-04",
+    "number": "INV-202604-005",
+    "siteId": "site-05",
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "period": "2026-04",
+    "energyKwh": 11344,
+    "rate": 0.12,
+    "amount": 1361.28,
+    "status": "overdue",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-06-2026-04",
+    "number": "INV-202604-006",
+    "siteId": "site-06",
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "period": "2026-04",
+    "energyKwh": 31252,
+    "rate": 0.1,
+    "amount": 3125.2,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-14"
+   },
+   {
+    "id": "inv-site-07-2026-04",
+    "number": "INV-202604-007",
+    "siteId": "site-07",
+    "customer": "قۇمۇل توك تورى",
+    "period": "2026-04",
+    "energyKwh": 75357,
+    "rate": 0.08,
+    "amount": 6028.56,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-17"
+   },
+   {
+    "id": "inv-site-08-2026-04",
+    "number": "INV-202604-008",
+    "siteId": "site-08",
+    "customer": "كورلا نېفىت شىركىتى",
+    "period": "2026-04",
+    "energyKwh": 7680,
+    "rate": 0.12,
+    "amount": 921.6,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-10"
+   },
+   {
+    "id": "inv-site-09-2026-04",
+    "number": "INV-202604-009",
+    "siteId": "site-09",
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "period": "2026-04",
+    "energyKwh": 4565,
+    "rate": 0.14,
+    "amount": 639.1,
+    "status": "overdue",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-10-2026-04",
+    "number": "INV-202604-010",
+    "siteId": "site-10",
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "period": "2026-04",
+    "energyKwh": 14202,
+    "rate": 0.12,
+    "amount": 1704.24,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-18"
+   },
+   {
+    "id": "inv-site-11-2026-04",
+    "number": "INV-202604-011",
+    "siteId": "site-11",
+    "customer": "نۇرگۈل خانىم",
+    "period": "2026-04",
+    "energyKwh": 2140,
+    "rate": 0.14,
+    "amount": 299.6,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-16"
+   },
+   {
+    "id": "inv-site-12-2026-04",
+    "number": "INV-202604-012",
+    "siteId": "site-12",
+    "customer": "يەكەن توقۇمىچىلىق",
+    "period": "2026-04",
+    "energyKwh": 41257,
+    "rate": 0.1,
+    "amount": 4125.7,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-04"
+   },
+   {
+    "id": "inv-site-13-2026-04",
+    "number": "INV-202604-013",
+    "siteId": "site-13",
+    "customer": "قاراماي ئامبار شىركىتى",
+    "period": "2026-04",
+    "energyKwh": 34250,
+    "rate": 0.1,
+    "amount": 3425,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-09"
+   },
+   {
+    "id": "inv-site-14-2026-04",
+    "number": "INV-202604-014",
+    "siteId": "site-14",
+    "customer": "بۆرتالا ساياھەت",
+    "period": "2026-04",
+    "energyKwh": 8738,
+    "rate": 0.12,
+    "amount": 1048.56,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-05"
+   },
+   {
+    "id": "inv-site-15-2026-04",
+    "number": "INV-202604-015",
+    "siteId": "site-15",
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "period": "2026-04",
+    "energyKwh": 2839,
+    "rate": 0.14,
+    "amount": 397.46,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-07"
+   },
+   {
+    "id": "inv-site-16-2026-04",
+    "number": "INV-202604-016",
+    "siteId": "site-16",
+    "customer": "شىخەنزە لوگىستىكا",
+    "period": "2026-04",
+    "energyKwh": 25032,
+    "rate": 0.12,
+    "amount": 3003.84,
+    "status": "paid",
+    "issuedAt": "2026-05-01",
+    "dueAt": "2026-05-21",
+    "paidAt": "2026-05-08"
+   },
+   {
+    "id": "inv-site-01-2026-05",
+    "number": "INV-202605-001",
+    "siteId": "site-01",
+    "customer": "تۇرپان ئېنېرگىيە شىركىتى",
+    "period": "2026-05",
+    "energyKwh": 122328,
+    "rate": 0.08,
+    "amount": 9786.24,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-09"
+   },
+   {
+    "id": "inv-site-02-2026-05",
+    "number": "INV-202605-002",
+    "siteId": "site-02",
+    "customer": "تەڭرىتاغ سودا گۇرۇھى",
+    "period": "2026-05",
+    "energyKwh": 27019,
+    "rate": 0.12,
+    "amount": 3242.28,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-03-2026-05",
+    "number": "INV-202605-003",
+    "siteId": "site-03",
+    "customer": "ئابدۇللا ئائىلىسى",
+    "period": "2026-05",
+    "energyKwh": 1828,
+    "rate": 0.14,
+    "amount": 255.92,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-04-2026-05",
+    "number": "INV-202605-004",
+    "siteId": "site-04",
+    "customer": "خوتەن ئاشلىق شىركىتى",
+    "period": "2026-05",
+    "energyKwh": 60432,
+    "rate": 0.1,
+    "amount": 6043.2,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-03"
+   },
+   {
+    "id": "inv-site-05-2026-05",
+    "number": "INV-202605-005",
+    "siteId": "site-05",
+    "customer": "غۇلجا مائارىپ ئىدارىسى",
+    "period": "2026-05",
+    "energyKwh": 14184,
+    "rate": 0.12,
+    "amount": 1702.08,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-07"
+   },
+   {
+    "id": "inv-site-06-2026-05",
+    "number": "INV-202605-006",
+    "siteId": "site-06",
+    "customer": "ئاقسۇ دېھقانچىلىق كوپراتىپى",
+    "period": "2026-05",
+    "energyKwh": 39018,
+    "rate": 0.1,
+    "amount": 3901.8,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-09"
+   },
+   {
+    "id": "inv-site-07-2026-05",
+    "number": "INV-202605-007",
+    "siteId": "site-07",
+    "customer": "قۇمۇل توك تورى",
+    "period": "2026-05",
+    "energyKwh": 94919,
+    "rate": 0.08,
+    "amount": 7593.52,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-08-2026-05",
+    "number": "INV-202605-008",
+    "siteId": "site-08",
+    "customer": "كورلا نېفىت شىركىتى",
+    "period": "2026-05",
+    "energyKwh": 9660,
+    "rate": 0.12,
+    "amount": 1159.2,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-08"
+   },
+   {
+    "id": "inv-site-09-2026-05",
+    "number": "INV-202605-009",
+    "siteId": "site-09",
+    "customer": "ئاتۇش مۈلۈك باشقۇرۇش",
+    "period": "2026-05",
+    "energyKwh": 5571,
+    "rate": 0.14,
+    "amount": 779.94,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-10-2026-05",
+    "number": "INV-202605-010",
+    "siteId": "site-10",
+    "customer": "چۆچەك ساغلاملىق مەركىزى",
+    "period": "2026-05",
+    "energyKwh": 17652,
+    "rate": 0.12,
+    "amount": 2118.24,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-09"
+   },
+   {
+    "id": "inv-site-11-2026-05",
+    "number": "INV-202605-011",
+    "siteId": "site-11",
+    "customer": "نۇرگۈل خانىم",
+    "period": "2026-05",
+    "energyKwh": 2669,
+    "rate": 0.14,
+    "amount": 373.66,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-03"
+   },
+   {
+    "id": "inv-site-12-2026-05",
+    "number": "INV-202605-012",
+    "siteId": "site-12",
+    "customer": "يەكەن توقۇمىچىلىق",
+    "period": "2026-05",
+    "energyKwh": 51093,
+    "rate": 0.1,
+    "amount": 5109.3,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-13-2026-05",
+    "number": "INV-202605-013",
+    "siteId": "site-13",
+    "customer": "قاراماي ئامبار شىركىتى",
+    "period": "2026-05",
+    "energyKwh": 42642,
+    "rate": 0.1,
+    "amount": 4264.2,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-14-2026-05",
+    "number": "INV-202605-014",
+    "siteId": "site-14",
+    "customer": "بۆرتالا ساياھەت",
+    "period": "2026-05",
+    "energyKwh": 10946,
+    "rate": 0.12,
+    "amount": 1313.52,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-02"
+   },
+   {
+    "id": "inv-site-15-2026-05",
+    "number": "INV-202605-015",
+    "siteId": "site-15",
+    "customer": "كۇچا ئۈزۈمچىلىك",
+    "period": "2026-05",
+    "energyKwh": 3556,
+    "rate": 0.14,
+    "amount": 497.84,
+    "status": "overdue",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": null
+   },
+   {
+    "id": "inv-site-16-2026-05",
+    "number": "INV-202605-016",
+    "siteId": "site-16",
+    "customer": "شىخەنزە لوگىستىكا",
+    "period": "2026-05",
+    "energyKwh": 30923,
+    "rate": 0.12,
+    "amount": 3710.76,
+    "status": "paid",
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-06-21",
+    "paidAt": "2026-06-06"
+   }
+  ],
+  "notifications": [
+   {
+    "id": "ntf-1",
+    "title": "ئالتاي ئىستانسىسى تورسىز",
+    "body": "ئالتاي تاغ ئارامگاھى 6 سائەتتىن بۇيان سانلىق مەلۇمات ئەۋەتمىدى.",
+    "kind": "danger",
+    "link": "/sites/site-11",
+    "read": false,
+    "createdAt": "2026-06-21T07:05:00.000Z"
+   },
+   {
+    "id": "ntf-2",
+    "title": "ئىنۋېرتور ئاگاھلاندۇرۇشى",
+    "body": "كۇچا ئۈزۈمزارلىقىدىكى ئىنۋېرتور تېمپېراتۇرىسى يۇقىرى.",
+    "kind": "warning",
+    "link": "/devices",
+    "read": false,
+    "createdAt": "2026-06-21T06:00:00.000Z"
+   },
+   {
+    "id": "ntf-3",
+    "title": "ھېسابات تۆلەندى",
+    "body": "تەڭرىتاغ سودا گۇرۇھى ئالدىنقى ئاينىڭ ھېساباتىنى تۆلىدى.",
+    "kind": "success",
+    "link": "/billing",
+    "read": false,
+    "createdAt": "2026-06-21T03:30:00.000Z"
+   },
+   {
+    "id": "ntf-4",
+    "title": "يېڭى ئاسراش ۋەزىپىسى",
+    "body": "چۆچەك دوختۇرخانىسى زاپاس توك سىنىقى بۈگۈن.",
+    "kind": "info",
+    "link": "/maintenance",
+    "read": true,
+    "createdAt": "2026-06-20T21:30:00.000Z"
+   },
+   {
+    "id": "ntf-5",
+    "title": "ئايلىق دوكلات تەييار",
+    "body": "ئالدىنقى ئاينىڭ ئېنېرگىيە دوكلاتىنى چۈشۈرەلەيسىز.",
+    "kind": "info",
+    "link": "/reports",
+    "read": true,
+    "createdAt": "2026-06-20T07:30:00.000Z"
+   }
+  ],
+  "reports": [],
+  "alertRules": [
+   {
+    "id": "rule-01",
+    "name": "ئىستانسا تورسىز",
+    "metric": "site_offline",
+    "threshold": 0,
+    "siteId": null,
+    "severity": "danger",
+    "enabled": true,
+    "lastTriggeredAt": null,
+    "createdAt": "2026-05-22T07:30:00.000Z"
+   },
+   {
+    "id": "rule-02",
+    "name": "ھاسىلات تۆۋەن",
+    "metric": "site_yield_below",
+    "threshold": 1.5,
+    "siteId": null,
+    "severity": "warning",
+    "enabled": true,
+    "lastTriggeredAt": null,
+    "createdAt": "2026-05-22T07:30:00.000Z"
+   },
+   {
+    "id": "rule-03",
+    "name": "ئىنۋېرتور ئۈنۈمى تۆۋەن",
+    "metric": "device_efficiency_below",
+    "threshold": 92,
+    "siteId": null,
+    "severity": "warning",
+    "enabled": true,
+    "lastTriggeredAt": null,
+    "createdAt": "2026-05-22T07:30:00.000Z"
+   },
+   {
+    "id": "rule-04",
+    "name": "ئۈسكۈنە سالامەتلىكى ناچار",
+    "metric": "device_health_below",
+    "threshold": 72,
+    "siteId": null,
+    "severity": "warning",
+    "enabled": true,
+    "lastTriggeredAt": null,
+    "createdAt": "2026-05-22T07:30:00.000Z"
+   },
+   {
+    "id": "rule-05",
+    "name": "ئۈسكۈنە 1 سائەتتىن ئارتۇق تورسىز",
+    "metric": "device_offline_minutes",
+    "threshold": 60,
+    "siteId": null,
+    "severity": "danger",
+    "enabled": true,
+    "lastTriggeredAt": null,
+    "createdAt": "2026-05-22T07:30:00.000Z"
+   },
+   {
+    "id": "rule-06",
+    "name": "تالون 10 كۈندىن ئارتۇق كېچىكتى",
+    "metric": "invoice_overdue_days",
+    "threshold": 10,
+    "siteId": null,
+    "severity": "warning",
+    "enabled": true,
+    "lastTriggeredAt": null,
+    "createdAt": "2026-05-22T07:30:00.000Z"
+   }
+  ],
+  "integrations": [],
+  "settings": {
+   "id": "settings",
+   "userName": "ئالىم كېرىم",
+   "email": "admin@solarpulse.app",
+   "role": "admin",
+   "company": "SolarPulse Energy",
+   "language": "ug",
+   "theme": "light",
+   "currency": "USD",
+   "city": "ئۈرۈمچى",
+   "lat": 43.825,
+   "lng": 87.617,
+   "co2KgPerKwh": 0.7,
+   "treeKgPerYear": 21.8,
+   "carTonsPerYear": 4.6,
+   "notifyEmail": true,
+   "notifyPush": true,
+   "notifyDeviceAlerts": true,
+   "notifyBilling": true,
+   "notifyMaintenance": true,
+   "discountRatePct": 6
+  }
+ },
+ "finance": {
+  "site": {
+   "input": {
+    "id": "site-01",
+    "name": "T",
+    "location": "L",
+    "type": "utility",
+    "status": "active",
+    "capacityKw": 820,
+    "batteryKwh": 600,
+    "pricePerKwh": 0.08,
+    "customer": "C",
+    "installDate": "2024-01-01",
+    "lat": 42.95,
+    "lng": 89.18,
+    "systemCost": 738000,
+    "annualOpex": 11070,
+    "degradationPct": 0.5,
+    "tariffEscalationPct": 2
+   },
+   "e1": 1050359.5803307644,
+   "result": {
+    "systemCost": 738000,
+    "e1": 1050359.5803307644,
+    "year1Savings": 84028.76642646115,
+    "paybackYears": 9.408554696667045,
+    "roiPct": 204.36753788829583,
+    "npv": 355326.2142451546,
+    "irrPct": 10.276047153020045,
+    "lcoe": 0.06850996926763182,
+    "series": [
+     {
+      "year": 0,
+      "cashFlow": -738000,
+      "cumulative": -738000
+     },
+     {
+      "year": 1,
+      "cashFlow": 72958.76642646115,
+      "cumulative": -665041.2335735388
+     },
+     {
+      "year": 2,
+      "cashFlow": 74210.79504621543,
+      "cumulative": -590830.4385273234
+     },
+     {
+      "year": 3,
+      "cashFlow": 75481.47889240403,
+      "cumulative": -515348.9596349194
+     },
+     {
+      "year": 4,
+      "cashFlow": 76771.09592790087,
+      "cumulative": -438577.86370701855
+     },
+     {
+      "year": 5,
+      "cashFlow": 78079.92825722658,
+      "cumulative": -360497.93544979196
+     },
+     {
+      "year": 6,
+      "cashFlow": 79408.26218825926,
+      "cumulative": -281089.6732615327
+     },
+     {
+      "year": 7,
+      "cashFlow": 80756.38829486431,
+      "cumulative": -200333.28496666835
+     },
+     {
+      "year": 8,
+      "cashFlow": 82124.6014804578,
+      "cumulative": -118208.68348621055
+     },
+     {
+      "year": 9,
+      "cashFlow": 83513.20104251662,
+      "cumulative": -34695.48244369392
+     },
+     {
+      "year": 10,
+      "cashFlow": 84922.49073805011,
+      "cumulative": 50227.00829435619
+     },
+     {
+      "year": 11,
+      "cashFlow": 86352.77885004708,
+      "cumulative": 136579.78714440326
+     },
+     {
+      "year": 12,
+      "cashFlow": 87804.37825491276,
+      "cumulative": 224384.16539931603
+     },
+     {
+      "year": 13,
+      "cashFlow": 89277.60649091098,
+      "cumulative": 313661.771890227
+     },
+     {
+      "year": 14,
+      "cashFlow": 90772.78582762556,
+      "cumulative": 404434.5577178525
+     },
+     {
+      "year": 15,
+      "cashFlow": 92290.24333645716,
+      "cumulative": 496724.8010543097
+     },
+     {
+      "year": 16,
+      "cashFlow": 93830.31096217039,
+      "cumulative": 590555.1120164801
+     },
+     {
+      "year": 17,
+      "cashFlow": 95393.32559550671,
+      "cumulative": 685948.4376119868
+     },
+     {
+      "year": 18,
+      "cashFlow": 96979.62914687979,
+      "cumulative": 782928.0667588665
+     },
+     {
+      "year": 19,
+      "cashFlow": 98589.56862116829,
+      "cumulative": 881517.6353800348
+     },
+     {
+      "year": 20,
+      "cashFlow": 100223.4961936237,
+      "cumulative": 981741.1315736584
+     },
+     {
+      "year": 21,
+      "cashFlow": 101881.76928690869,
+      "cumulative": 1083622.900860567
+     },
+     {
+      "year": 22,
+      "cashFlow": 103564.75064928365,
+      "cumulative": 1187187.6515098508
+     },
+     {
+      "year": 23,
+      "cashFlow": 105272.80843395797,
+      "cumulative": 1292460.4599438086
+     },
+     {
+      "year": 24,
+      "cashFlow": 107006.31627962395,
+      "cumulative": 1399466.7762234325
+     },
+     {
+      "year": 25,
+      "cashFlow": 108765.65339219036,
+      "cumulative": 1508232.4296156229
+     }
+    ]
+   }
+  },
+  "portfolio": {
+   "systemCost": 3253860,
+   "e1": 4622366.775454965,
+   "year1Savings": 448747.28700064233,
+   "paybackYears": 7.691352746665161,
+   "roiPct": 276.583880437565,
+   "npv": 2716726.7703265697,
+   "irrPct": 13.09199497042573,
+   "lcoe": 0.06863907891001528,
+   "series": [
+    {
+     "year": 0,
+     "cashFlow": -3253860,
+     "cumulative": -3253860
+    },
+    {
+     "year": 1,
+     "cashFlow": 399938.2870006423,
+     "cumulative": -2853921.712999358
+    },
+    {
+     "year": 2,
+     "cashFlow": 406624.62157695193,
+     "cumulative": -2447297.091422406
+    },
+    {
+     "year": 3,
+     "cashFlow": 413410.58253844845,
+     "cumulative": -2033886.5088839575
+    },
+    {
+     "year": 4,
+     "cashFlow": 420297.6543182714,
+     "cumulative": -1613588.854565686
+    },
+    {
+     "year": 5,
+     "cashFlow": 427287.3434676135,
+     "cumulative": -1186301.5110980726
+    },
+    {
+     "year": 6,
+     "cashFlow": 434381.1789852811,
+     "cumulative": -751920.3321127915
+    },
+    {
+     "year": 7,
+     "cashFlow": 441580.7126521618,
+     "cumulative": -310339.6194606297
+    },
+    {
+     "year": 8,
+     "cashFlow": 448887.519370679,
+     "cumulative": 138547.89991004928
+    },
+    {
+     "year": 9,
+     "cashFlow": 456303.19750930206,
+     "cumulative": 594851.0974193513
+    },
+    {
+     "year": 10,
+     "cashFlow": 463829.36925219063,
+     "cumulative": 1058680.466671542
+    },
+    {
+     "year": 11,
+     "cashFlow": 471467.68095404835,
+     "cumulative": 1530148.1476255904
+    },
+    {
+     "year": 12,
+     "cashFlow": 479219.80350026366,
+     "cumulative": 2009367.9511258542
+    },
+    {
+     "year": 13,
+     "cashFlow": 487087.4326724176,
+     "cumulative": 2496455.383798272
+    },
+    {
+     "year": 14,
+     "cashFlow": 495072.2895192368,
+     "cumulative": 2991527.673317509
+    },
+    {
+     "year": 15,
+     "cashFlow": 503176.1207330733,
+     "cumulative": 3494703.794050582
+    },
+    {
+     "year": 16,
+     "cashFlow": 511400.69903199613,
+     "cumulative": 4006104.4930825783
+    },
+    {
+     "year": 17,
+     "cashFlow": 519747.8235475727,
+     "cumulative": 4525852.316630151
+    },
+    {
+     "year": 18,
+     "cashFlow": 528219.3202184315,
+     "cumulative": 5054071.636848583
+    },
+    {
+     "year": 19,
+     "cashFlow": 536817.0421896863,
+     "cumulative": 5590888.679038269
+    },
+    {
+     "year": 20,
+     "cashFlow": 545542.8702183126,
+     "cumulative": 6136431.549256582
+    },
+    {
+     "year": 21,
+     "cashFlow": 554398.7130845656,
+     "cumulative": 6690830.262341147
+    },
+    {
+     "year": 22,
+     "cashFlow": 563386.5080095256,
+     "cumulative": 7254216.770350673
+    },
+    {
+     "year": 23,
+     "cashFlow": 572508.2210788674,
+     "cumulative": 7826724.99142954
+    },
+    {
+     "year": 24,
+     "cashFlow": 581765.8476729427,
+     "cumulative": 8408490.839102482
+    },
+    {
+     "year": 25,
+     "cashFlow": 591161.4129032696,
+     "cumulative": 8999652.252005752
+    }
+   ]
+  },
+  "perSite": [
+   {
+    "id": "site-01",
+    "result": {
+     "systemCost": 738000,
+     "e1": 1050359.5803307644,
+     "year1Savings": 84028.76642646115,
+     "paybackYears": 9.408554696667045,
+     "roiPct": 204.36753788829583,
+     "npv": 355326.2142451546,
+     "irrPct": 10.276047153020045,
+     "lcoe": 0.06850996926763182,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -738000,
+       "cumulative": -738000
+      },
+      {
+       "year": 1,
+       "cashFlow": 72958.76642646115,
+       "cumulative": -665041.2335735388
+      },
+      {
+       "year": 2,
+       "cashFlow": 74210.79504621543,
+       "cumulative": -590830.4385273234
+      },
+      {
+       "year": 3,
+       "cashFlow": 75481.47889240403,
+       "cumulative": -515348.9596349194
+      },
+      {
+       "year": 4,
+       "cashFlow": 76771.09592790087,
+       "cumulative": -438577.86370701855
+      },
+      {
+       "year": 5,
+       "cashFlow": 78079.92825722658,
+       "cumulative": -360497.93544979196
+      },
+      {
+       "year": 6,
+       "cashFlow": 79408.26218825926,
+       "cumulative": -281089.6732615327
+      },
+      {
+       "year": 7,
+       "cashFlow": 80756.38829486431,
+       "cumulative": -200333.28496666835
+      },
+      {
+       "year": 8,
+       "cashFlow": 82124.6014804578,
+       "cumulative": -118208.68348621055
+      },
+      {
+       "year": 9,
+       "cashFlow": 83513.20104251662,
+       "cumulative": -34695.48244369392
+      },
+      {
+       "year": 10,
+       "cashFlow": 84922.49073805011,
+       "cumulative": 50227.00829435619
+      },
+      {
+       "year": 11,
+       "cashFlow": 86352.77885004708,
+       "cumulative": 136579.78714440326
+      },
+      {
+       "year": 12,
+       "cashFlow": 87804.37825491276,
+       "cumulative": 224384.16539931603
+      },
+      {
+       "year": 13,
+       "cashFlow": 89277.60649091098,
+       "cumulative": 313661.771890227
+      },
+      {
+       "year": 14,
+       "cashFlow": 90772.78582762556,
+       "cumulative": 404434.5577178525
+      },
+      {
+       "year": 15,
+       "cashFlow": 92290.24333645716,
+       "cumulative": 496724.8010543097
+      },
+      {
+       "year": 16,
+       "cashFlow": 93830.31096217039,
+       "cumulative": 590555.1120164801
+      },
+      {
+       "year": 17,
+       "cashFlow": 95393.32559550671,
+       "cumulative": 685948.4376119868
+      },
+      {
+       "year": 18,
+       "cashFlow": 96979.62914687979,
+       "cumulative": 782928.0667588665
+      },
+      {
+       "year": 19,
+       "cashFlow": 98589.56862116829,
+       "cumulative": 881517.6353800348
+      },
+      {
+       "year": 20,
+       "cashFlow": 100223.4961936237,
+       "cumulative": 981741.1315736584
+      },
+      {
+       "year": 21,
+       "cashFlow": 101881.76928690869,
+       "cumulative": 1083622.900860567
+      },
+      {
+       "year": 22,
+       "cashFlow": 103564.75064928365,
+       "cumulative": 1187187.6515098508
+      },
+      {
+       "year": 23,
+       "cashFlow": 105272.80843395797,
+       "cumulative": 1292460.4599438086
+      },
+      {
+       "year": 24,
+       "cashFlow": 107006.31627962395,
+       "cumulative": 1399466.7762234325
+      },
+      {
+       "year": 25,
+       "cashFlow": 108765.65339219036,
+       "cumulative": 1508232.4296156229
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-02",
+    "result": {
+     "systemCost": 164700,
+     "e1": 233706.1464092509,
+     "year1Savings": 28044.737569110108,
+     "paybackYears": 6.172615558160187,
+     "roiPct": 373.75500459162055,
+     "npv": 215841.50834692243,
+     "irrPct": 16.65714363733423,
+     "lcoe": 0.06871839678383417,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -164700,
+       "cumulative": -164700
+      },
+      {
+       "year": 1,
+       "cashFlow": 25573.737569110108,
+       "cumulative": -139126.26243088988
+      },
+      {
+       "year": 2,
+       "cashFlow": 25991.604158889848,
+       "cumulative": -113134.65827200003
+      },
+      {
+       "year": 3,
+       "cashFlow": 26415.69696085731,
+       "cumulative": -86718.96131114272
+      },
+      {
+       "year": 4,
+       "cashFlow": 26846.108745574085,
+       "cumulative": -59872.85256556863
+      },
+      {
+       "year": 5,
+       "cashFlow": 27282.93366588313,
+       "cumulative": -32589.9188996855
+      },
+      {
+       "year": 6,
+       "cashFlow": 27726.267277504794,
+       "cumulative": -4863.651622180707
+      },
+      {
+       "year": 7,
+       "cashFlow": 28176.20655993962,
+       "cumulative": 23312.554937758912
+      },
+      {
+       "year": 8,
+       "cashFlow": 28632.84993768272,
+       "cumulative": 51945.40487544163
+      },
+      {
+       "year": 9,
+       "cashFlow": 29096.29730175419,
+       "cumulative": 81041.70217719582
+      },
+      {
+       "year": 10,
+       "cashFlow": 29566.650031550325,
+       "cumulative": 110608.35220874615
+      },
+      {
+       "year": 11,
+       "cashFlow": 30044.01101702043,
+       "cumulative": 140652.36322576657
+      },
+      {
+       "year": 12,
+       "cashFlow": 30528.484681174035,
+       "cumulative": 171180.84790694062
+      },
+      {
+       "year": 13,
+       "cashFlow": 31020.177002923527,
+       "cumulative": 202201.02490986415
+      },
+      {
+       "year": 14,
+       "cashFlow": 31519.195540267086,
+       "cumulative": 233720.22045013122
+      },
+      {
+       "year": 15,
+       "cashFlow": 32025.649453817066,
+       "cumulative": 265745.8699039483
+      },
+      {
+       "year": 16,
+       "cashFlow": 32539.649530678944,
+       "cumulative": 298285.5194346272
+      },
+      {
+       "year": 17,
+       "cashFlow": 33061.30820868606,
+       "cumulative": 331346.82764331327
+      },
+      {
+       "year": 18,
+       "cashFlow": 33590.73960099548,
+       "cumulative": 364937.56724430877
+      },
+      {
+       "year": 19,
+       "cashFlow": 34128.059521050316,
+       "cumulative": 399065.6267653591
+      },
+      {
+       "year": 20,
+       "cashFlow": 34673.38550791397,
+       "cumulative": 433739.012273273
+      },
+      {
+       "year": 21,
+       "cashFlow": 35226.83685198189,
+       "cumulative": 468965.8491252549
+      },
+      {
+       "year": 22,
+       "cashFlow": 35788.53462107642,
+       "cumulative": 504754.3837463313
+      },
+      {
+       "year": 23,
+       "cashFlow": 36358.60168693045,
+       "cumulative": 541112.9854332617
+      },
+      {
+       "year": 24,
+       "cashFlow": 36937.16275206572,
+       "cumulative": 578050.1481853274
+      },
+      {
+       "year": 25,
+       "cashFlow": 37524.3443770715,
+       "cumulative": 615574.4925623989
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-03",
+    "result": {
+     "systemCost": 11160,
+     "e1": 15855.937605057168,
+     "year1Savings": 2219.831264708004,
+     "paybackYears": 5.251943592264691,
+     "roiPct": 459.82014513410724,
+     "npv": 19326.531022786003,
+     "irrPct": 19.691380488598952,
+     "lcoe": 0.06860261582824058,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -11160,
+       "cumulative": -11160
+      },
+      {
+       "year": 1,
+       "cashFlow": 2052.831264708004,
+       "cumulative": -9107.168735291996
+      },
+      {
+       "year": 2,
+       "cashFlow": 2085.906750552153,
+       "cumulative": -7021.261984739844
+      },
+      {
+       "year": 3,
+       "cashFlow": 2119.47506113538,
+       "cumulative": -4901.7869236044635
+      },
+      {
+       "year": 4,
+       "cashFlow": 2153.5435395462973,
+       "cumulative": -2748.243384058166
+      },
+      {
+       "year": 5,
+       "cashFlow": 2188.119638285537,
+       "cumulative": -560.1237457726293
+      },
+      {
+       "year": 6,
+       "cashFlow": 2223.2109208959914,
+       "cumulative": 1663.0871751233622
+      },
+      {
+       "year": 7,
+       "cashFlow": 2258.8250636173416,
+       "cumulative": 3921.9122387407037
+      },
+      {
+       "year": 8,
+       "cashFlow": 2294.9698570652404,
+       "cumulative": 6216.882095805944
+      },
+      {
+       "year": 9,
+       "cashFlow": 2331.653207935513,
+       "cumulative": 8548.535303741457
+      },
+      {
+       "year": 10,
+       "cashFlow": 2368.8831407337516,
+       "cumulative": 10917.418444475208
+      },
+      {
+       "year": 11,
+       "cashFlow": 2406.667799530685,
+       "cumulative": 13324.086244005894
+      },
+      {
+       "year": 12,
+       "cashFlow": 2445.015449743692,
+       "cumulative": 15769.101693749586
+      },
+      {
+       "year": 13,
+       "cashFlow": 2483.934479944873,
+       "cumulative": 18253.036173694458
+      },
+      {
+       "year": 14,
+       "cashFlow": 2523.4334036960513,
+       "cumulative": 20776.469577390508
+      },
+      {
+       "year": 15,
+       "cashFlow": 2563.520861411123,
+       "cumulative": 23339.99043880163
+      },
+      {
+       "year": 16,
+       "cashFlow": 2604.205622246149,
+       "cumulative": 25944.196061047776
+      },
+      {
+       "year": 17,
+       "cashFlow": 2645.496586017616,
+       "cumulative": 28589.692647065393
+      },
+      {
+       "year": 18,
+       "cashFlow": 2687.4027851492783,
+       "cumulative": 31277.09543221467
+      },
+      {
+       "year": 19,
+       "cashFlow": 2729.933386648003,
+       "cumulative": 34007.02881886267
+      },
+      {
+       "year": 20,
+       "cashFlow": 2773.097694109058,
+       "cumulative": 36780.12651297173
+      },
+      {
+       "year": 21,
+       "cashFlow": 2816.9051497512833,
+       "cumulative": 39597.03166272301
+      },
+      {
+       "year": 22,
+       "cashFlow": 2861.3653364825777,
+       "cumulative": 42458.39699920559
+      },
+      {
+       "year": 23,
+       "cashFlow": 2906.4879799961677,
+       "cumulative": 45364.884979201765
+      },
+      {
+       "year": 24,
+       "cashFlow": 2952.2829508981113,
+       "cumulative": 48317.16793009987
+      },
+      {
+       "year": 25,
+       "cashFlow": 2998.7602668664927,
+       "cumulative": 51315.928196966364
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-04",
+    "result": {
+     "systemCost": 369000,
+     "e1": 524169.10111254273,
+     "year1Savings": 52416.91011125428,
+     "paybackYears": 7.456505142348255,
+     "roiPct": 289.012033093553,
+     "npv": 330532.6030326329,
+     "irrPct": 13.559625909809256,
+     "lcoe": 0.06864206838564962,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -369000,
+       "cumulative": -369000
+      },
+      {
+       "year": 1,
+       "cashFlow": 46881.91011125428,
+       "cumulative": -322118.08988874574
+      },
+      {
+       "year": 2,
+       "cashFlow": 47662.92207191196,
+       "cumulative": -274455.16781683377
+      },
+      {
+       "year": 3,
+       "cashFlow": 48455.57111078346,
+       "cumulative": -225999.5967060503
+      },
+      {
+       "year": 4,
+       "cashFlow": 49260.03062033413,
+       "cumulative": -176739.5660857162
+      },
+      {
+       "year": 5,
+       "cashFlow": 50076.4765765771,
+       "cumulative": -126663.08950913908
+      },
+      {
+       "year": 6,
+       "cashFlow": 50905.087577568105,
+       "cumulative": -75758.00193157098
+      },
+      {
+       "year": 7,
+       "cashFlow": 51746.04488247388,
+       "cumulative": -24011.957049097102
+      },
+      {
+       "year": 8,
+       "cashFlow": 52599.53245122273,
+       "cumulative": 28587.57540212563
+      },
+      {
+       "year": 9,
+       "cashFlow": 53465.73698474595,
+       "cumulative": 82053.31238687158
+      },
+      {
+       "year": 10,
+       "cashFlow": 54344.84796581866,
+       "cumulative": 136398.16035269023
+      },
+      {
+       "year": 11,
+       "cashFlow": 55237.05770050937,
+       "cumulative": 191635.2180531996
+      },
+      {
+       "year": 12,
+       "cashFlow": 56142.56136024695,
+       "cumulative": 247777.77941344655
+      },
+      {
+       "year": 13,
+       "cashFlow": 57061.55702451464,
+       "cumulative": 304839.3364379612
+      },
+      {
+       "year": 14,
+       "cashFlow": 57994.24572417991,
+       "cumulative": 362833.5821621411
+      },
+      {
+       "year": 15,
+       "cashFlow": 58940.83148547018,
+       "cumulative": 421774.4136476113
+      },
+      {
+       "year": 16,
+       "cashFlow": 59901.52137460369,
+       "cumulative": 481675.93502221495
+      },
+      {
+       "year": 17,
+       "cashFlow": 60876.525543085285,
+       "cumulative": 542552.4605653002
+      },
+      {
+       "year": 18,
+       "cashFlow": 61866.05727367726,
+       "cumulative": 604418.5178389775
+      },
+      {
+       "year": 19,
+       "cashFlow": 62870.33302705505,
+       "cumulative": 667288.8508660325
+      },
+      {
+       "year": 20,
+       "cashFlow": 63889.57248915816,
+       "cumulative": 731178.4233551907
+      },
+      {
+       "year": 21,
+       "cashFlow": 64923.998619246646,
+       "cumulative": 796102.4219744373
+      },
+      {
+       "year": 22,
+       "cashFlow": 65973.83769867342,
+       "cumulative": 862076.2596731107
+      },
+      {
+       "year": 23,
+       "cashFlow": 67039.31938038365,
+       "cumulative": 929115.5790534944
+      },
+      {
+       "year": 24,
+       "cashFlow": 68120.67673915136,
+       "cumulative": 997236.2557926457
+      },
+      {
+       "year": 25,
+       "cashFlow": 69218.14632256473,
+       "cumulative": 1066454.4021152104
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-05",
+    "result": {
+     "systemCost": 86400,
+     "e1": 122761.79278744975,
+     "year1Savings": 14731.41513449397,
+     "paybackYears": 6.164087204318302,
+     "roiPct": 374.43752416704655,
+     "npv": 113517.09463434914,
+     "irrPct": 16.681597469112603,
+     "lcoe": 0.06862556486488083,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -86400,
+       "cumulative": -86400
+      },
+      {
+       "year": 1,
+       "cashFlow": 13435.41513449397,
+       "cumulative": -72964.58486550603
+      },
+      {
+       "year": 2,
+       "cashFlow": 13654.91321999793,
+       "cumulative": -59309.6716455081
+      },
+      {
+       "year": 3,
+       "cashFlow": 13877.6818269759,
+       "cumulative": -45431.989818532194
+      },
+      {
+       "year": 4,
+       "cashFlow": 14103.769686197842,
+       "cumulative": -31328.220132334354
+      },
+      {
+       "year": 5,
+       "cashFlow": 14333.226254522187,
+       "cumulative": -16994.993877812165
+      },
+      {
+       "year": 6,
+       "cashFlow": 14566.101725714567,
+       "cumulative": -2428.8921520975982
+      },
+      {
+       "year": 7,
+       "cashFlow": 14802.447041427718,
+       "cumulative": 12373.55488933012
+      },
+      {
+       "year": 8,
+       "cashFlow": 15042.31390234499,
+       "cumulative": 27415.868791675108
+      },
+      {
+       "year": 9,
+       "cashFlow": 15285.754779489933,
+       "cumulative": 42701.62357116504
+      },
+      {
+       "year": 10,
+       "cashFlow": 15532.822925704331,
+       "cumulative": 58234.446496869365
+      },
+      {
+       "year": 11,
+       "cashFlow": 15783.572387297329,
+       "cumulative": 74018.0188841667
+      },
+      {
+       "year": 12,
+       "cashFlow": 16038.058015868057,
+       "cumulative": 90056.07690003475
+      },
+      {
+       "year": 13,
+       "cashFlow": 16296.335480304493,
+       "cumulative": 106352.41238033924
+      },
+      {
+       "year": 14,
+       "cashFlow": 16558.46127896103,
+       "cumulative": 122910.87365930027
+      },
+      {
+       "year": 15,
+       "cashFlow": 16824.492752017544,
+       "cumulative": 139735.3664113178
+      },
+      {
+       "year": 16,
+       "cashFlow": 17094.48809402261,
+       "cumulative": 156829.85450534042
+      },
+      {
+       "year": 17,
+       "cashFlow": 17368.506366623544,
+       "cumulative": 174198.36087196396
+      },
+      {
+       "year": 18,
+       "cashFlow": 17646.607511486236,
+       "cumulative": 191844.9683834502
+      },
+      {
+       "year": 19,
+       "cashFlow": 17928.852363407383,
+       "cumulative": 209773.8207468576
+      },
+      {
+       "year": 20,
+       "cashFlow": 18215.30266362215,
+       "cumulative": 227989.12341047975
+      },
+      {
+       "year": 21,
+       "cashFlow": 18506.021073310127,
+       "cumulative": 246495.14448378986
+      },
+      {
+       "year": 22,
+       "cashFlow": 18801.071187302445,
+       "cumulative": 265296.21567109233
+      },
+      {
+       "year": 23,
+       "cashFlow": 19100.51754799325,
+       "cumulative": 284396.7332190856
+      },
+      {
+       "year": 24,
+       "cashFlow": 19404.42565945835,
+       "cumulative": 303801.15887854394
+      },
+      {
+       "year": 25,
+       "cashFlow": 19712.86200178428,
+       "cumulative": 323514.0208803282
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-06",
+    "result": {
+     "systemCost": 238500,
+     "e1": 338327.1599468006,
+     "year1Savings": 33832.71599468006,
+     "paybackYears": 7.467338429671134,
+     "roiPct": 288.4213140795748,
+     "npv": 212947.10370179324,
+     "irrPct": 13.537473790493095,
+     "lcoe": 0.06873796936749296,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -238500,
+       "cumulative": -238500
+      },
+      {
+       "year": 1,
+       "cashFlow": 30254.71599468006,
+       "cumulative": -208245.28400531993
+      },
+      {
+       "year": 2,
+       "cashFlow": 30758.8234630008,
+       "cumulative": -177486.46054231914
+      },
+      {
+       "year": 3,
+       "cashFlow": 31270.442132599506,
+       "cumulative": -146216.01840971963
+      },
+      {
+       "year": 4,
+       "cashFlow": 31789.683920375246,
+       "cumulative": -114426.33448934439
+      },
+      {
+       "year": 5,
+       "cashFlow": 32316.662410788827,
+       "cumulative": -82109.67207855557
+      },
+      {
+       "year": 6,
+       "cashFlow": 32851.492880709586,
+       "cumulative": -49258.17919784598
+      },
+      {
+       "year": 7,
+       "cashFlow": 33394.292324632166,
+       "cumulative": -15863.886873213814
+      },
+      {
+       "year": 8,
+       "cashFlow": 33945.17948026918,
+       "cumulative": 18081.292607055366
+      },
+      {
+       "year": 9,
+       "cashFlow": 34504.27485452519,
+       "cumulative": 52585.567461580555
+      },
+      {
+       "year": 10,
+       "cashFlow": 35071.70074985762,
+       "cumulative": 87657.26821143818
+      },
+      {
+       "year": 11,
+       "cashFlow": 35647.581291030496,
+       "cumulative": 123304.84950246867
+      },
+      {
+       "year": 12,
+       "cashFlow": 36232.04245226685,
+       "cumulative": 159536.8919547355
+      },
+      {
+       "year": 13,
+       "cashFlow": 36825.21208480563,
+       "cumulative": 196362.10403954113
+      },
+      {
+       "year": 14,
+       "cashFlow": 37427.21994486923,
+       "cumulative": 233789.32398441035
+      },
+      {
+       "year": 15,
+       "cashFlow": 38038.19772204778,
+       "cumulative": 271827.5217064581
+      },
+      {
+       "year": 16,
+       "cashFlow": 38658.27906810629,
+       "cumulative": 310485.8007745644
+      },
+      {
+       "year": 17,
+       "cashFlow": 39287.599626221076,
+       "cumulative": 349773.40040078544
+      },
+      {
+       "year": 18,
+       "cashFlow": 39926.29706065177,
+       "cumulative": 389699.6974614372
+      },
+      {
+       "year": 19,
+       "cashFlow": 40574.511086855484,
+       "cumulative": 430274.2085482927
+      },
+      {
+       "year": 20,
+       "cashFlow": 41232.383502049626,
+       "cumulative": 471506.5920503423
+      },
+      {
+       "year": 21,
+       "cashFlow": 41900.05821623018,
+       "cumulative": 513406.6502665725
+      },
+      {
+       "year": 22,
+       "cashFlow": 42577.68128365201,
+       "cumulative": 555984.3315502245
+      },
+      {
+       "year": 23,
+       "cashFlow": 43265.40093477842,
+       "cumulative": 599249.7324850028
+      },
+      {
+       "year": 24,
+       "cashFlow": 43963.36760870662,
+       "cumulative": 643213.1000937094
+      },
+      {
+       "year": 25,
+       "cashFlow": 44671.73398607636,
+       "cumulative": 687884.8340797857
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-07",
+    "result": {
+     "systemCost": 576000,
+     "e1": 817144.898004145,
+     "year1Savings": 65371.5918403316,
+     "paybackYears": 9.440703256910599,
+     "roiPct": 203.26329977867707,
+     "npv": 274214.7637667795,
+     "irrPct": 10.231389223044971,
+     "lcoe": 0.06873197474475701,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -576000,
+       "cumulative": -576000
+      },
+      {
+       "year": 1,
+       "cashFlow": 56731.5918403316,
+       "cumulative": -519268.4081596684
+      },
+      {
+       "year": 2,
+       "cashFlow": 57705.62855875255,
+       "cumulative": -461562.77960091585
+      },
+      {
+       "year": 3,
+       "cashFlow": 58694.178424277954,
+       "cumulative": -402868.6011766379
+      },
+      {
+       "year": 4,
+       "cashFlow": 59697.45768279971,
+       "cumulative": -343171.1434938382
+      },
+      {
+       "year": 5,
+       "cashFlow": 60715.68580227341,
+       "cumulative": -282455.4576915648
+      },
+      {
+       "year": 6,
+       "cashFlow": 61749.08552072728,
+       "cumulative": -220706.37217083754
+      },
+      {
+       "year": 7,
+       "cashFlow": 62797.88289498612,
+       "cumulative": -157908.4892758514
+      },
+      {
+       "year": 8,
+       "cashFlow": 63862.307350121424,
+       "cumulative": -94046.18192572998
+      },
+      {
+       "year": 9,
+       "cashFlow": 64942.59172963824,
+       "cumulative": -29103.59019609174
+      },
+      {
+       "year": 10,
+       "cashFlow": 66038.97234640984,
+       "cumulative": 36935.382150318095
+      },
+      {
+       "year": 11,
+       "cashFlow": 67151.68903437135,
+       "cumulative": 104087.07118468944
+      },
+      {
+       "year": 12,
+       "cashFlow": 68280.98520098349,
+       "cumulative": 172368.05638567294
+      },
+      {
+       "year": 13,
+       "cashFlow": 69427.10788047814,
+       "cumulative": 241795.16426615109
+      },
+      {
+       "year": 14,
+       "cashFlow": 70590.30778789727,
+       "cumulative": 312385.4720540483
+      },
+      {
+       "year": 15,
+       "cashFlow": 71770.83937393693,
+       "cumulative": 384156.31142798526
+      },
+      {
+       "year": 16,
+       "cashFlow": 72968.96088060859,
+       "cumulative": 457125.27230859385
+      },
+      {
+       "year": 17,
+       "cashFlow": 74184.93439772965,
+       "cumulative": 531310.2067063235
+      },
+      {
+       "year": 18,
+       "cashFlow": 75419.02592025584,
+       "cumulative": 606729.2326265794
+      },
+      {
+       "year": 19,
+       "cashFlow": 76671.50540646765,
+       "cumulative": 683400.738033047
+      },
+      {
+       "year": 20,
+       "cashFlow": 77942.64683702402,
+       "cumulative": 761343.384870071
+      },
+      {
+       "year": 21,
+       "cashFlow": 79232.72827489568,
+       "cumulative": 840576.1131449667
+      },
+      {
+       "year": 22,
+       "cashFlow": 80542.03192619164,
+       "cumulative": 921118.1450711583
+      },
+      {
+       "year": 23,
+       "cashFlow": 81870.84420189189,
+       "cumulative": 1002988.9892730502
+      },
+      {
+       "year": 24,
+       "cashFlow": 83219.4557805001,
+       "cumulative": 1086208.4450535504
+      },
+      {
+       "year": 25,
+       "cashFlow": 84588.16167162954,
+       "cumulative": 1170796.60672518
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-08",
+    "result": {
+     "systemCost": 58500,
+     "e1": 83460.40190182031,
+     "year1Savings": 10015.248228218437,
+     "paybackYears": 6.138391150757181,
+     "roiPct": 376.51292133163133,
+     "npv": 77454.4867135781,
+     "irrPct": 16.755747845192673,
+     "lcoe": 0.0683519045887307,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -58500,
+       "cumulative": -58500
+      },
+      {
+       "year": 1,
+       "cashFlow": 9137.248228218437,
+       "cumulative": -49362.751771781564
+      },
+      {
+       "year": 2,
+       "cashFlow": 9286.475426818892,
+       "cumulative": -40076.27634496267
+      },
+      {
+       "year": 3,
+       "cashFlow": 9437.926110678492,
+       "cumulative": -30638.350234284182
+      },
+      {
+       "year": 4,
+       "cashFlow": 9591.633409727605,
+       "cumulative": -21046.716824556577
+      },
+      {
+       "year": 5,
+       "cashFlow": 9747.630947532543,
+       "cumulative": -11299.085877024034
+      },
+      {
+       "year": 6,
+       "cashFlow": 9905.952848650779,
+       "cumulative": -1393.133028373255
+      },
+      {
+       "year": 7,
+       "cashFlow": 10066.633746095677,
+       "cumulative": 8673.500717722422
+      },
+      {
+       "year": 8,
+       "cashFlow": 10229.708788912501,
+       "cumulative": 18903.20950663492
+      },
+      {
+       "year": 9,
+       "cashFlow": 10395.213649867297,
+       "cumulative": 29298.42315650222
+      },
+      {
+       "year": 10,
+       "cashFlow": 10563.18453325032,
+       "cumulative": 39861.60768975254
+      },
+      {
+       "year": 11,
+       "cashFlow": 10733.658182795753,
+       "cumulative": 50595.26587254829
+      },
+      {
+       "year": 12,
+       "cashFlow": 10906.671889719408,
+       "cumulative": 61501.9377622677
+      },
+      {
+       "year": 13,
+       "cashFlow": 11082.263500876228,
+       "cumulative": 72584.20126314393
+      },
+      {
+       "year": 14,
+       "cashFlow": 11260.471427039285,
+       "cumulative": 83844.67269018322
+      },
+      {
+       "year": 15,
+       "cashFlow": 11441.334651302168,
+       "cumulative": 95286.00734148538
+      },
+      {
+       "year": 16,
+       "cashFlow": 11624.892737606571,
+       "cumulative": 106910.90007909195
+      },
+      {
+       "year": 17,
+       "cashFlow": 11811.185839396909,
+       "cumulative": 118722.08591848885
+      },
+      {
+       "year": 18,
+       "cashFlow": 12000.254708403923,
+       "cumulative": 130722.34062689278
+      },
+      {
+       "year": 19,
+       "cashFlow": 12192.140703559142,
+       "cumulative": 142914.48133045193
+      },
+      {
+       "year": 20,
+       "cashFlow": 12386.885800042171,
+       "cumulative": 155301.3671304941
+      },
+      {
+       "year": 21,
+       "cashFlow": 12584.532598462803,
+       "cumulative": 167885.8997289569
+      },
+      {
+       "year": 22,
+       "cashFlow": 12785.124334179898,
+       "cumulative": 180671.02406313678
+      },
+      {
+       "year": 23,
+       "cashFlow": 12988.704886759177,
+       "cumulative": 193659.72894989594
+      },
+      {
+       "year": 24,
+       "cashFlow": 13195.31878957189,
+       "cumulative": 206855.04773946785
+      },
+      {
+       "year": 25,
+       "cashFlow": 13405.011239536514,
+       "cumulative": 220260.05897900436
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-09",
+    "result": {
+     "systemCost": 34200,
+     "e1": 48643.76830938755,
+     "year1Savings": 6810.127563314258,
+     "paybackYears": 5.246988779184828,
+     "roiPct": 460.3818627630485,
+     "npv": 59319.81921320128,
+     "irrPct": 19.71056311033317,
+     "lcoe": 0.06855423780653837,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -34200,
+       "cumulative": -34200
+      },
+      {
+       "year": 1,
+       "cashFlow": 6297.127563314258,
+       "cumulative": -27902.872436685742
+      },
+      {
+       "year": 2,
+       "cashFlow": 6398.59846400764,
+       "cumulative": -21504.2739726781
+      },
+      {
+       "year": 3,
+       "cashFlow": 6501.581281121355,
+       "cumulative": -15002.692691556746
+      },
+      {
+       "year": 4,
+       "cashFlow": 6606.098542210063,
+       "cumulative": -8396.594149346682
+      },
+      {
+       "year": 5,
+       "cashFlow": 6712.173110488991,
+       "cumulative": -1684.4210388576903
+      },
+      {
+       "year": 6,
+       "cashFlow": 6819.828189835279,
+       "cumulative": 5135.407150977589
+      },
+      {
+       "year": 7,
+       "cashFlow": 6929.087329863824,
+       "cumulative": 12064.494480841413
+      },
+      {
+       "year": 8,
+       "cashFlow": 7039.9744310787955,
+       "cumulative": 19104.46891192021
+      },
+      {
+       "year": 9,
+       "cashFlow": 7152.513750101871,
+       "cumulative": 26256.982662022077
+      },
+      {
+       "year": 10,
+       "cashFlow": 7266.729904978387,
+       "cumulative": 33523.71256700046
+      },
+      {
+       "year": 11,
+       "cashFlow": 7382.647880562567,
+       "cumulative": 40906.36044756303
+      },
+      {
+       "year": 12,
+       "cashFlow": 7500.293033982948,
+       "cumulative": 48406.653481545975
+      },
+      {
+       "year": 13,
+       "cashFlow": 7619.691100189295,
+       "cumulative": 56026.34458173527
+      },
+      {
+       "year": 14,
+       "cashFlow": 7740.868197582115,
+       "cumulative": 63767.212779317386
+      },
+      {
+       "year": 15,
+       "cashFlow": 7863.850833726088,
+       "cumulative": 71631.06361304347
+      },
+      {
+       "year": 16,
+       "cashFlow": 7988.665911148608,
+       "cumulative": 79619.72952419208
+      },
+      {
+       "year": 17,
+       "cashFlow": 8115.340733224721,
+       "cumulative": 87735.0702574168
+      },
+      {
+       "year": 18,
+       "cashFlow": 8243.90301014977,
+       "cumulative": 95978.97326756656
+      },
+      {
+       "year": 19,
+       "cashFlow": 8374.380865001001,
+       "cumulative": 104353.35413256756
+      },
+      {
+       "year": 20,
+       "cashFlow": 8506.802839889517,
+       "cumulative": 112860.15697245707
+      },
+      {
+       "year": 21,
+       "cashFlow": 8641.19790220387,
+       "cumulative": 121501.35487466094
+      },
+      {
+       "year": 22,
+       "cashFlow": 8777.59545094671,
+       "cumulative": 130278.95032560766
+      },
+      {
+       "year": 23,
+       "cashFlow": 8916.025323165815,
+       "cumulative": 139194.97564877348
+      },
+      {
+       "year": 24,
+       "cashFlow": 9056.517800480986,
+       "cumulative": 148251.49344925449
+      },
+      {
+       "year": 25,
+       "cashFlow": 9199.103615708153,
+       "cumulative": 157450.59706496264
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-10",
+    "result": {
+     "systemCost": 108000,
+     "e1": 153692.374786279,
+     "year1Savings": 18443.084974353478,
+     "paybackYears": 6.1541256327113105,
+     "roiPct": 375.23864315533336,
+     "npv": 142319.83232567567,
+     "irrPct": 16.710258430306567,
+     "lcoe": 0.06851834212317982,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -108000,
+       "cumulative": -108000
+      },
+      {
+       "year": 1,
+       "cashFlow": 16823.084974353478,
+       "cumulative": -91176.91502564652
+      },
+      {
+       "year": 2,
+       "cashFlow": 17097.886940471344,
+       "cumulative": -74079.02808517517
+      },
+      {
+       "year": 3,
+       "cashFlow": 17376.783455884368,
+       "cumulative": -56702.244629290806
+      },
+      {
+       "year": 4,
+       "cashFlow": 17659.835529377047,
+       "cumulative": -39042.409099913755
+      },
+      {
+       "year": 5,
+       "cashFlow": 17947.105078764762,
+       "cumulative": -21095.304021148993
+      },
+      {
+       "year": 6,
+       "cashFlow": 18238.654944438356,
+       "cumulative": -2856.649076710637
+      },
+      {
+       "year": 7,
+       "cashFlow": 18534.548903110495,
+       "cumulative": 15677.899826399858
+      },
+      {
+       "year": 8,
+       "cashFlow": 18834.851681766835,
+       "cumulative": 34512.75150816669
+      },
+      {
+       "year": 9,
+       "cashFlow": 19139.62897182516,
+       "cumulative": 53652.38047999186
+      },
+      {
+       "year": 10,
+       "cashFlow": 19448.94744350536,
+       "cumulative": 73101.32792349721
+      },
+      {
+       "year": 11,
+       "cashFlow": 19762.874760413593,
+       "cumulative": 92864.20268391081
+      },
+      {
+       "year": 12,
+       "cashFlow": 20081.47959434375,
+       "cumulative": 112945.68227825456
+      },
+      {
+       "year": 13,
+       "cashFlow": 20404.831640299475,
+       "cumulative": 133350.51391855403
+      },
+      {
+       "year": 14,
+       "cashFlow": 20733.00163173994,
+       "cumulative": 154083.51555029396
+      },
+      {
+       "year": 15,
+       "cashFlow": 21066.061356052858,
+       "cumulative": 175149.57690634683
+      },
+      {
+       "year": 16,
+       "cashFlow": 21404.08367025805,
+       "cumulative": 196553.6605766049
+      },
+      {
+       "year": 17,
+       "cashFlow": 21747.142516944896,
+       "cumulative": 218300.8030935498
+      },
+      {
+       "year": 18,
+       "cashFlow": 22095.31294044737,
+       "cumulative": 240396.11603399715
+      },
+      {
+       "year": 19,
+       "cashFlow": 22448.671103260036,
+       "cumulative": 262844.78713725717
+      },
+      {
+       "year": 20,
+       "cashFlow": 22807.294302698614,
+       "cumulative": 285652.0814399558
+      },
+      {
+       "year": 21,
+       "cashFlow": 23171.260987808826,
+       "cumulative": 308823.3424277646
+      },
+      {
+       "year": 22,
+       "cashFlow": 23540.65077652718,
+       "cumulative": 332363.9932042918
+      },
+      {
+       "year": 23,
+       "cashFlow": 23915.54447309743,
+       "cumulative": 356279.5376773892
+      },
+      {
+       "year": 24,
+       "cashFlow": 24296.024085746583,
+       "cumulative": 380575.56176313583
+      },
+      {
+       "year": 25,
+       "cashFlow": 24682.172844624212,
+       "cumulative": 405257.73460776004
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-11",
+    "result": {
+     "systemCost": 16200,
+     "e1": 23007.792014863608,
+     "year1Savings": 3221.0908820809054,
+     "paybackYears": 5.2549819258491235,
+     "roiPct": 459.49982248263586,
+     "npv": 28028.925991503755,
+     "irrPct": 19.679873397602933,
+     "lcoe": 0.06865552359735638,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -16200,
+       "cumulative": -16200
+      },
+      {
+       "year": 1,
+       "cashFlow": 2978.0908820809054,
+       "cumulative": -13221.909117919095
+      },
+      {
+       "year": 2,
+       "cashFlow": 3026.085136223911,
+       "cumulative": -10195.823981695183
+      },
+      {
+       "year": 3,
+       "cashFlow": 3074.7945047536473,
+       "cumulative": -7121.029476941536
+      },
+      {
+       "year": 4,
+       "cashFlow": 3124.2296428744767,
+       "cumulative": -3996.7998340670592
+      },
+      {
+       "year": 5,
+       "cashFlow": 3174.401364553306,
+       "cumulative": -822.3984695137533
+      },
+      {
+       "year": 6,
+       "cashFlow": 3225.32064488515,
+       "cumulative": 2402.922175371397
+      },
+      {
+       "year": 7,
+       "cashFlow": 3276.9986224939394,
+       "cumulative": 5679.920797865336
+      },
+      {
+       "year": 8,
+       "cashFlow": 3329.4466019690985,
+       "cumulative": 9009.367399834435
+      },
+      {
+       "year": 9,
+       "cashFlow": 3382.676056338439,
+       "cumulative": 12392.043456172874
+      },
+      {
+       "year": 10,
+       "cashFlow": 3436.6986295778815,
+       "cumulative": 15828.742085750757
+      },
+      {
+       "year": 11,
+       "cashFlow": 3491.5261391585923,
+       "cumulative": 19320.26822490935
+      },
+      {
+       "year": 12,
+       "cashFlow": 3547.1705786320545,
+       "cumulative": 22867.4388035414
+      },
+      {
+       "year": 13,
+       "cashFlow": 3603.644120253673,
+       "cumulative": 26471.082923795075
+      },
+      {
+       "year": 14,
+       "cashFlow": 3660.959117645453,
+       "cumulative": 30132.042041440527
+      },
+      {
+       "year": 15,
+       "cashFlow": 3719.12810849837,
+       "cumulative": 33851.170149938895
+      },
+      {
+       "year": 16,
+       "cashFlow": 3778.163817314996,
+       "cumulative": 37629.33396725389
+      },
+      {
+       "year": 17,
+       "cashFlow": 3838.079158192989,
+       "cumulative": 41467.41312544688
+      },
+      {
+       "year": 18,
+       "cashFlow": 3898.887237650065,
+       "cumulative": 45366.30036309695
+      },
+      {
+       "year": 19,
+       "cashFlow": 3960.6013574910503,
+       "cumulative": 49326.90172058799
+      },
+      {
+       "year": 20,
+       "cashFlow": 4023.235017717667,
+       "cumulative": 53350.136738305664
+      },
+      {
+       "year": 21,
+       "cashFlow": 4086.8019194816607,
+       "cumulative": 57436.93865778732
+      },
+      {
+       "year": 22,
+       "cashFlow": 4151.315968081938,
+       "cumulative": 61588.25462586926
+      },
+      {
+       "year": 23,
+       "cashFlow": 4216.791276006359,
+       "cumulative": 65805.04590187562
+      },
+      {
+       "year": 24,
+       "cashFlow": 4283.242166018854,
+       "cumulative": 70088.28806789448
+      },
+      {
+       "year": 25,
+       "cashFlow": 4350.683174292534,
+       "cumulative": 74438.971242187
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-12",
+    "result": {
+     "systemCost": 315000,
+     "e1": 446611.95986651594,
+     "year1Savings": 44661.1959866516,
+     "paybackYears": 7.471343755002388,
+     "roiPct": 288.20233584612856,
+     "npv": 280913.64947186544,
+     "irrPct": 13.529284067131812,
+     "lcoe": 0.06877262743865296,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -315000,
+       "cumulative": -315000
+      },
+      {
+       "year": 1,
+       "cashFlow": 39936.1959866516,
+       "cumulative": -275063.8040133484
+      },
+      {
+       "year": 2,
+       "cashFlow": 40601.64780685271,
+       "cumulative": -234462.1562064957
+      },
+      {
+       "year": 3,
+       "cashFlow": 41277.014859174815,
+       "cumulative": -193185.1413473209
+      },
+      {
+       "year": 4,
+       "cashFlow": 41962.44488057652,
+       "cumulative": -151222.69646674438
+      },
+      {
+       "year": 5,
+       "cashFlow": 42658.0878092971,
+       "cumulative": -108564.60865744727
+      },
+      {
+       "year": 6,
+       "cashFlow": 43364.09581765563,
+       "cumulative": -65200.51283979164
+      },
+      {
+       "year": 7,
+       "cashFlow": 44080.62334533871,
+       "cumulative": -21119.88949445293
+      },
+      {
+       "year": 8,
+       "cashFlow": 44807.82713318425,
+       "cumulative": 23687.937638731317
+      },
+      {
+       "year": 9,
+       "cashFlow": 45545.86625746869,
+       "cumulative": 69233.8038962
+      },
+      {
+       "year": 10,
+       "cashFlow": 46294.90216470498,
+       "cumulative": 115528.70606090498
+      },
+      {
+       "year": 11,
+       "cashFlow": 47055.098706959085,
+       "cumulative": 162583.80476786406
+      },
+      {
+       "year": 12,
+       "cashFlow": 47826.62217769278,
+       "cumulative": 210410.42694555683
+      },
+      {
+       "year": 13,
+       "cashFlow": 48609.6413481404,
+       "cumulative": 259020.06829369723
+      },
+      {
+       "year": 14,
+       "cashFlow": 49404.327504227695,
+       "cumulative": 308424.39579792495
+      },
+      {
+       "year": 15,
+       "cashFlow": 50210.85448404068,
+       "cumulative": 358635.25028196565
+      },
+      {
+       "year": 16,
+       "cashFlow": 51029.39871585289,
+       "cumulative": 409664.6489978185
+      },
+      {
+       "year": 17,
+       "cashFlow": 51860.1392567191,
+       "cumulative": 461524.7882545376
+      },
+      {
+       "year": 18,
+       "cashFlow": 52703.25783164421,
+       "cumulative": 514228.0460861818
+      },
+      {
+       "year": 19,
+       "cashFlow": 53558.93887333571,
+       "cumulative": 567786.9849595175
+      },
+      {
+       "year": 20,
+       "cashFlow": 54427.36956254841,
+       "cumulative": 622214.354522066
+      },
+      {
+       "year": 21,
+       "cashFlow": 55308.739869030396,
+       "cumulative": 677523.0943910964
+      },
+      {
+       "year": 22,
+       "cashFlow": 56203.24259307896,
+       "cumulative": 733726.3369841754
+      },
+      {
+       "year": 23,
+       "cashFlow": 57111.07340771583,
+       "cumulative": 790837.4103918911
+      },
+      {
+       "year": 24,
+       "cashFlow": 58032.43090149079,
+       "cumulative": 848869.841293382
+      },
+      {
+       "year": 25,
+       "cashFlow": 58967.51662192301,
+       "cumulative": 907837.357915305
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-13",
+    "result": {
+     "systemCost": 261000,
+     "e1": 370934.10454808944,
+     "year1Savings": 37093.410454808945,
+     "paybackYears": 7.452712978045061,
+     "roiPct": 289.2195063504521,
+     "npv": 234056.3854048082,
+     "irrPct": 13.567397907638224,
+     "lcoe": 0.06860869425281452,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -261000,
+       "cumulative": -261000
+      },
+      {
+       "year": 1,
+       "cashFlow": 33178.410454808945,
+       "cumulative": -227821.58954519106
+      },
+      {
+       "year": 2,
+       "cashFlow": 33731.1022705856,
+       "cumulative": -194090.48727460546
+      },
+      {
+       "year": 3,
+       "cashFlow": 34292.02919441732,
+       "cumulative": -159798.45808018814
+      },
+      {
+       "year": 4,
+       "cashFlow": 34861.313929414144,
+       "cumulative": -124937.144150774
+      },
+      {
+       "year": 5,
+       "cashFlow": 35439.081006962406,
+       "cumulative": -89498.0631438116
+      },
+      {
+       "year": 6,
+       "cashFlow": 36025.45681396616,
+       "cumulative": -53472.60632984544
+      },
+      {
+       "year": 7,
+       "cashFlow": 36620.56962049426,
+       "cumulative": -16852.03670935118
+      },
+      {
+       "year": 8,
+       "cashFlow": 37224.54960783961,
+       "cumulative": 20372.51289848843
+      },
+      {
+       "year": 9,
+       "cashFlow": 37837.528896996424,
+       "cumulative": 58210.04179548485
+      },
+      {
+       "year": 10,
+       "cashFlow": 38459.64157756168,
+       "cumulative": 96669.68337304653
+      },
+      {
+       "year": 11,
+       "cashFlow": 39091.02373706734,
+       "cumulative": 135760.70711011387
+      },
+      {
+       "year": 12,
+       "cashFlow": 39731.81349074964,
+       "cumulative": 175492.5206008635
+      },
+      {
+       "year": 13,
+       "cashFlow": 40382.15101176182,
+       "cumulative": 215874.67161262533
+      },
+      {
+       "year": 14,
+       "cashFlow": 41042.17856183707,
+       "cumulative": 256916.8501744624
+      },
+      {
+       "year": 15,
+       "cashFlow": 41712.04052240844,
+       "cumulative": 298628.89069687086
+      },
+      {
+       "year": 16,
+       "cashFlow": 42391.88342619233,
+       "cumulative": 341020.7741230632
+      },
+      {
+       "year": 17,
+       "cashFlow": 43081.85598924259,
+       "cumulative": 384102.6301123058
+      },
+      {
+       "year": 18,
+       "cashFlow": 43782.10914348231,
+       "cumulative": 427884.7392557881
+      },
+      {
+       "year": 19,
+       "cashFlow": 44492.79606972019,
+       "cumulative": 472377.5353255083
+      },
+      {
+       "year": 20,
+       "cashFlow": 45214.07223115902,
+       "cumulative": 517591.6075566673
+      },
+      {
+       "year": 21,
+       "cashFlow": 45946.09540740331,
+       "cumulative": 563537.7029640706
+      },
+      {
+       "year": 22,
+       "cashFlow": 46689.025728973626,
+       "cumulative": 610226.7286930443
+      },
+      {
+       "year": 23,
+       "cashFlow": 47443.02571233532,
+       "cumulative": 657669.7544053796
+      },
+      {
+       "year": 24,
+       "cashFlow": 48208.26029544911,
+       "cumulative": 705878.0147008287
+      },
+      {
+       "year": 25,
+       "cashFlow": 48984.896873851314,
+       "cumulative": 754862.91157468
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-14",
+    "result": {
+     "systemCost": 66600,
+     "e1": 94434.7678644613,
+     "year1Savings": 11332.172143735355,
+     "paybackYears": 6.177196808187392,
+     "roiPct": 373.3873767134738,
+     "npv": 87160.44991583294,
+     "irrPct": 16.644012726290384,
+     "lcoe": 0.06876662719187833,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -66600,
+       "cumulative": -66600
+      },
+      {
+       "year": 1,
+       "cashFlow": 10333.172143735355,
+       "cumulative": -56266.827856264645
+      },
+      {
+       "year": 2,
+       "cashFlow": 10502.021508677013,
+       "cumulative": -45764.80634758763
+      },
+      {
+       "year": 3,
+       "cashFlow": 10673.3867291563,
+       "cumulative": -35091.41961843133
+      },
+      {
+       "year": 4,
+       "cashFlow": 10847.305291420731,
+       "cumulative": -24244.114327010604
+      },
+      {
+       "year": 5,
+       "cashFlow": 11023.815240262897,
+       "cumulative": -13220.299086747707
+      },
+      {
+       "year": 6,
+       "cashFlow": 11202.955187342814,
+       "cumulative": -2017.3438994048938
+      },
+      {
+       "year": 7,
+       "cashFlow": 11384.764319634225,
+       "cumulative": 9367.420420229331
+      },
+      {
+       "year": 8,
+       "cashFlow": 11569.282407996774,
+       "cumulative": 20936.702828226105
+      },
+      {
+       "year": 9,
+       "cashFlow": 11756.549815875927,
+       "cumulative": 32693.25264410203
+      },
+      {
+       "year": 10,
+       "cashFlow": 11946.607508132476,
+       "cumulative": 44639.860152234505
+      },
+      {
+       "year": 11,
+       "cashFlow": 12139.497060003652,
+       "cumulative": 56779.35721223816
+      },
+      {
+       "year": 12,
+       "cashFlow": 12335.260666197706,
+       "cumulative": 69114.61787843586
+      },
+      {
+       "year": 13,
+       "cashFlow": 12533.941150124054,
+       "cumulative": 81648.55902855992
+      },
+      {
+       "year": 14,
+       "cashFlow": 12735.581973260902,
+       "cumulative": 94384.14100182083
+      },
+      {
+       "year": 15,
+       "cashFlow": 12940.227244662488,
+       "cumulative": 107324.36824648331
+      },
+      {
+       "year": 16,
+       "cashFlow": 13147.92173060796,
+       "cumulative": 120472.28997709128
+      },
+      {
+       "year": 17,
+       "cashFlow": 13358.710864394017,
+       "cumulative": 133831.0008414853
+      },
+      {
+       "year": 18,
+       "cashFlow": 13572.640756273488,
+       "cumulative": 147403.6415977588
+      },
+      {
+       "year": 19,
+       "cashFlow": 13789.758203541964,
+       "cumulative": 161193.39980130078
+      },
+      {
+       "year": 20,
+       "cashFlow": 14010.11070077474,
+       "cumulative": 175203.5105020755
+      },
+      {
+       "year": 21,
+       "cashFlow": 14233.746450216287,
+       "cumulative": 189437.2569522918
+      },
+      {
+       "year": 22,
+       "cashFlow": 14460.714372324508,
+       "cumulative": 203897.9713246163
+      },
+      {
+       "year": 23,
+       "cashFlow": 14691.064116472142,
+       "cumulative": 218589.03544108843
+      },
+      {
+       "year": 24,
+       "cashFlow": 14924.846071807578,
+       "cumulative": 233513.881512896
+      },
+      {
+       "year": 25,
+       "cashFlow": 15162.111378277514,
+       "cumulative": 248675.99289117352
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-15",
+    "result": {
+     "systemCost": 21600,
+     "e1": 30707.481516782693,
+     "year1Savings": 4299.047412349578,
+     "paybackYears": 5.249613412049488,
+     "roiPct": 460.0919267665361,
+     "npv": 37434.497483506246,
+     "irrPct": 19.700475838355487,
+     "lcoe": 0.06858749853240048,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -21600,
+       "cumulative": -21600
+      },
+      {
+       "year": 1,
+       "cashFlow": 3975.047412349578,
+       "cumulative": -17624.952587650423
+      },
+      {
+       "year": 2,
+       "cashFlow": 4039.103218793586,
+       "cumulative": -13585.849368856838
+      },
+      {
+       "year": 3,
+       "cashFlow": 4104.113456753611,
+       "cumulative": -9481.735912103228
+      },
+      {
+       "year": 4,
+       "cashFlow": 4170.092347259239,
+       "cumulative": -5311.643564843988
+      },
+      {
+       "year": 5,
+       "cashFlow": 4237.054323233401,
+       "cumulative": -1074.5892416105871
+      },
+      {
+       "year": 6,
+       "cashFlow": 4305.014032649579,
+       "cumulative": 3230.424791038992
+      },
+      {
+       "year": 7,
+       "cashFlow": 4373.986341736058,
+       "cumulative": 7604.411132775051
+      },
+      {
+       "year": 8,
+       "cashFlow": 4443.986338227925,
+       "cumulative": 12048.397471002976
+      },
+      {
+       "year": 9,
+       "cashFlow": 4515.029334667523,
+       "cumulative": 16563.426805670497
+      },
+      {
+       "year": 10,
+       "cashFlow": 4587.130871754068,
+       "cumulative": 21150.557677424564
+      },
+      {
+       "year": 11,
+       "cashFlow": 4660.306721743204,
+       "cumulative": 25810.864399167767
+      },
+      {
+       "year": 12,
+       "cashFlow": 4734.572891897177,
+       "cumulative": 30545.437291064944
+      },
+      {
+       "year": 13,
+       "cashFlow": 4809.945627986446,
+       "cumulative": 35355.38291905139
+      },
+      {
+       "year": 14,
+       "cashFlow": 4886.441417843444,
+       "cumulative": 40241.82433689484
+      },
+      {
+       "year": 15,
+       "cashFlow": 4964.076994969311,
+       "cumulative": 45205.90133186415
+      },
+      {
+       "year": 16,
+       "cashFlow": 5042.869342194354,
+       "cumulative": 50248.770674058505
+      },
+      {
+       "year": 17,
+       "cashFlow": 5122.83569539305,
+       "cumulative": 55371.606369451554
+      },
+      {
+       "year": 18,
+       "cashFlow": 5203.993547254406,
+       "cumulative": 60575.59991670596
+      },
+      {
+       "year": 19,
+       "cashFlow": 5286.360651108497,
+       "cumulative": 65861.96056781446
+      },
+      {
+       "year": 20,
+       "cashFlow": 5369.955024810013,
+       "cumulative": 71231.91559262447
+      },
+      {
+       "year": 21,
+       "cashFlow": 5454.7949546796835,
+       "cumulative": 76686.71054730416
+      },
+      {
+       "year": 22,
+       "cashFlow": 5540.898999504412,
+       "cumulative": 82227.60954680857
+      },
+      {
+       "year": 23,
+       "cashFlow": 5628.285994597027,
+       "cumulative": 87855.8955414056
+      },
+      {
+       "year": 24,
+       "cashFlow": 5716.975055916522,
+       "cumulative": 93572.87059732212
+      },
+      {
+       "year": 25,
+       "cashFlow": 5806.985584249679,
+       "cumulative": 99379.8561815718
+      }
+     ]
+    }
+   },
+   {
+    "id": "site-16",
+    "result": {
+     "systemCost": 189000,
+     "e1": 268549.50845075486,
+     "year1Savings": 32225.941014090582,
+     "paybackYears": 6.163895189992817,
+     "roiPct": 374.45294040931987,
+     "npv": 248332.90505618075,
+     "irrPct": 16.682149084314005,
+     "lcoe": 0.06862349836960245,
+     "series": [
+      {
+       "year": 0,
+       "cashFlow": -189000,
+       "cumulative": -189000
+      },
+      {
+       "year": 1,
+       "cashFlow": 29390.941014090582,
+       "cumulative": -159609.05898590942
+      },
+      {
+       "year": 2,
+       "cashFlow": 29871.107535200535,
+       "cumulative": -129737.95145070888
+      },
+      {
+       "year": 3,
+       "cashFlow": 30358.428537475025,
+       "cumulative": -99379.52291323384
+      },
+      {
+       "year": 4,
+       "cashFlow": 30853.010622683403,
+       "cumulative": -68526.51229055044
+      },
+      {
+       "year": 5,
+       "cashFlow": 31354.961980961372,
+       "cumulative": -37171.55030958907
+      },
+      {
+       "year": 6,
+       "cashFlow": 31864.392414477705,
+       "cumulative": -5307.157895111362
+      },
+      {
+       "year": 7,
+       "cashFlow": 32381.41336145343,
+       "cumulative": 27074.255466342067
+      },
+      {
+       "year": 8,
+       "cashFlow": 32906.13792053908,
+       "cumulative": 59980.393386881144
+      },
+      {
+       "year": 9,
+       "cashFlow": 33438.68087555511,
+       "cumulative": 93419.07426243625
+      },
+      {
+       "year": 10,
+       "cashFlow": 33979.15872060088,
+       "cumulative": 127398.23298303713
+      },
+      {
+       "year": 11,
+       "cashFlow": 34527.68968553784,
+       "cumulative": 161925.92266857496
+      },
+      {
+       "year": 12,
+       "cashFlow": 35084.39376185235,
+       "cumulative": 197010.3164304273
+      },
+      {
+       "year": 13,
+       "cashFlow": 35649.39272890396,
+       "cumulative": 232659.70915933128
+      },
+      {
+       "year": 14,
+       "cashFlow": 36222.81018056463,
+       "cumulative": 268882.5193398959
+      },
+      {
+       "year": 15,
+       "cashFlow": 36804.771552255035,
+       "cumulative": 305687.29089215095
+      },
+      {
+       "year": 16,
+       "cashFlow": 37395.40414838364,
+       "cumulative": 343082.6950405346
+      },
+      {
+       "year": 17,
+       "cashFlow": 37994.83717019455,
+       "cumulative": 381077.53221072914
+      },
+      {
+       "year": 18,
+       "cashFlow": 38603.20174403045,
+       "cumulative": 419680.7339547596
+      },
+      {
+       "year": 19,
+       "cashFlow": 39220.63095001651,
+       "cumulative": 458901.3649047761
+      },
+      {
+       "year": 20,
+       "cashFlow": 39847.25985117175,
+       "cumulative": 498748.62475594785
+      },
+      {
+       "year": 21,
+       "cashFlow": 40483.22552295422,
+       "cumulative": 539231.8502789021
+      },
+      {
+       "year": 22,
+       "cashFlow": 41128.66708324623,
+       "cumulative": 580360.5173621484
+      },
+      {
+       "year": 23,
+       "cashFlow": 41783.72572278661,
+       "cumulative": 622144.243084935
+      },
+      {
+       "year": 24,
+       "cashFlow": 42448.54473605612,
+       "cumulative": 664592.7878209911
+      },
+      {
+       "year": 25,
+       "cashFlow": 43123.269552623366,
+       "cumulative": 707716.0573736145
+      }
+     ]
+    }
+   }
+  ],
+  "irrSimple": 15.238237090205075,
+  "paybackSimple": 3.3333333333333335
+ },
+ "alerts": [
+  {
+   "ruleId": "rule-01",
+   "matches": [
+    {
+     "label": "ئالتاي تاغ ئارامگاھى",
+     "value": null,
+     "link": "/sites/site-11"
+    }
+   ]
+  },
+  {
+   "ruleId": "rule-02",
+   "matches": [
+    {
+     "label": "غۇلجا مەكتىپى",
+     "value": 0.6341557210887988,
+     "link": "/sites/site-05"
+    },
+    {
+     "label": "ئاتۇش ئائىلە ئولتۇراق رايونى",
+     "value": 0.6318118593132419,
+     "link": "/sites/site-09"
+    },
+    {
+     "label": "ئالتاي تاغ ئارامگاھى",
+     "value": 0,
+     "link": "/sites/site-11"
+    },
+    {
+     "label": "قاراماي ئامبار مەركىزى",
+     "value": 0.6088119611386046,
+     "link": "/sites/site-13"
+    },
+    {
+     "label": "كۇچا ئۈزۈمزارلىقى",
+     "value": 0,
+     "link": "/sites/site-15"
+    }
+   ]
+  },
+  {
+   "ruleId": "rule-03",
+   "matches": [
+    {
+     "label": "BAT-01-6 · تۇرپان قۇياش مەيدانى",
+     "value": 91.3,
+     "link": "/devices?q=BAT-01-6"
+    },
+    {
+     "label": "SNS-02-6 · ئۈرۈمچى سودا مەركىزى",
+     "value": 91.1,
+     "link": "/devices?q=SNS-02-6"
+    },
+    {
+     "label": "BAT-03-4 · قەشقەر كونا شەھەر ئۆيلىرى",
+     "value": 90.4,
+     "link": "/devices?q=BAT-03-4"
+    },
+    {
+     "label": "MTR-04-5 · خوتەن ئاشلىق زاۋۇتى",
+     "value": 90.7,
+     "link": "/devices?q=MTR-04-5"
+    },
+    {
+     "label": "MTR-05-4 · غۇلجا مەكتىپى",
+     "value": 90.4,
+     "link": "/devices?q=MTR-05-4"
+    },
+    {
+     "label": "BAT-08-4 · كورلا ئىشخانا بىناسى",
+     "value": 91.8,
+     "link": "/devices?q=BAT-08-4"
+    },
+    {
+     "label": "MTR-10-4 · چۆچەك دوختۇرخانىسى",
+     "value": 91.2,
+     "link": "/devices?q=MTR-10-4"
+    },
+    {
+     "label": "BAT-10-5 · چۆچەك دوختۇرخانىسى",
+     "value": 91.5,
+     "link": "/devices?q=BAT-10-5"
+    },
+    {
+     "label": "MTR-11-3 · ئالتاي تاغ ئارامگاھى",
+     "value": 91.3,
+     "link": "/devices?q=MTR-11-3"
+    },
+    {
+     "label": "MTR-13-4 · قاراماي ئامبار مەركىزى",
+     "value": 91.7,
+     "link": "/devices?q=MTR-13-4"
+    },
+    {
+     "label": "SNS-13-6 · قاراماي ئامبار مەركىزى",
+     "value": 91.8,
+     "link": "/devices?q=SNS-13-6"
+    },
+    {
+     "label": "MTR-14-3 · بۆرتالا مېھمانخانىسى",
+     "value": 90.2,
+     "link": "/devices?q=MTR-14-3"
+    }
+   ]
+  },
+  {
+   "ruleId": "rule-04",
+   "matches": [
+    {
+     "label": "INV-02-2 · ئۈرۈمچى سودا مەركىزى",
+     "value": 70,
+     "link": "/devices?q=INV-02-2"
+    },
+    {
+     "label": "BAT-03-4 · قەشقەر كونا شەھەر ئۆيلىرى",
+     "value": 71,
+     "link": "/devices?q=BAT-03-4"
+    },
+    {
+     "label": "MTR-05-4 · غۇلجا مەكتىپى",
+     "value": 71,
+     "link": "/devices?q=MTR-05-4"
+    },
+    {
+     "label": "MTR-14-3 · بۆرتالا مېھمانخانىسى",
+     "value": 70,
+     "link": "/devices?q=MTR-14-3"
+    }
+   ]
+  },
+  {
+   "ruleId": "rule-05",
+   "matches": [
+    {
+     "label": "INV-11-1 · ئالتاي تاغ ئارامگاھى",
+     "value": 1349.8038333333334,
+     "link": "/devices?q=INV-11-1"
+    },
+    {
+     "label": "PV-11-2 · ئالتاي تاغ ئارامگاھى",
+     "value": 2168.7282666666665,
+     "link": "/devices?q=PV-11-2"
+    },
+    {
+     "label": "MTR-11-3 · ئالتاي تاغ ئارامگاھى",
+     "value": 739.2177,
+     "link": "/devices?q=MTR-11-3"
+    },
+    {
+     "label": "BAT-11-4 · ئالتاي تاغ ئارامگاھى",
+     "value": 2222.2558833333333,
+     "link": "/devices?q=BAT-11-4"
+    }
+   ]
+  },
+  {
+   "ruleId": "rule-06",
+   "matches": [
+    {
+     "label": "INV-202604-005 · غۇلجا مائارىپ ئىدارىسى",
+     "value": 31,
+     "link": "/billing?open=inv-site-05-2026-04"
+    },
+    {
+     "label": "INV-202604-009 · ئاتۇش مۈلۈك باشقۇرۇش",
+     "value": 31,
+     "link": "/billing?open=inv-site-09-2026-04"
+    }
+   ]
+  }
+ ]
+}

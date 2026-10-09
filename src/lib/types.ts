@@ -14,6 +14,11 @@ export interface Site {
   installDate: string // YYYY-MM-DD
   lat: number
   lng: number
+  // financial model (ROI); defaults in seed.ts → siteFinanceDefaults
+  systemCost: number // CAPEX, in settings.currency
+  annualOpex: number // O&M per year
+  degradationPct: number // output loss per year, %
+  tariffEscalationPct: number // tariff growth per year, %
 }
 
 export type DeviceType = 'inverter' | 'battery' | 'panel' | 'meter' | 'sensor'
@@ -91,7 +96,7 @@ export interface SavedReport {
 
 export type ReportKind = 'energy' | 'financial' | 'devices' | 'maintenance' | 'environment'
 
-export type Lang = 'ug' | 'en'
+export type Lang = 'ug' | 'en' | 'ar' | 'tr'
 export type Theme = 'light' | 'dark' | 'system'
 
 export interface Settings {
@@ -114,6 +119,45 @@ export interface Settings {
   notifyDeviceAlerts: boolean
   notifyBilling: boolean
   notifyMaintenance: boolean
+  discountRatePct: number
+}
+
+export type AlertMetric =
+  | 'site_yield_below'
+  | 'site_offline'
+  | 'device_efficiency_below'
+  | 'device_health_below'
+  | 'device_offline_minutes'
+  | 'invoice_overdue_days'
+export type AlertSeverity = 'warning' | 'danger'
+
+export interface AlertRule {
+  id: string
+  name: string
+  metric: AlertMetric
+  threshold: number
+  siteId: string | null // null = all sites
+  severity: AlertSeverity
+  enabled: boolean
+  lastTriggeredAt: string | null
+  createdAt: string
+}
+
+export type IntegrationVendor = 'solaredge' | 'fusionsolar' | 'webhook'
+export type IntegrationStatus = 'pending' | 'ok' | 'error'
+
+export interface Integration {
+  id: string
+  vendor: IntegrationVendor
+  name: string
+  siteId: string
+  externalId: string // SolarEdge site id / FusionSolar station code
+  config: Record<string, string> // non-secret, e.g. { base_url, username }
+  ingestToken: string
+  status: IntegrationStatus
+  lastSyncAt: string | null
+  lastError: string | null
+  createdAt: string
 }
 
 export interface DB {
@@ -123,6 +167,8 @@ export interface DB {
   invoices: Invoice[]
   notifications: AppNotification[]
   reports: SavedReport[]
+  alertRules: AlertRule[]
+  integrations: Integration[]
   settings: Settings
 }
 

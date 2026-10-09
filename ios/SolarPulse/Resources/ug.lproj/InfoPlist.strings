@@ -1,0 +1,2 @@
+/* App name shown under the icon (kept in Latin script in every language). */
+"CFBundleDisplayName" = "SolarPulse";

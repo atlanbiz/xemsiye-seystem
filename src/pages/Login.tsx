@@ -1,17 +1,15 @@
 import { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
-import { Loader2, Languages } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { useAuth } from '../context/auth'
-import { useData } from '../context/data'
 import { useI18n } from '../context/i18n'
 import { Field, Input } from '../components/ui'
-import { Logo } from '../components/Layout'
+import { Logo, LanguageMenu } from '../components/Layout'
 import { isSupabase } from '../lib/supabase'
 import { useEffect } from 'react'
 
 export default function Login() {
   const { user, signIn, signUp } = useAuth()
-  const { db, updateSettings } = useData()
   const { t, dir, lang } = useI18n()
   const navigate = useNavigate()
   const [mode, setMode] = useState<'in' | 'up'>('in')
@@ -46,7 +44,7 @@ export default function Login() {
       <div className="glass fade-in w-full max-w-md rounded-3xl p-8">
         <div className="flex items-center justify-between">
           <Logo />
-          <button className="icon-btn" onClick={() => updateSettings({ language: db.settings.language === 'ug' ? 'en' : 'ug' })}><Languages className="h-4 w-4" /></button>
+          <LanguageMenu />
         </div>
         <h1 className="mt-8 text-2xl font-semibold">{t('auth.welcome')}</h1>
         <p className="mt-1 text-sm text-slate-500">{t('auth.subtitle')}</p>

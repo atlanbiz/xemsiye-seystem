@@ -235,6 +235,10 @@ export function Sparkline({ data, color = '#3b74f6', width = 80, height = 26, fi
   )
 }
 
+export function Skeleton({ className }: { className?: string }) {
+  return <div className={cn('animate-pulse rounded-2xl bg-slate-200/70 dark:bg-slate-700/40', className)} />
+}
+
 export function EmptyState({ text }: { text: string }) {
   return (
     <div className="flex flex-col items-center justify-center gap-2 py-10 text-slate-400">
@@ -253,7 +257,7 @@ export function SearchInput({ value, onChange, placeholder }: { value: string; o
   )
 }
 
-export function Stat({ label, value, sub, icon, tone = 'blue' }: { label: string; value: ReactNode; sub?: ReactNode; icon?: ReactNode; tone?: 'blue' | 'green' | 'amber' | 'red' | 'violet' }) {
+export function Stat({ label, value, sub, icon, tone = 'blue' }: { label: ReactNode; value: ReactNode; sub?: ReactNode; icon?: ReactNode; tone?: 'blue' | 'green' | 'amber' | 'red' | 'violet' }) {
   const bg = { blue: 'bg-blue-50 text-blue-600 dark:bg-blue-500/15', green: 'bg-emerald-50 text-emerald-600 dark:bg-emerald-500/15', amber: 'bg-amber-50 text-amber-600 dark:bg-amber-500/15', red: 'bg-rose-50 text-rose-600 dark:bg-rose-500/15', violet: 'bg-violet-50 text-violet-600 dark:bg-violet-500/15' }[tone]
   return (
     <div className="card flex items-start gap-3">

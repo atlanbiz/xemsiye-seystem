@@ -1,0 +1,21 @@
+# Gradle / build outputs
+.gradle/
+build/
+**/build/
+.kotlin/
+
+# Local configuration (SDK path, Supabase keys)
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing
+*.jks
+*.keystore
+keystore.properties

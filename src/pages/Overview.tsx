@@ -6,7 +6,7 @@ import { useData } from '../context/data'
 import { useI18n } from '../context/i18n'
 import { Card, ChartTooltip, PillSelect, Ring, Sparkline, StatusBadge } from '../components/ui'
 import { co2Tons, dailySeries, deviceStats, energyFlow, hourlySeries, liveKw, siteDayKwh, siteDayKwhCached, siteKw, totalKwh } from '../lib/sim'
-import { useWeather, weatherKind } from '../lib/weather'
+import { useWeather, weatherKind, cityLabel } from '../lib/weather'
 import { addDays, axisEnergy, axisPower, cn, dayKey, pctChange } from '../lib/utils'
 import type { DictKey } from '../i18n/en'
 
@@ -144,14 +144,14 @@ function Kpi({ icon, label, value, change, changeLabel, sub, spark, color, tone 
 
 function WeatherCard() {
   const { db } = useData()
-  const { t, fmt } = useI18n()
+  const { t, fmt, lang } = useI18n()
   const w = useWeather(db.settings.lat, db.settings.lng)
   const kind = weatherKind(w.code)
   const Icon = WX_ICON[kind]
   return (
     <div className="card w-full self-start !p-4 lg:w-64">
       <div className="text-xs font-medium text-slate-500">{fmt.dateLong(new Date())}</div>
-      <div className="mt-1 text-xs text-slate-400">{db.settings.city}</div>
+      <div className="mt-1 text-xs text-slate-400">{cityLabel(db.settings.city, lang)}</div>
       <div className="mt-2 flex items-center gap-3">
         <Icon className={cn('h-10 w-10', kind === 'sunny' ? 'text-amber-400' : 'text-sky-500')} />
         <div>

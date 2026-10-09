@@ -74,6 +74,22 @@ export function siteDayKwh(site: Site, day: string, untilHour = 24) {
   return sum
 }
 
+/** ∫ solarCurve over a day with siteDayKwh's 15-minute midpoint rule. */
+const DAY_CURVE = (() => {
+  let s = 0
+  for (let h = 0; h < 24; h += 0.25) s += solarCurve(h + 0.125) * 0.25
+  return s
+})()
+
+/**
+ * Full-day kWh of a past day, ignoring the install date. Equals siteDayKwh(site, day) for days
+ * on/after installation (siteKw is a per-day constant × solarCurve), but in O(1) — used for the
+ * 365-day finance estimate.
+ */
+export function siteFullDayKwh(site: Site, day: string) {
+  return site.capacityKw * PERF * DAY_CURVE * seasonFactor(parseDay(day)) * weatherFactor(day) * (0.92 + rand(site.id + day) * 0.1)
+}
+
 const cache = new Map<string, number>()
 /** Cached full-day production (past days only). */
 export function siteDayKwhCached(site: Site, day: string) {

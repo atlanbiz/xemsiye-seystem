@@ -80,8 +80,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
     async (id: string) => {
       const cur = dbRef.current
       if (!cur) return
-      for (const c of ['devices', 'tickets', 'invoices'] as const)
-        for (const r of (cur[c] as { id: string; siteId: string }[]).filter((r) => r.siteId === id)) await remove(c, r.id)
+      for (const c of ['devices', 'tickets', 'invoices', 'integrations', 'alertRules'] as const)
+        for (const r of (cur[c] as { id: string; siteId: string | null }[]).filter((r) => r.siteId === id)) await remove(c, r.id)
       await remove('sites', id)
     },
     [remove],
